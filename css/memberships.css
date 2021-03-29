@@ -1,0 +1,166 @@
+h2,h3 {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+h3 {
+	color: var(--main);
+	text-align: center;
+	max-width: 780px;
+	margin: 30px auto;
+}
+.bold {
+	font-weight: bold;
+}
+.line {
+	display: block;
+	max-width: 415px;
+	height: 1px;
+	background: var(--main);
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+main .membership.container {
+	margin-bottom: 50px;
+}
+main {
+	padding-top: 40px;
+}
+main .offer > div {
+    width: 50%;
+}
+main .offer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 35px;
+}
+main .offer .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .offer .content {
+    background: var(--main);
+    color: #fff;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 60px;
+}
+
+main .membership .wrap {
+	display: flex;
+	justify-content: center;
+}
+
+main .membership .wrap > div {
+	width: 30%;
+	box-shadow: 0px 0px 10px 0px rgb(0 10 24 / 40%);
+	border-radius: 3px;
+	text-align: center;
+	padding-bottom: 40px;
+	margin: 0 auto;
+	background: var(--accent2);
+}
+main .membership .wrap .title {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	color: #fff;
+	background: var(--main);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 25px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+main .membership .wrap .cost {
+	font-family: 'Open Sans', sans-serif;
+	color: var(--main);
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+main .membership .wrap ul {
+	max-width: 240px;
+	margin-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+main .membership .wrap li {
+	font-size: 18px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid var(--main);
+}
+main .membership .wrap li:last-child {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	border-bottom: none;
+}
+main .membership .wrap .signUpNow {
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	padding: 12px 45px;
+	border-radius: 3px;
+	background: var(--accent1);
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+}
+main .info {
+	margin-bottom: 50px;
+}
+main .info h3 {
+	text-align: left;
+	color: var(--main);
+	line-height: 1.3;
+}
+main .info p {
+	font-size: 14px;
+	margin-bottom: 20px;
+	line-height: 1.3;
+}
+main .advantages h3 {
+	line-height: 1.3;
+}
+@media all and (max-width: 980px) {
+	h3 {
+		font-size: 22px;
+	}
+	main .offer {
+	    flex-direction: column;
+	}
+	main .offer .img {
+	    order: 2;
+	}
+	main .offer > div {
+		width: 100%;
+	}
+	main .offer .content {
+	    padding-left: 25px;
+	    padding-right: 25px;
+	    order: 1;
+	}
+	main .membership .wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+	main .membership .wrap > div {
+		width: 80%;
+		margin-bottom: 40px;
+	}
+	main .membership .wrap ul {
+		max-width: 90%;
+	}
+	main .membership.container {
+		margin-bottom: 20px;
+	}
+}

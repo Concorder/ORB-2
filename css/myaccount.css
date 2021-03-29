@@ -1,0 +1,325 @@
+main .contactForm {
+	background: url(../imgs/bg.png) no-repeat left top;
+	background-size: contain;
+	background-position: -150px;
+}
+main .container {	
+	padding: 60px 15px 100px 15px;
+	overflow: hidden;
+}
+.foodImg {
+	position: absolute;
+	right: 0;
+	top: 102px;
+	z-index: -1;
+}
+main .contactBox {
+	text-align: center;
+    max-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+main .contactBox h2, main .faqBox h2 {
+	font-family: 'Open Sans', sans-serif;
+	color: var(--main);
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+main .contactBox .account {
+    border-radius: 4px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 350px;
+    width: 320px;
+    margin-bottom: 150px;
+    background: #fff;
+}
+
+.account h4 {
+	display: block;
+    font-size: 14px;
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+    font-weight: 800;
+    color: var(--text-bg)
+}
+
+/*.account.unsub{*/
+/*    margin-top: */
+/*}*/
+main .contactBox .account input,
+main .contactBox .account .acc-data,
+main .contactBox .account textarea {
+	padding: 7px 3px;
+	border: none;
+	border-bottom: 1px solid #c0c0c0;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	font-size: 16px;
+	text-align: center;
+}
+main .contactBox .account .acc-data {
+	border-bottom: unset;
+}
+main .contactBox p {
+	padding: 7px 3px;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1.3;
+	display: none;
+}
+main .contactBox #success {
+	color: green;
+}
+main .contactBox #error {
+	color: red;
+}
+main .contactBox .account textarea {
+	resize: none;
+}
+main .contactBox .account .acc-data {
+	display: block;
+	margin-bottom: 40px;
+}
+
+#myPass {
+    background: url(../imgs/eyepass.png) no-repeat;
+    background-size: 20px;
+    background-position: 15px 12px;
+}
+main .contactBox .account .greenButton {
+    background-color: rgb(27, 176, 0);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+    width: 70%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+#signOut {
+    position: relative;
+    margin-top: 25px;
+    display: block;
+    color: #939393;
+    text-decoration: none;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+#signOut::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 1px;
+    bottom: -5px;
+    left: 0px;
+    background: #a19393;
+    transition: 1s width;
+}
+#signOut:hover:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -5px;
+    left: 0px;
+    background: #a19393;
+}
+main .contactBox .account ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #303030;
+	font-size: 14px;
+}
+main .contactBox .account ::-moz-placeholder { /* Firefox 19+ */
+	color: #303030;
+	font-size: 14px;
+}
+main .contactBox .account :-ms-input-placeholder { /* IE 10+ */
+	color: #303030;
+	font-size: 14px;
+}
+main .contactBox .account :-moz-placeholder { /* Firefox 18- */
+	color: #303030;
+	font-size: 14px;
+}
+.noScrollbar::-webkit-scrollbar {
+  display: none;
+} 
+.noScrollbar {
+ -ms-overflow-style: none;
+}
+.accordion ul {
+    list-style:none;
+    margin:0;
+    padding:0;    
+}
+.accordion li {
+    margin:0;
+    padding:0;
+}
+.accordion [type=radio], .accordion [type=checkbox] {
+    display:none;
+}
+.accordion h4, .mainSubheader {
+	font-weight: 600;
+	font-size: 18px;
+	color: var(--text-bg);
+}
+.mainSubheader {
+	margin-bottom: 45px;
+}
+.accordion label {
+	margin-left: 40px;
+	position: relative;
+	border-radius: 10px;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    color: var(--text-bg);
+    cursor: pointer;
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none;
+}
+.accordion label:hover {
+color: #3f5b96;
+}
+.accordion [type=radio] ~ label::before, 
+.accordion [type=checkbox] ~ label::before {
+	position: absolute;
+	content: "–";
+	color: var(--main);
+    font-size: 50px;
+    font-weight: 300;
+    margin-right: 12px;
+    vertical-align: text-top;
+    left: -40px;
+    top: 5px;
+}
+.accordion ul li label:hover, 
+.accordion [type=radio]:checked ~ label, 
+.accordion [type=checkbox]:checked ~ label {
+   color: var(--text-bg);
+}
+.accordion [type=radio]:checked ~ label::before, 
+.accordion [type=checkbox]:checked ~ label::before {
+	content: '+';
+    top: 9px;
+}
+.accordion .content {
+    overflow:hidden;
+ 
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+}
+.accordion p {
+	font-size: 18px;
+    color: var(--text-bg);
+    padding: 0px 0 20px;
+    line-height: 25px
+}
+.toform {
+	margin-bottom: 25px;
+	display: block;
+}
+.vertical ul li {
+    overflow:hidden;
+    margin:0 0 1px;
+}
+.vertical ul li label {
+    padding:10px 0px;
+}
+.vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
+    border-bottom:0;
+}
+.vertical ul li .content {
+    height:0px;
+    border-top:0;
+    transition: all .5s ease-out;
+}
+.vertical [type=checkbox]:checked ~ label ~ .content {
+    height:auto;
+}
+main.unsub .contactBox h2 {
+    margin-bottom: 40%;
+}
+main.unsub .contactBox .account {
+    width: min-content;
+    padding-top: 30%;
+}
+
+main.unsub .contactBox .account .greenButton {
+    width: max-content;
+}
+
+@media all and (max-width: 980px) {
+    main.unsub .container {
+    height: calc(100vh - 160px);
+}
+main.unsub .contactBox .account {
+    width: 100%;}
+
+main.unsub .contactBox .account .greenButton {
+    position: absolute;
+    width: max-content;
+    transform: translate(-50%, 0px);
+    left: 50%;
+}
+
+	main .faqBox h2 {
+		font-size: 22px;
+	}
+	main .contactForm {
+		background: none;
+	}
+	main .contactBox .account {
+		margin-bottom: 0px;
+	}
+
+	.foodImg {
+		display: none;
+	}
+	.accordion label{
+		position: relative;
+	}
+	.accordion label::before {
+		position: absolute;
+		left:0%;
+		top: 40%;
+	}
+	main .contactBox, main .faqBox {
+		margin-right: auto;
+		margin-left: auto;
+		float: none;
+	}
+	main .contactBox h2, main .faqBox h2 {
+		margin-bottom: 30px;
+	}
+	main .container {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	#signOut::after {
+	width: 100%;
+	}
+}

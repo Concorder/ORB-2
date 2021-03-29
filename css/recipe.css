@@ -1,0 +1,108 @@
+main .premiumRecipe {
+	color: #303030;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding-top: 60px;
+	line-height: 1.4;
+}
+main .container {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+main .premiumRecipe > div {
+	margin-bottom: 40px;
+}
+main .premiumRecipe > div:nth-child(even) {
+	width: 60%;
+}
+main .premiumRecipe > div:nth-child(odd) {
+	width: 350px;
+}
+
+/*********************************************   block1 - Main Img   */
+
+main .premiumRecipe .img {
+	height: 350px;
+}
+main .premiumRecipe .img img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	object-fit: cover;
+}
+
+/*********************************************   block2 - Recipe   */
+
+main .premiumRecipe .recipe h2 {
+	font-size: 28px;
+	color: var(--main);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+main .premiumRecipe .recipe .description {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 40px;
+	max-width: 560px;
+	line-height: 1.6;
+	color: var(--text-bg);
+	height: 85px;
+    overflow: hidden;
+}
+main .premiumRecipe .recipe .seeFullRecipe {
+	font-size: 18px;
+	margin-bottom: 20px;
+	color: var(--main);
+}
+main .premiumRecipe .recipe .getAccessLink {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 600;
+	background: var(--accent1);
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 10px 30px;
+	display: inline-block;
+}
+
+@media all and (max-width: 980px) {
+	header {
+		border-bottom: 1px solid #eaecf0;
+	}
+	main .premiumRecipe > div {
+		margin-bottom: 25px;
+	}
+	main .premiumRecipe {
+		flex-direction: column;
+		padding-top: 30px;
+	}
+	main .premiumRecipe > div:nth-child(even),
+	main .premiumRecipe > div:nth-child(odd) {
+		width: 100%;
+	}
+	main .premiumRecipe .recipe .description {
+		max-width: 100%;
+	}
+	main .premiumRecipe .img {
+		text-align: center;
+		height: 235px;
+	}
+	main .premiumRecipe .img img {
+		width: 250px;
+	}
+	main .premiumRecipe .recipe .seeFullRecipe {
+		font-size: 14px;
+		text-align: center;
+	}
+	main .premiumRecipe .recipe .getAccessLink {
+		margin-right: auto;
+	    margin-left: auto;
+	    text-align: center;
+	    display: block;
+	    max-width: 260px;
+	}
+}

@@ -1,0 +1,136 @@
+main .getAccess {
+	text-align: center;
+	padding: 60px 15px 50px 15px;
+}
+main .getAccess h1 {
+	color: var(--main);
+	font-size: 28px;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+main .getAccess form {
+	max-width: 360px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 15px;
+}
+main .getAccess form input {
+	width: 100%;
+	display: block;
+	border-radius: 5px;
+	border: none;
+}
+main .getAccess form input[type='tel'] {
+	margin-bottom: 15px;
+	border: 1px solid rgb(48, 48, 48);
+	height: 40px;
+	padding: 10px 15px;
+	color: #999;
+	font-size: 18px;
+}
+main .getAccess form input[type='submit'] {
+	background: var(--accent1);
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	height: 47px;
+	cursor: pointer;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+main .getAccess p {
+	font-size: 12px;
+	color: var(--text-darker);
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.3;
+}
+main .getAccess .text1 {
+	max-width: 	300px;
+	margin-bottom: 20px;
+}
+main .getAccess .text2 {
+	max-width: 	660px;	
+}
+main .getAccess ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #999;
+	font-size: 18px;
+}
+main .getAccess ::-moz-placeholder { /* Firefox 19+ */
+	color: #999;
+	font-size: 18px;
+}
+main .getAccess :-ms-input-placeholder { /* IE 10+ */
+	color: #999;
+	font-size: 18px;
+}
+main .getAccess :-moz-placeholder { /* Firefox 18- */
+	color: #999;
+	font-size: 18px;
+}
+main .benefits {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	margin-bottom: 20px;
+}
+main .benefits > div {
+	width: 50%;
+}
+main .benefits .img img {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .benefits .content {
+	background: var(--main);
+	color: #fff;
+	line-height: 1.5;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 20px 60px;
+}
+main .benefits .content h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 28px;
+	margin-bottom: 30px;
+}
+main .benefits .content p {
+	font-size: 14px;
+}
+
+@media all and (max-width: 980px) {
+	main .getAccess {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	main .getAccess h1 {
+		font-size: 19px;
+	}
+	main .getAccess form input[type='tel'] {
+		height: 50px;
+	}
+	main .getAccess form input[type='submit'] {
+		height: 60px;
+	}
+	main .benefits {
+		flex-direction: column;
+	}
+	main .benefits > div {
+		width: 100%;
+	}
+	main .benefits .content {
+		padding-left: 25px;
+		padding-right: 25px;
+		order: 1;
+	}
+	main .benefits .img {
+		order: 2;
+	}
+}

@@ -1,0 +1,665 @@
+
+
+.foodImg {
+    position: absolute;
+    right: 0;
+    top: 102px;
+    z-index: -1;
+}
+
+main .contactBox h2, main .faqBox h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--main);
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+.account h4 {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+    font-weight: 800;
+    color: var(--text-bg)
+}
+
+main .contactBox .account input,
+main .contactBox .account .acc-data,
+main .contactBox .account textarea {
+    padding: 7px 3px;
+    border: none;
+    border-bottom: 1px solid #c0c0c0;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+main .contactBox p {
+    padding: 7px 3px;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.3;
+    display: none;
+}
+.svg-inline--fa.fa-w-16 {
+    width: 1em;
+}
+
+main .contactBox .account textarea {
+    resize: none;
+}
+
+main .contactBox .account ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: var(--text-bg);
+    font-size: 14px;
+}
+main .contactBox .account ::-moz-placeholder { /* Firefox 19+ */
+    color: var(--text-bg);
+    font-size: 14px;
+}
+main .contactBox .account :-ms-input-placeholder { /* IE 10+ */
+    color: var(--text-bg);
+    font-size: 14px;
+}
+main .contactBox .account :-moz-placeholder { /* Firefox 18- */
+    color: var(--text-bg);
+    font-size: 14px;
+}
+
+.accordion ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.accordion li {
+    margin:0;
+    padding:0;
+}
+.accordion [type=radio], .accordion [type=checkbox] {
+    display:none;
+}
+
+
+.accordion label:hover {
+    color: #3f5b96;
+}
+.accordion [type=radio] ~ label::before,
+.accordion [type=checkbox] ~ label::before {
+    position: absolute;
+    content: "–";
+    color: var(--main);
+    font-size: 50px;
+    font-weight: 300;
+    margin-right: 12px;
+    vertical-align: text-top;
+    left: -40px;
+    top: 5px;
+}
+.accordion ul li label:hover,
+.accordion [type=radio]:checked ~ label,
+.accordion [type=checkbox]:checked ~ label {
+    color: var(--text-bg);
+}
+.accordion [type=radio]:checked ~ label::before,
+.accordion [type=checkbox]:checked ~ label::before {
+    content: '+';
+    top: 9px;
+}
+
+.accordion p {
+    font-size: 18px;
+    color: var(--text-bg);
+    padding: 0px 0 20px;
+    line-height: 25px
+}
+
+.vertical ul li {
+    overflow:hidden;
+    margin:0 0 1px;
+}
+.vertical ul li label {
+    padding:10px 0px;
+}
+.vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
+    border-bottom:0;
+}
+
+main.unsub .contactBox h2 {
+    margin-bottom: 40%;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+/***** VARIABLES *****/
+/***** / VARIABLES *****/
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+/***** BOOTSTRAP BUTTONS *****/
+.btn {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.33);
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+
+
+.btn-outline-primary.focus, .btn-outline-primary:focus {
+    box-shadow: none;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus, .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none;
+}
+
+.show > .btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+/* / BTN-PRIMARY*/
+
+/***** / BOOTSTRAP BUTTONS *****/
+
+body {
+
+    background-color: #fff;
+}
+.btn-primary {
+    color: #fff;
+    background-color: var(--main);
+    border: none;
+
+}
+.row {
+    margin: 0;
+    width: 100%;
+}
+
+
+header {
+    width: 100%;
+    box-shadow: 0 2px 21px 2px rgba(0, 0, 0, 0.16);
+    background-color: #f9f9f9;
+    border-bottom: 1px solid grey;
+    margin-bottom: 40px;
+}
+
+header .row {
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+}
+
+header .row:first-child {
+    width: 70%;
+}
+
+header .row > .col-md-6 {
+    padding: 0;
+}
+
+#nav-menu .desktop-only a {
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+#nav-menu .left {
+    text-align: right;
+}
+
+#nav-menu .center {
+    text-align: center;
+}
+
+#nav-menu .right {
+    text-align: left;
+}
+
+.block-header {
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3e3e3d;
+    padding-bottom: 5px;
+}
+
+.block-text {
+    word-break: break-word;
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.47;
+    color: #575454;
+}
+
+.contact-us {
+    background-color: #FFFFFF;
+}
+
+.contact-us a {
+    font-size: 17px;
+}
+
+.contact-us .small {
+    font-size: 13px;
+    color: #3e3e3d;
+}
+
+.page-content {
+    margin: 25px auto;
+}
+
+.page-content.block {
+    background-color: #FFFFFF;
+}
+
+.block {
+    padding: 30px 15px;
+}
+
+/********** BOOTSTRAP TOAST **********/
+#toast-container {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+#error-toast .toast-header {
+    background-color: #E85940;
+    color: #FFFFFF;
+}
+
+#success-toast .toast-header {
+    background-color: #0C9B5E;
+    color: #FFFFFF;
+}
+
+.toast-header, .toast-header button {
+    color: #FFFFFF;
+}
+
+/********** / BOOTSTRAP TOAST **********/
+/********** HOME **********/
+#home form {
+    width: 100%;
+}
+
+.home-option {
+    border: 1px solid lightgray;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+#home-block-1 > .left, .block-container > .left {
+    padding: 0;
+}
+
+#home-block-1 > .right, .block-container > .right {
+    padding: 0 0 0 25px;
+}
+
+#home-block1-ad {
+    background-color: #f3e0e0;
+    text-align: center;
+    padding: 20px 15px ;
+    margin: 0 auto;
+    min-height: 211px;
+}
+
+#home-block1-ad .small {
+    font-size: 17px;
+}
+
+#home-block1-ad .big {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#home-block1-ad .big a {
+    word-break: break-word;
+    color: var(--main);
+    text-transform: uppercase;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.col-2 {
+    max-width: 5%;
+}
+
+.unlabeled-form-item {
+    margin-top: 25px;
+}
+
+.cc-nums {
+    text-align: center;
+}
+
+.step-circle {
+    border-radius: 83px;
+    text-align: center;
+    padding-top: 3px;
+    background-color: var(--main);
+    color: #FFFFFF;
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.47;
+}
+
+#cc-6-num-container {
+    padding-right: 0;
+}
+
+#cc-middle-numbers {
+    margin-top: 11px;
+}
+
+#cc-middle-numbers-container {
+    margin: 0;
+    padding: 0 5px;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.option-title {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.form-input {
+    height: 45px;
+    border-radius: 6px;
+}
+
+.form-send-btn {
+    min-height: 45px;
+    border-radius: 6px;
+    width: 225px;
+    display: block;
+}
+
+
+/********** / HOME **********/
+/********** CONTACT **********/
+
+
+.bold-label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #3e3e3d;
+}
+
+#contact-form label {
+    padding: 0;
+}
+
+#contact-form .form-group {
+    margin-top: 15px;
+}
+
+
+/********** / CONTACT **********/
+/********** SETTINGS **********/
+
+
+
+
+
+#settings-container .col {
+    height: 100%;
+}
+
+#settings-container > .row {
+    height: 100%;
+}
+
+
+.form-group {
+    padding-left: 0;
+    padding-right: 30px;
+}
+
+
+.settings-payment-table th {
+    border-top: none;
+}
+
+
+#settings-subscriptions .card-body div, #settings-subscriptions .card-header div {
+    padding: 0;
+}
+
+#cancel-subscription-modal .modal-body {
+    padding: 85px 10px 85px 10px;
+    text-align: center;
+    width: 513px;
+    height: 131px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.56;
+}
+
+
+#modal-btn-row-container .btn-outline-primary {
+    background-color: #FFFFFF;
+}
+
+#modal-btn-row-container .btn {
+    width: 163px;
+    height: 45px;
+    font-size: 17px;
+}
+
+#modal-btn-row-container .left {
+    text-align: right;
+}
+
+#modal-btn-row-container .right {
+    text-align: left;
+}
+
+
+.settings-payment-table th {
+    white-space: nowrap;
+}
+
+
+/********** / SETTINGS **********/
+/********** FAQ **********/
+
+
+#faq-contactus p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #3e3e3d;
+}
+
+#faq-contactus a {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+
+#logo img {
+    max-height: 35px;
+    max-width: 100%;
+}
+
+
+
+
+
+
+.btn.dropdown-toggle img {
+    height: 30px;
+}
+
+
+.dropdown-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dropdown-item:last-child {
+    padding-bottom: 0;
+}
+
+
+@media all and (max-width: 980px) {
+
+    main .faqBox h2 {
+        font-size: 22px;
+    }
+
+
+    .foodImg {
+        display: none;
+    }
+    .accordion label{
+        position: relative;
+    }
+    .accordion label::before {
+        position: absolute;
+        left:0%;
+        top: 40%;
+    }
+
+    main .contactBox h2, main .faqBox h2 {
+        margin-bottom: 30px;
+    }
+
+}
+@media (max-width: 768px) {
+
+
+
+
+    .col-2 {
+        max-width: 10%;
+    }
+
+    .unlabeled-form-item {
+        margin-top: 0;
+    }
+
+    #cc-6-num-container {
+        padding-right: 30px;
+    }
+
+    #cc-middle-numbers {
+        margin-right: 0;
+    }
+
+    #cc-middle-numbers-container {
+        padding: 0 30px 0 0;
+        max-width: 100%;
+    }
+}
+@media (max-width: 992px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+    #home-block-1 > .right, .block-container > .right {
+        padding: 0;
+        margin: 25px auto 0 auto;
+    }
+
+    .contact-us {
+        height: auto;
+    }
+
+    .form-group-submit-btn {
+        text-align: center;
+    }
+}
+@media (max-width: 900px) {
+    #settings-container {
+        width: 100%;
+    }
+
+    .col-2 {
+        max-width: 8%;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+
+
+    .col-2 {
+        max-width: 10%;
+    }
+
+    .unlabeled-form-item {
+        margin-top: 0;
+    }
+
+    #cc-6-num-container {
+        padding-right: 30px;
+    }
+
+    #cc-middle-numbers {
+        margin-right: 0;
+    }
+
+    #cc-middle-numbers-container {
+        padding: 0 30px 0 0;
+        max-width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    #settings-user-info > .row {
+        margin-bottom: 20px;
+    }
+    .form-send-btn {
+        width: 100%;
+    }
+
+    #modal-btn-row-container .left {
+        text-align: center;
+    }
+
+    #modal-btn-row-container .right {
+        text-align: center;
+    }
+
+    #nav-menu .left {
+        text-align: center;
+    }
+
+
+
+    #nav-menu .right {
+        text-align: center;
+    }
+}

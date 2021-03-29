@@ -1,0 +1,134 @@
+main .contactBox .price {
+	border-radius: 4px;
+	display: block;
+	padding: 20px;
+}
+main .contactBox .price > div {
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
+}
+main .contactBox .price > div:not(:last-child) {
+	border-bottom: 1px solid #ebebeb;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+main .contactBox .price > div .col1 {
+	width: 75%;
+}
+main .contactBox .price > div .col2 {
+	width: 25%;
+}
+main .contactBox .price > div span {
+	font-size: 14px;
+
+}
+main form#billingForm {
+	background: var(--accent2);
+	border-radius: 4px;
+	padding: 20px 25px 15px 15px;
+	overflow: hidden;
+}
+main form#billingForm .row {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+main form#billingForm .title {
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	width: 38%;
+	text-align: right;
+	padding-right: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+main form#billingForm .inputWrap {
+	width: 70%;
+	display: flex;
+    align-items: center;
+}
+main form#billingForm .paymentBrand {
+	color: #9e9e9e;
+	font-size: 14px;
+}
+main form#billingForm .buttonPay {
+    max-width: 200px;
+    color: #fff;
+    font-weight: bold;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 3px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: inset 0 0 1px #fff;
+    background-color: var(--accent1);
+    padding: 8px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    float: right;
+    clear: both;
+    margin-top: 15px;
+}
+main .contactBox .footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+main .contactBox .footer .text {
+	font-size: 12px;
+	padding-right: 10px;
+	line-height: 1.3;
+}
+main .mainPart {
+	margin-right: 0;
+	width: 54%;
+}
+main .contactBox {
+	max-width: 100%;
+	width: 40%;
+	margin-right: 10px;
+}
+@media (max-width: 980px) {
+	main .contactBox {
+	    margin: 0;
+	}
+	main .mainPart,
+	main .contactBox {
+		width: 100%;
+	}
+	main form#billingForm .row {
+		flex-direction: column;
+	}
+	main form#billingForm .title,
+	main form#billingForm .inputWrap {
+		width: 100%;
+	}
+	main form#billingForm .inputWrap {
+		margin-bottom: 10px;
+	}
+	main form#billingForm .title {
+		padding-right: 0;
+		justify-content: flex-start;
+		margin-bottom: 10px;
+		font-size: 16px;
+	}
+	main form#billingForm .buttonPay {
+		display: block;
+		width: 100%;
+    	max-width: 100%;
+    	padding: 12px;
+    	font-size: 15px;
+	}
+	main .contactBox .footer {
+		flex-direction: column;
+		align-items: center;
+	}
+	main .contactBox .footer .text {
+		margin-bottom: 10px;
+		padding-right: 0;
+	}
+}

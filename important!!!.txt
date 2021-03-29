@@ -1,0 +1,2 @@
+Page "index_authorized.html" has hidden IDs for popUp after the recipes are over:
+#popUpLimit and #balanceZero - display: none;
