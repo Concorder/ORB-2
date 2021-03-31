@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<base href="http://Onlinerecipesbook.net/"/>-->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Premium Recipes</title>
+    <link rel="shortcut icon" href="imgs/logo_cooking_onlinerecipes.ico"/><link rel="icon" type="image/x-icon" href="https://img.onlinerecipesbook.com/imgs/logo_cooking_onlinerecipes.ico"><link rel="stylesheet" href="https://img.onlinerecipesbook.com/css/open_sans.css">
+    <link rel="stylesheet" href="css/playfair.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css"><link rel="stylesheet" href="https://img.onlinerecipesbook.com/css/slick-carouse1.8.1.css"><link rel="stylesheet" href="https://img.onlinerecipesbook.com/css/slick-carouse1.8.1-theme.min.css"><link rel="stylesheet" href="https://img.onlinerecipesbook.com/css/privacy.css">
+    <style>
+    </style>
+
+    <script type="text/javascript">function clickLogin(myOpen) {
+        if (document.getElementsByTagName('header').length) {
+            var obj = document.getElementsByTagName('header')[0];
+            var obj2=document.getElementsByClassName('userButton');
+            if (!myOpen && obj2.length) {
+                obj2[0].getElementsByClassName('open').length && (obj2[0].getElementsByClassName('open')[0].style.display=myOpen?'none':'block');
+                obj2[0].getElementsByClassName('close').length && (obj2[0].getElementsByClassName('close')[0].style.display=myOpen?'block':'none');
+            }
+            myOpen ? (obj.style.border='none') : (obj.style.borderBottom='1px solid #eaecf0');
+            ['login','authorized'].forEach(function(val) { obj.getElementsByClassName(val).length && (obj.getElementsByClassName(val)[0].style.display=myOpen?'block':'none'); });
+            obj.getElementsByClassName('container').length && (obj.getElementsByClassName('container')[0].style.height=myOpen?'auto':'100px');
+            obj.getElementsByClassName('search').length && (obj.getElementsByClassName('search')[0].style.display=myOpen?'none':'flex');
+            if (myOpen && obj2.length) {
+                obj2[0].getElementsByClassName('open').length && (obj2[0].getElementsByClassName('open')[0].style.display=myOpen?'none':'block');
+                obj2[0].getElementsByClassName('close').length && (obj2[0].getElementsByClassName('close')[0].style.display=myOpen?'block':'none');
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="container">
+            <a href="https://www.onlinerecipesbook.com/" class="logo"><img src="imgs/1Logo_cooking_onlinerecipes-01.png" alt=""></a>
+            <div class="search" style="display: flex;">
+                <form id="searchForm">
+                    <input type="search" id="search" placeholder="Search" name="search" value="" maxlength="15">
+                    <input type="submit" value="">
+                </form>
+            </div>
+            <button class="userButton">
+                <img class="open" src="https://img.onlinerecipesbook.com/imgs/user.png" alt="" onclick="clickLogin(true);">
+                <img class="close" src="https://img.onlinerecipesbook.com/imgs/close.png" alt="" onclick="clickLogin(false);">
+            </button>
+            <div class="login">
+                <form id="authenticationForm" action="https://www.onlinerecipesbook.com/?page=subscriptionterms" method="post">
+                    <!--<input type="hidden" name="page" value="subscriptionterms">-->
+                    <input type="text" id="userName" name="u" value="" placeholder="User" maxlength="22">
+                    <input type="password" id="userPassword" name="c" placeholder="Password" maxlength="12">
+                    <input type="submit" id="authentication" value="Login" name="authentication">
+                    <div class="getPremium">
+                        <span class="text">Don’t have an account?</span>
+                        <a href="https://www.onlinerecipesbook.com/?page=getPremium" class="getAccess">Get access to premium</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>	<main>
+    <section class="container">
+
+        <article>
+            <p>By using this service, you acknowledge that you are over 18 years of age, and that you accept the subscription terms of this offer. This is a subscription service, charged at a discounted rate of 1 EUR for the first 3 days and followed by a monthly charge of 28.95 EUR, unless terminated within the first 3 days. There will be a 1 EUR charge for authorization purposes. This charge will be reverted back to you.
+            </p>
+            <p>onlinerecipesbook.com may change the applicable subscription terms at any time. If significant changes occur, onlinerecipesbook.com commits to notify the member at least 3 weeks prior to the changes taking effect. The applicable subscription terms will always be available at onlinerecipesbook.com.</p>
+        </article>
+
+    </section>
+</main>
+
+    <footer>
+        <a href="https://www.onlinerecipesbook.com/" class="logo"><img src="imgs/1Logo_cooking_onlinerecipes-01.png" alt=""></a>
+        <div class="links">
+            <a href="https://www.onlinerecipesbook.com/?page=contactUs">Contact us</a>
+            <a href="https://www.onlinerecipesbook.com/?page=policy">Privacy Policy</a>
+            <a href="https://www.onlinerecipesbook.com/?page=terms">Terms &amp; Conditions</a>
+            <a href="https://www.onlinerecipesbook.com/?page=faq">FAQ</a>
+            <a href="https://www.onlinerecipesbook.com/?page=refund">Refund Policy</a>
+            <a href="https://www.onlinerecipesbook.com/?page=subscriptionterms">Subscription Terms</a>
+        </div><div style="margin:10px" class="links">
+        <img src="imgs/mastercard.png">
+        <img src="imgs/securecode.png">
+        <img src="imgs/verified.png">
+        <img src="imgs/visa-electron.png"></div></footer>
+</div>
+<script type="text/javascript" src="https://img.onlinerecipesbook.com/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://img.onlinerecipesbook.com/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://img.onlinerecipesbook.com/js/slick-carouse1.8.1.min.js"></script><script type="text/javascript" src="https://img.onlinerecipesbook.com/js/slider.js"></script>
+<script type="text/javascript" src="https://img.onlinerecipesbook.com/js/index.js?"></script>
+</body>
+</html>
