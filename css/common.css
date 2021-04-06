@@ -11,9 +11,9 @@
 	--accent2: #474753;
 }
 body {
-	background:url(../imgs/flour_bg.png)no-repeat, url(../imgs/flour_bg.png)no-repeat, var(--bg-text);
-	background-blend-mode: screen;
-	background-position:-190px 100px, 110% 600px;
+	background:url(../imgs/flour_bg.png)no-repeat, url(../imgs/flour_bg2.png)no-repeat, var(--bg-text);
+
+	background-position: -275px 100px, 110% 600px;
 	color: var(--text-bg);
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -34,7 +34,6 @@ h3{
 
 	width: fit-content;
 }
-
 
 a {
 	color: var(--main);
@@ -70,7 +69,27 @@ button {
 input[type="submit"] {
 	cursor: pointer;
 }
-
+.btn {
+	bottom: 35px;
+	font-size: 13px;
+	color: #fff;
+	background: transparent;
+	padding: 7px 20px;
+	border: 2px solid var(--main);
+	border-radius: 20px;
+	text-decoration: none;
+	display: inline-block;
+	white-space: nowrap;
+	filter: drop-shadow(0px 3px 1px #0006);
+	transition: 0.5s;
+	font-weight: 600;
+}
+.btn:hover {
+	background: var(--main)!important;
+}
+.btn:is( :hover, :focus, :active) {
+	outline: none;
+}
 
 /*******************************************************   HEADER  */
 
@@ -377,6 +396,9 @@ footer {
 	padding-bottom: 50px;
 	font-family: 'Open Sans', sans-serif;
 }
+footer a {
+	color: var(--text-bg);
+}
 footer .logo {
 	width: 85px;
 	margin-right: auto;
@@ -498,7 +520,7 @@ footer .links img {
 }
 @media (max-width: 1550px){
 	body {
-		background-position: -300px -170px, calc(100% + 280px) 790px;
+		background-position: -370px -20px, calc(100% + 280px) 790px;
 	}
 }
 

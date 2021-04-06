@@ -1,0 +1,205 @@
+.clear {
+    clear: both;
+}
+main .contactForm.calc .contactBox {
+    max-width: unset;
+}
+.side__menu {display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 282px;}
+.login__alternate {
+    background: var(--accent2);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100%;
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+}
+.login__alternate a {
+    display: block;
+    margin-top: 10px;
+}
+#main {
+    position: relative;
+    min-height: 636px;
+    max-width: 480px;
+    min-width: 310px;
+    margin: 0 auto;
+    border: 2px solid #a4c74d;
+    place-items: center;
+    padding: 30px;
+    border-radius: 6px;
+    background: var(--accent2);
+}
+
+#form01, #form02{
+    background: transparent;
+    box-shadow: none;
+}
+#main h2 {
+    font-size: 24px;
+}
+#back {
+    float: left;
+}
+#form01 label {
+    float: right;
+}
+.calc__title {
+    margin-bottom: 24px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #007a00;
+    letter-spacing: -1.5px;
+}
+#main h1 {
+    font-family: Lato;
+    text-align: center;
+    color: #0b6078;
+    margin: 0 20px;
+    padding: 12px 0 3px 0;
+    border-radius: 0 0 40px 40px;
+
+}
+
+
+#proceed, #start_over {
+    float: right;
+}
+
+#start_over {
+    display: none;
+}
+
+/* Form Styles */
+
+#form02, #result_wrapper, #back {
+    display: none;
+}
+
+form h2, #result_wrapper h2 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#result {
+    margin: 10px 10px;
+    padding: 10px;
+}
+.selector_wrapper {
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+}
+.selector_wrapper span {
+    display: inline-block;
+    width: 160px;
+    margin-bottom: 40px;
+}
+
+
+
+.selector_wrapper span:last-child {margin-bottom: 0px;}
+.selector_wrapper select {
+    width: auto;
+    min-width: 60px;
+    height: auto;
+    margin-right: 10px;
+    background: var(--main);
+}
+.selector_wrapper select option {
+    background-color: #42b242;
+}
+.selector_wrapper select option:hover {
+    background-color: #007a00;
+}
+.selector_wrapper label {
+
+}
+
+.selector_wrapper label{
+    margin-right: 25px;
+}
+
+/* Second and third form styles */
+
+.inner {
+    border-radius: 15px;
+    color: white;
+}
+.calc_subtitle {
+    margin-bottom: 20px;
+    color: var(--text-bg);
+    display: block;
+}
+
+.inner .activity_selector {
+    min-height: 60px;
+}
+
+.activity_selector {
+    box-sizing: border-box;
+    color: white;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 2px solid var(--main);
+}
+.selector_wrapper > span {
+    color: var(--main);
+}
+
+.activity_selector:hover {
+    background-color: #fff;
+    color: #007a00;
+
+    cursor: pointer;
+}
+
+/* Final Score */
+#result_wrapper {
+    place-content: center;
+    flex-direction: column;
+}
+#score {
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--accent1);
+    font-size: 2em;
+    width: 200px;
+    height: 80px;
+    margin: 40px auto;
+    padding: 15px 25px 15px 15px;
+}
+
+#result {
+    min-height: 470px;
+}
+
+.inner {
+    min-height: 450px;
+}
+.health .recipe__ingredients-item-2--first::before {
+
+    background: url(../img/icon-water.png) center no-repeat;
+}
+.health .recipe__ingredients-item-2--second::before {
+    background: url(../img/icon-food.png) center no-repeat;
+}
+.health .recipe__ingredients-item-2--third::before{
+    background: url(../img/icon-gym.png);
+}
+#proceed.btn {
+    width: 30%;
+    position: absolute;
+    bottom: 20px;
+    right: 28px;
+}
