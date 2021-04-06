@@ -327,8 +327,10 @@ header .container .userButton {
 header .container .userButton .close {
 	display: none;
 }
-header .container .userButton img {
+header .container .userButton svg {
 	width: 100%;
+	fill: var(--main);
+	height: 100%;
 }
 header .container .userButton .wrap {
 	display: block;
@@ -586,6 +588,7 @@ footer a {
 	header .container {
 		display: block;
 		padding-top: 25px;
+		padding-bottom: 25px;
 	}
 	header .container .search {
 		padding-left: 85px;
@@ -625,6 +628,7 @@ footer a {
 	}
 	header .container .userButton  {
 		display: block;
+
 	}
 	header .container .login #authentication {
 		font-size: 18px;
@@ -636,7 +640,7 @@ footer a {
 		font-family: 'Open Sans', sans-serif;
 	}
 	header .container .login .getPremium .text {
-		color: #303030;
+		color: var(--main);
 		font-size: 18px;
 		display: block;
 		margin-bottom: 15px;
