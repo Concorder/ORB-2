@@ -142,6 +142,18 @@ header .container .search input[type=submit] {
     right: 1px;
     top: 1px;
 }
+.headerMenu {
+	margin: unset;
+	display: inline-block;
+}
+.headerMenu a {
+	font-size: 18px;
+}
+.headerMenu li {
+	display: inline-block;
+	margin: 5px 10px;
+
+}
 #searchForm span {
 	display: block;
 	text-align: center;
@@ -600,7 +612,13 @@ footer a {
 	}
 	header .container {
 		padding-top: 25px;
-		padding-bottom: 25px;
+		padding-bottom: 0px;
+		display: block;
+	}
+	.headerMenu {
+		width: 100%;
+		text-align: center;
+		margin-top: 10px;
 	}
 	header .container .search {
 		padding-top: 6px;
@@ -687,7 +705,10 @@ footer a {
 @media all and (max-width: 420px) {
 	header .container .search form {
 
-		width: 180px;
+		width: 155px;
+	}
+	#searchForm span {
+		display: none;
 	}
 	.region {
 		display: none;
