@@ -578,7 +578,7 @@ li svg {
 }
 
 svg {
-	fill: #be1023;
+	fill: var(--main);
 }
 
 .side {
