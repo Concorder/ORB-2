@@ -12,7 +12,7 @@
 }
 body {
 	background:url(../imgs/flour_bg.png)no-repeat, url(../imgs/flour_bg2.png)no-repeat, var(--bg-text);
-
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	background-position: -275px 100px, 110% 600px;
 	color: var(--text-bg);
 }
@@ -49,6 +49,21 @@ a {
 }
 main {
 	width: 100%;
+}
+.underline {
+	margin-bottom: 60px;
+	position: relative;
+
+}
+.underline:after {
+	content: '';
+	position: absolute;
+	bottom: -30px;
+	width: 60px;
+	height: 2px;
+	background: var(--main);
+	left: 50%;
+	transform: translate(-50%,0);
 }
 .container {
 	max-width: 1180px;
@@ -142,17 +157,62 @@ header .container .search input[type=submit] {
     right: 1px;
     top: 1px;
 }
+.line {
+	height: 40px;
+	position: relative;
+}
+footer ul {margin-left: 0px}
+.slider .line:after {
+content: none}
+.line:after {
+	content: '';
+	position: absolute;
+	bottom: 20px;
+	height: 2px;
+	width: 70px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background: var(--accent2);
+}
+
 .headerMenu {
 	margin: unset;
 	display: inline-block;
 }
 .headerMenu a {
 	font-size: 18px;
+	text-decoration: none;
+	position: relative;
+	transition: 1s;
 }
+.headerMenu a:hover {
+	color: var(--accent1);
+}
+.headerMenu a:before {
+	content: '';
+	bottom: -3px;
+	width:0;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	height: 2px;
+	background: var(--main);
+	display: block;
+	transition: 1s;
+}
+.headerMenu a:hover:before {
+	width: 100%;
+	background: var(--accent1);
+}
+
 .headerMenu li {
 	display: inline-block;
 	margin: 5px 10px;
 
+}
+.benefits h2 {
+	margin: 0!important;
 }
 #searchForm span {
 	display: block;
@@ -160,6 +220,7 @@ header .container .search input[type=submit] {
 	color: var(--main);
 	margin-top: 2px;
 	width: 100%;
+	font-size: 14px;
 	position: absolute;
 }
 
@@ -531,6 +592,7 @@ footer .links img {
 	max-width: 130px;
 }
 
+
 @media only screen and (max-width: 1339px) {
 	.footer-menu {order: 1; width:50%; min-width: unset }
 	.footer-contact {order: 2; width: 50%}
@@ -547,7 +609,7 @@ footer .links img {
 }
 @media (max-width: 1550px){
 	body {
-		background-position: -370px -20px, calc(100% + 280px) 790px;
+		background-position: -375px 60px, calc(100% + 280px) 790px;
 	}
 }
 

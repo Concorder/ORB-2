@@ -18,7 +18,7 @@ function closeUser() {
 	$('header').find('.search').show();
 }
 */
-$(function() {
+
 
 /*  $('.userButton').on('click', '.open', function() {
     $('header').css({
@@ -44,7 +44,25 @@ $(function() {
   	$('header').find('.search').show();
   });
 */
-
+function clickLogin(myOpen) {
+    if (document.getElementsByTagName('header').length) {
+        var obj = document.getElementsByTagName('header')[0];
+        var obj2=document.getElementsByClassName('userButton');
+        if (!myOpen && obj2.length) {
+            obj2[0].getElementsByClassName('open').length && (obj2[0].getElementsByClassName('open')[0].style.display=myOpen?'none':'block');
+            obj2[0].getElementsByClassName('close').length && (obj2[0].getElementsByClassName('close')[0].style.display=myOpen?'block':'none');
+        }
+        myOpen ? (obj.style.border='none') : (obj.style.borderBottom='1px solid #eaecf0');
+        ['login','authorized'].forEach(function(val) { obj.getElementsByClassName(val).length && (obj.getElementsByClassName(val)[0].style.display=myOpen?'block':'none'); });
+        obj.getElementsByClassName('container').length && (obj.getElementsByClassName('container')[0].style.height=myOpen?'auto':'auto');
+        obj.getElementsByClassName('search').length && (obj.getElementsByClassName('search')[0].style.display=myOpen?'none':'flex');
+        if (myOpen && obj2.length) {
+            obj2[0].getElementsByClassName('open').length && (obj2[0].getElementsByClassName('open')[0].style.display=myOpen?'none':'block');
+            obj2[0].getElementsByClassName('close').length && (obj2[0].getElementsByClassName('close')[0].style.display=myOpen?'block':'none');
+        }
+    }
+}
+$(function() {
   $('#popUpLimit').on('click', '.close', function() {
     $('#popUpLimit, #balanceZero').fadeOut(600);
   });

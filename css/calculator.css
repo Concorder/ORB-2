@@ -117,10 +117,12 @@ form h2, #result_wrapper h2 {
     background: var(--main);
 }
 .selector_wrapper select option {
-    background-color: #42b242;
+    background-color: var(--main);
+    color: var(--text-bg);
 }
 .selector_wrapper select option:hover {
-    background-color: #007a00;
+    background-color: var(--text-bg);
+    color: var(--main);
 }
 .selector_wrapper label {
 
