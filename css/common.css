@@ -609,7 +609,7 @@ footer .links img {
 }
 @media (max-width: 1550px){
 	body {
-		background-position: -375px 60px, calc(100% + 280px) 790px;
+		background-position: -375px 150px, calc(100% + 280px) 790px;
 	}
 }
 

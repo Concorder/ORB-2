@@ -107,6 +107,15 @@ aside .showRecipe:hover:before{
     }
 }
 @media screen and (max-width: 640px){
+    main.articles .set > div .showRecipe {
+        display: block;
+        right: unset;
+        transform: none;
+        position: relative;
+        margin-top: 30px;
+        left: 0;
+        width: fit-content;
+    }
     .read .container {
         flex-direction: column;
     }
