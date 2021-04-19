@@ -219,7 +219,7 @@ main .title h2 {
 }
 main .title h1 {
 	font-family: 'Open Sans', sans-serif;
-	color: var(--main);
+	color: var(--accent1);
 	font-size: 28px;
 	font-weight: 600;
 
