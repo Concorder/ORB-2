@@ -175,7 +175,6 @@ content: none}
 	transform: translate(-50%,-50%);
 	background: var(--accent2);
 }
-
 .headerMenu {
 	margin: unset;
 	display: inline-block;
@@ -333,6 +332,26 @@ header .container .login #authentication {
     box-shadow: none;
 }
 
+main .title {
+	max-width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	padding: 30px 20px 30px 20px;
+	line-height: 1.4;
+}
+main .title h2 {
+	font-family: 'Open Sans', sans-serif;
+	color: var(--main);
+
+}
+main .title h1 {
+	font-family: 'Open Sans', sans-serif;
+	color: var(--accent1);
+	font-size: 28px;
+	font-weight: 600;
+
+}
 /* / BTN-PRIMARY*/
 
 /***** / BOOTSTRAP BUTTONS *****/
@@ -360,6 +379,16 @@ header .container .login #authentication {
 }
 .flag-icon-dk {
 	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/flags/4x3/dk.svg);
+}
+/****************************************************** Checkboxes*/
+form label {
+	color: #fff;
+	font-size: 12px;
+	max-width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
 }
 
 /*****************************************************  authorized  */
@@ -458,6 +487,9 @@ main.policy_terms {
 	font-size: 14px;
 	line-height: 2;
 }
+main.policy_terms li {
+	font-size: 14px;
+}
 main.policy_terms article,
 main.policy_terms article p,
 main.policy_terms .orderList  {
@@ -480,6 +512,7 @@ main.policy_terms .noIndentation {
 
 /*********************************************   footer   */
 footer {
+	border-top: 2px solid var(--accent2);
 	padding-top: 15px;
 	padding-bottom: 50px;
 	font-family: 'Open Sans', sans-serif;
@@ -589,7 +622,11 @@ svg {
 
 }
 footer .links img {
-	max-width: 130px;
+	max-width: 100px;
+}
+a:focus, a:hover {
+	color: var(--accent1);
+	text-decoration: underline;
 }
 
 
@@ -626,6 +663,7 @@ footer .links img {
 	}
 
 	footer .links img {
+		max-width: 75px;
 		padding-bottom: 30px;
 	}
 

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>MindsBoom Recipes</title>
+    <link rel="shortcut icon" href="imgs/logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
+    <link rel="stylesheet" href="https://img.onlinerecipesbook.com/css/open_sans.css">
+    <link rel="stylesheet" href="css/playfair.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/slick-carouse1.8.1.css">
+    <link rel="stylesheet" href="css/slick-carouse1.8.1-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/articles.css">
+    <style>
+        main .slider .img1 {
+            background: url(https://photos.bigoven.com/recipe/hero/chicken-lentil-kale-soup.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        main .slider .img2 {
+            background: url(https://photos.bigoven.com/recipe/hero/simple-fondant-potatoes.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        main .slider .img3 {
+            background: url(https://photos.bigoven.com/recipe/hero/tomato-basil-dip.jpg) no-repeat center;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+                <div class="search" style="display: flex;">
+                    <form id="searchForm">
+                        <input type="search" id="search" placeholder="Search" name="search" value="" maxlength="15">
+                        <input type="submit" value="">
+                        <span>Improve your skills with us</span>
+                    </form>
+
+                </div>
+
+
+                <button class="userButton">
+                    <svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0">
+                        </path>
+                    </svg>
+                    <svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
+                        <path
+                            d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0" />
+                        <path
+                            d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0" />
+                    </svg>
+                </button>
+                <ul class="headerMenu">
+                    <li>
+                        <a href="index.html">Recipes</a>
+                    </li>
+                    <li>
+                        <a href="articles.html">Articles</a>
+                    </li>
+                    <li>
+                        <a href="calculator.html">Calorie Calculator</a>
+                    </li>
+                </ul>
+                <div class="login">
+                    <form id="authenticationForm" action="index.html?page=" method="post">
+                        <!--<input type="hidden" name="page" value="">-->
+                        <input type="text" id="userName" name="u" value="" placeholder="User" maxlength="22">
+                        <input type="password" id="userPassword" name="c" placeholder="Password" maxlength="12">
+                        <input type="submit" id="authentication" value="Login" name="authentication">
+                        <div class="getPremium">
+                            <span class="text">Don’t have an account?</span>
+                            <a href="getPremium.html" class="getAccess">Get access to premium</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </header>
+        <main class="articles read">
+
+            <section class="title">
+                <h1 class="underline">7 SIMPLE TIPS TO WAKE UP EARLY</h1>
+            </section>
+            <section class="container">
+                <div class="article_block">
+                    <div class="article_illustration">
+                        <img src="https://s3.us-east-1.amazonaws.com/dexerto-assets-production-cbbdf288/uploads/2020/02/11100545/gordon-ramsey-hot-ones-sean-evans-nervous.jpg"
+                            alt="">
+                    </div>
+                    <p>There are people who are used to being awake in the morning. Conversely, there are those who are
+                        more accustomed to showing all their activity in the afternoon. The story of sleep, like most of
+                        the phenomena associated with our bodies, is based on habit - being programmed for a certain set
+                        of actions and reactions.
+                    </p>
+                    <p>The patterns of behavior, firmly seated in our minds, form the vast majority of our daily actions
+                        and, accordingly, their results.</p>
+                    <p>Man is the only creature in nature capable of changing his habits. And do it yourself. Animals
+                        are not capable, plants are not capable, man can. True, not everyone. Only the one who is ready
+                        to believe in it and put it into practice.</p>
+
+                    <h3>HOW TO LEARN TO STAND UP EARLY? PRACTICAL LAYOUT</h3>
+                    <h3>1. Waking up early means going to bed early. It's all about how much you sleep.
+                    </h3>
+                    <p>Most sources state that the optimal sleep time for a healthy adult is 8 hours. 9 hours - if you
+                        are tired, but within the acceptable limit. 10 hours - for a sick person. 12 hours - after a
+                        serious physical or emotional stress.</p>
+                    <p>It is believed that 6 hours on an ongoing basis is enough for a person. Maybe. With an ideal
+                        state of the body and nervous system, as well as with additional energy stimulants - if you are
+                        in love, you have a crazy project on fire, a very small child, or other mind-blowing things.
+                        Then the person will sleep little and not get tired, but this, as a rule, is a short-term story,
+                        which is better not to be abused.</p>
+                    <h3>2. The first month must be patient</h3>
+                    <p>If you go to an early rise from the "owl" state, then at first you cannot avoid turbulence. You
+                        just have to go through it. The body will get used to it much faster than it seems.</p>
+                    <p>How do you learn to go to bed early if you don't feel like sleeping at all?</p>
+                    <p>We must force ourselves to get up early.</p>
+                    <p>If for only 3 days you get up at 6 in the morning (or another time that means "early" to you) and
+                        be patient during the day, then on the 4th day you will simply be "knocked out" at 22-23 pm. And
+                        since you went to bed early, then the ascent will be easier. The circle is closed again. Only
+                        now are you becoming a morning person. Congratulations!</p>
+                    <h3>3. Set two alarms at a distance from the bed.</h3>
+                    <p>Put alarm clocks farther away, set a horrible sound, the interval between alarms - 5 minutes.
+                        Trivial advice, but it works pretty well if you really want to learn to get up early.</p>
+                    <h3>4. Play music right after waking up.</h3>
+                    <h3>5. Do not eat at least 3 hours before bedtime.</h3>
+                    <p>Don't burden your stomach and intestines with digesting food. You will sleep better and easier.
+                        If today you regularly eat before bedtime, then this is still the same habit. Try, for the sake
+                        of experiment, to live at least a week (ideally a month) in a different way, and you will feel a
+                        difference that will affect not only your sleep, but in general on your well-being and
+                        appearance.</p>
+                    <h3>6. Have morning rituals.</h3>
+                    <p>Drink a glass of water, wash your face, do exercises with music and sleep will be gone, or at
+                        least it will not be as obvious as 15 minutes ago. Make these actions a habit. Healthy rituals
+                        create a healthy track all day long. And a healthy day forms a healthy life.</p>
+                    <p>When there is no strength to tear yourself away from the bed due to complete disidentification
+                        with your current reality, this is another problem. Alarms and other tips won't help here. Here
+                        you must first disassemble yourself, and then reassemble, whatever it actually costs.</p>
+
+                </div>
+                <aside>
+                    <div>
+                        <div class="img">
+                            <img src="https://photos.bigoven.com/recipe/hero/crunchy-ice-cream-dessert.jpg" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>Crunchy Ice Cream Dessert</h3>
+                            <p>Delicious ice cream dessert that is crunchy and sweet.</p>
+                            <a href="article_read_1.html" class="showRecipe">Read More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="https://photos.bigoven.com/recipe/hero/best-ever-buckeyes.jpg" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>Best Ever Buckeyes</h3>
+                            <p>Delicious!</p>
+                            <a href="article_read_1.html" class="showRecipe">Read More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="https://photos.bigoven.com/recipe/hero/lo-mein-noodles-with-shrimp.jpg" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>Lo Mein Noodles with Shrimp</h3>
+                            <p>Lo Mein Noodles with Shrimp</p>
+                            <a href="article_read_1.html" class="showRecipe">Read More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="https://photos.bigoven.com/recipe/hero/frittata-15.jpg" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>Frittata</h3>
+                            <p>A frittata is an egg dish made mainly on the stove, easier than omelets, and can be
+                                vehicles for almost any veggies, cheeses, or meats you happen to have around. They are
+                                served in wedges and are easily transportable </p>
+                            <a href="article_read_1.html" class="showRecipe">Read More</a>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+        </main>
+        <footer>
+            <section class="ft-main ">
+                <div class="ft-main-item side footer-menu">
+                    <h2 class="ft-title">Menu</h2>
+                    <ul>
+                        <li><a href="policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                        <li><a href="subscriptionterms.html">Subscription Terms</a></li>
+                        <li><a href="contactUs.html">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="ft-main-item" id="main-item">
+                    <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+                    <div class="links">
+                        <img src="imgs/mastercard.png">
+                        <img src="imgs/securecode.png">
+                        <img src="imgs/verified.png">
+                        <img src="imgs/visa-electron.png">
+                    </div>
+                </div>
+
+                <div class="ft-main-item side footer-contact">
+                    <h2 class="ft-title">Contact us</h2>
+                    <ul>
+                        <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <polygon points="339.392,258.624 512,367.744 512,144.896 " />
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <polygon points="0,144.896 0,367.744 172.608,258.624 " />
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z" />
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+							L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z" />
+                                    </g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>&nbsp;&nbsp;&nbsp;
+                            <a href="mailto:support@mindsboom.com">support@mindsboom.com</a>
+                        </li>
+                        <li><svg id="Capa_1" enable-background="new 0 0 512 512" height="20" viewBox="0 0 512 512"
+                                width="20" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <circle cx="256" cy="165" r="75" />
+                                    <path
+                                        d="m256 0c-81.108 0-165 61.714-165 165 0 94.351 147.217 274.08 153.472 281.609 2.856 3.413 7.075 5.391 11.528 5.391s8.672-1.978 11.528-5.391c6.255-7.529 153.472-187.258 153.472-281.609 0-90.981-74.019-165-165-165zm0 270c-57.891 0-105-47.109-105-105s47.109-105 105-105 105 47.109 105 105-47.109 105-105 105z" />
+                                    <path
+                                        d="m357.087 377.811c-28.922 41.873-55.961 75.306-66.487 87.973-8.643 10.327-21.241 16.216-34.6 16.216s-25.957-5.889-34.541-16.143c-10.551-12.698-37.608-46.155-66.544-88.046-38.83 13.722-63.915 35.1-63.915 59.189 0 41.42 73.874 75 165 75s165-33.58 165-75c0-24.088-25.084-45.467-63.913-59.189z" />
+                                </g>
+                            </svg> <a href="https://goo.gl/maps/rT5TuPr6xFtg91VT6">4 Charalambou
+                                Pettemerides Str, 2042 Strovolos, Nicosia
+                                Cyprus</a></li>
+                    </ul>
+                </div>
+            </section>
+            <p>© 2021 mindsboomrecipes.com. All Rights Reserved. Powered by Mamtic Innovation</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick-carouse1.8.1.min.js"></script>
+    <script type="text/javascript" src="https://img.onlinerecipesbook.com/js/slider.js"></script>
+    <script type="text/javascript" src="js/index.js?"></script>
+</body>
+
+</html>

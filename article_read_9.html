@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>MindsBoom Recipes</title>
+    <link rel="shortcut icon" href="imgs/logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
+    <link rel="stylesheet" href="https://img.onlinerecipesbook.com/css/open_sans.css">
+    <link rel="stylesheet" href="css/playfair.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/slick-carouse1.8.1.css">
+    <link rel="stylesheet" href="css/slick-carouse1.8.1-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/articles.css">
+    <style>
+        main .slider .img1 {
+            background: url(https://photos.bigoven.com/recipe/hero/chicken-lentil-kale-soup.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        main .slider .img2 {
+            background: url(https://photos.bigoven.com/recipe/hero/simple-fondant-potatoes.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        main .slider .img3 {
+            background: url(https://photos.bigoven.com/recipe/hero/tomato-basil-dip.jpg) no-repeat center;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+                <div class="search" style="display: flex;">
+                    <form id="searchForm">
+                        <input type="search" id="search" placeholder="Search" name="search" value="" maxlength="15">
+                        <input type="submit" value="">
+                        <span>Improve your skills with us</span>
+                    </form>
+
+                </div>
+
+
+                <button class="userButton">
+                    <svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0">
+                        </path>
+                    </svg>
+                    <svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
+                        <path
+                            d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0" />
+                        <path
+                            d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0" />
+                    </svg>
+                </button>
+                <ul class="headerMenu">
+                    <li>
+                        <a href="index.html">Recipes</a>
+                    </li>
+                    <li>
+                        <a href="articles.html">Articles</a>
+                    </li>
+                    <li>
+                        <a href="calculator.html">Calorie Calculator</a>
+                    </li>
+                </ul>
+                <div class="login">
+                    <form id="authenticationForm" action="index.html?page=" method="post">
+                        <!--<input type="hidden" name="page" value="">-->
+                        <input type="text" id="userName" name="u" value="" placeholder="User" maxlength="22">
+                        <input type="password" id="userPassword" name="c" placeholder="Password" maxlength="12">
+                        <input type="submit" id="authentication" value="Login" name="authentication">
+                        <div class="getPremium">
+                            <span class="text">Don’t have an account?</span>
+                            <a href="getPremium.html" class="getAccess">Get access to premium</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </header>
+        <main class="articles read">
+
+            <section class="title">
+                <h1 class="underline">9 NUTRITIONAL RULES TO HELP YOU LIVE LONGER </h1>
+            </section>
+            <section class="container">
+                <div class="article_block">
+                    <div class="article_illustration">
+                        <img src="https://s3.us-east-1.amazonaws.com/dexerto-assets-production-cbbdf288/uploads/2020/02/11100545/gordon-ramsey-hot-ones-sean-evans-nervous.jpg"
+                            alt="">
+                    </div>
+                    <p>Longevity researcher, National Geographic Research Fellow and author of The Blue Zones Solution
+                        and The Blue Zones Kitchen Dan Buettner conducted 150 centenarians (100 and older) surveys on
+                        their nutrition. Read the nine principles of Blue Zones: what to eat to live longer and be
+                        healthy.
+                    </p>
+                    <h3>Make sure your diet is 90-100% plant-based</h3>
+                    <p>Centenarians eat a lot of seasonal vegetables and leafy greens: spinach, kale, beets, turnips,
+                        chard and kale, writes CNBC. They dry or pickle the excess. In the Blue Zones, the places where
+                        people have the longest life expectancy, legumes, greens, sweet potatoes, whole grains, fruits,
+                        nuts and seeds are available all year round.
+                    </p>
+                    <p>One of the most important elements in the diet of centenarians is olive oil. Its consumption
+                        increases the level of "good" cholesterol and lowers the level of "bad" cholesterol.
+                    </p>
+                    <p>On the Greek island of Ikaria, middle-aged people consume about six tablespoons of olive oil
+                        daily. This amount reduces the risk of premature death by 50%.
+                    </p>
+
+                    <h3>Eat less meat</h3>
+                    <p>A 12-year study of 96,000 Americans in California's Loma Linda Blue Zone found that vegans and
+                        sand-vegetarians (who eat fish and seafood) live longer. Vegetarians are likely to outlive meat
+                        eaters by eight years, scientists say.</p>
+                    <p>Okinawans in Japan have invented what is arguably the best meat substitute: very hard tofu, high in protein and phytoestrogens that help fight cancer.</p>
+
+                    <h3>Eat fish, but not too much</h3>
+                    <p>Usually, centenarians eat small and inexpensive fish such as sardines, anchovies and cod. These species are in the middle of the food chain and are not highly exposed to mercury and other chemicals.</p>
+
+                    <h3>Remember to eat your daily dose of legumes
+                    </h3>
+                    <p>Legumes occupy a special place in the diet of the inhabitants of the "blue zones". Black beans in
+                        Nicoya, lentils, peas and white beans in the Mediterranean, and soybeans in Okinawa.</p>
+                    <p>Most centenarians eat at least four times as many beans as the average human - at least half a
+                        glass a day. Beans contain more nutrients per gram than any other food on earth. On average,
+                        they have 21% protein, 77% complex carbohydrates and only a few percent fat, and a lot of fiber.
+                    </p>
+
+                    <h3>Give up sugar</h3>
+                    <p>Long-livers consume about the same amount of natural sugar as megapolis residents, but are
+                        limited to about a fifth of the amount of added sugar - no more than seven teaspoons per day.
+                    </p>
+                    <p>In the period from 1970 to 2000. The amount of added sugar in the world market has grown by 25%
+                        (about 22 teaspoons of added sugar per person per day). Typically, sugar is added to soda,
+                        yogurt, and sauces.</p>
+                    <p>Save sweets for special occasions, add no more than four teaspoons of sugar a day to coffee or
+                        tea, and avoid buying foods that have sugar in the first five ingredients.</p>
+
+                    <h3>Snack on nuts</h3>
+                    <p>Eat two small handfuls of nuts a day. This can be almonds, pistachios, brazil nuts, cashews,
+                        walnuts, or peanuts. According to a study on nutrition and longevity, people who eat nuts live
+                        on average 2-3 years longer.
+                    </p>
+
+                    <h3>Eat the right bread</h3>
+                    <p>Try to eat only sourdough bread or 100% whole grain bread. In stores, most breads are made from
+                        refined white flour, which quickly converts to sugar and raises insulin levels.</p>
+                    <p>In Icaria and Sardinia, bread is made from a variety of whole grains such as wheat, rye or
+                        barley. They contain a wide variety of nutrients. Whole grains have significantly more fiber
+                        than white flour products.</p>
+                    <p>Some traditional blue zone breads are made from bacteria, such as lactobacilli, which digest
+                        starch and gluten, causing the bread to rise. The bread is made with less gluten than bread
+                        labeled "gluten-free", with a longer shelf life and a pleasant sour taste.</p>
+
+                    <h3>Drink more water</h3>
+                    <p>Avoid soda, even diet soda. Inhabitants of the "blue zones" drink only coffee, tea, water and
+                        wine. That's why.</p>
+                    <p>Water. Research shows that water improves blood flow and reduces the likelihood of blood clots.
+                    </p>
+                    <p>Coffee. Sardinians, Ikarians and Nikoyans drink coffee. Scientists have linked coffee consumption
+                        to a lower risk of dementia and Parkinson's disease.</p>
+                    <p>Tea. Okinawans prefer green tea, which has been shown to reduce the risk of heart disease and
+                        certain types of cancer. Ikarians drink a decoction of rosemary, wild sage and dandelion. These
+                        herbs have anti-inflammatory properties.</p>
+                    <p>Red wine. People who drink wine in moderation tend to live longer than those who don't drink at
+                        all.</p>
+
+                    <!--******* sidebar-->
+                    <h3>Eat Whole Foods</h3>
+                    <p>Most centenarians eat whole foods that have not been extensively processed, such as raw fruits
+                        and vegetables or crushed grains.</p>
+                    <p>Blue Zones use fermentation - an ancient way of making nutrients bioavailable - in tofu,
+                        sourdough bread, wine and pickled vegetables. Long-livers rarely use artificial preservatives:
+                        their preparation consists of mixing ingredients without additives.</p>
+
+                </div>
+                <aside>
+                    <div>
+                        <div class="img">
+                            <img src="https://photos.bigoven.com/recipe/hero/crunchy-ice-cream-dessert.jpg" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>Crunchy Ice Cream Dessert</h3>
+                            <p>Delicious ice cream dessert that is crunchy and sweet.</p>
+                            <a href="article_read_1.html" class="showRecipe">Read More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="https://photos.bigoven.com/recipe/hero/best-ever-buckeyes.jpg" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>Best Ever Buckeyes</h3>
+                            <p>Delicious!</p>
+                            <a href="article_read_1.html" class="showRecipe">Read More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="https://photos.bigoven.com/recipe/hero/lo-mein-noodles-with-shrimp.jpg" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>Lo Mein Noodles with Shrimp</h3>
+                            <p>Lo Mein Noodles with Shrimp</p>
+                            <a href="article_read_1.html" class="showRecipe">Read More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="https://photos.bigoven.com/recipe/hero/frittata-15.jpg" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>Frittata</h3>
+                            <p>A frittata is an egg dish made mainly on the stove, easier than omelets, and can be
+                                vehicles for almost any veggies, cheeses, or meats you happen to have around. They are
+                                served in wedges and are easily transportable </p>
+                            <a href="article_read_1.html" class="showRecipe">Read More</a>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+        </main>
+        <footer>
+            <section class="ft-main ">
+                <div class="ft-main-item side footer-menu">
+                    <h2 class="ft-title">Menu</h2>
+                    <ul>
+                        <li><a href="policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                        <li><a href="subscriptionterms.html">Subscription Terms</a></li>
+                        <li><a href="contactUs.html">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="ft-main-item" id="main-item">
+                    <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+                    <div class="links">
+                        <img src="imgs/mastercard.png">
+                        <img src="imgs/securecode.png">
+                        <img src="imgs/verified.png">
+                        <img src="imgs/visa-electron.png">
+                    </div>
+                </div>
+
+                <div class="ft-main-item side footer-contact">
+                    <h2 class="ft-title">Contact us</h2>
+                    <ul>
+                        <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <polygon points="339.392,258.624 512,367.744 512,144.896 " />
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <polygon points="0,144.896 0,367.744 172.608,258.624 " />
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z" />
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+							L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z" />
+                                    </g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>&nbsp;&nbsp;&nbsp;
+                            <a href="mailto:support@mindsboom.com">support@mindsboom.com</a>
+                        </li>
+                        <li><svg id="Capa_1" enable-background="new 0 0 512 512" height="20" viewBox="0 0 512 512"
+                                width="20" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <circle cx="256" cy="165" r="75" />
+                                    <path
+                                        d="m256 0c-81.108 0-165 61.714-165 165 0 94.351 147.217 274.08 153.472 281.609 2.856 3.413 7.075 5.391 11.528 5.391s8.672-1.978 11.528-5.391c6.255-7.529 153.472-187.258 153.472-281.609 0-90.981-74.019-165-165-165zm0 270c-57.891 0-105-47.109-105-105s47.109-105 105-105 105 47.109 105 105-47.109 105-105 105z" />
+                                    <path
+                                        d="m357.087 377.811c-28.922 41.873-55.961 75.306-66.487 87.973-8.643 10.327-21.241 16.216-34.6 16.216s-25.957-5.889-34.541-16.143c-10.551-12.698-37.608-46.155-66.544-88.046-38.83 13.722-63.915 35.1-63.915 59.189 0 41.42 73.874 75 165 75s165-33.58 165-75c0-24.088-25.084-45.467-63.913-59.189z" />
+                                </g>
+                            </svg> <a href="https://goo.gl/maps/rT5TuPr6xFtg91VT6">4 Charalambou
+                                Pettemerides Str, 2042 Strovolos, Nicosia
+                                Cyprus</a></li>
+                    </ul>
+                </div>
+            </section>
+            <p>© 2021 mindsboomrecipes.com. All Rights Reserved. Powered by Mamtic Innovation</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick-carouse1.8.1.min.js"></script>
+    <script type="text/javascript" src="https://img.onlinerecipesbook.com/js/slider.js"></script>
+    <script type="text/javascript" src="js/index.js?"></script>
+</body>
+
+</html>

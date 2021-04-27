@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title>MindsBoom Recipes</title>
-    <link rel="shortcut icon" href="imgs/favicon.png"/>
+    <link rel="shortcut icon" href="imgs/logo.png"/>
     <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
     <link rel="stylesheet" href="https://img.onlinerecipesbook.com/css/open_sans.css">
     <link rel="stylesheet" href="css/playfair.css">
@@ -30,26 +30,7 @@
             background-size: cover;
         }
     </style>
-    <script type="text/javascript">
-        function clickLogin(myOpen) {
-            if (document.getElementsByTagName('header').length) {
-                var obj = document.getElementsByTagName('header')[0];
-                var obj2=document.getElementsByClassName('userButton');
-                if (!myOpen && obj2.length) {
-                    obj2[0].getElementsByClassName('open').length && (obj2[0].getElementsByClassName('open')[0].style.display=myOpen?'none':'block');
-                    obj2[0].getElementsByClassName('close').length && (obj2[0].getElementsByClassName('close')[0].style.display=myOpen?'block':'none');
-                }
-                myOpen ? (obj.style.border='none') : (obj.style.borderBottom='1px solid #eaecf0');
-                ['login','authorized'].forEach(function(val) { obj.getElementsByClassName(val).length && (obj.getElementsByClassName(val)[0].style.display=myOpen?'block':'none'); });
-                obj.getElementsByClassName('container').length && (obj.getElementsByClassName('container')[0].style.height=myOpen?'auto':'unset');
-                obj.getElementsByClassName('search').length && (obj.getElementsByClassName('search')[0].style.display=myOpen?'none':'flex');
-                if (myOpen && obj2.length) {
-                    obj2[0].getElementsByClassName('open').length && (obj2[0].getElementsByClassName('open')[0].style.display=myOpen?'none':'block');
-                    obj2[0].getElementsByClassName('close').length && (obj2[0].getElementsByClassName('close')[0].style.display=myOpen?'block':'none');
-                }
-            }
-        }
-    </script>
+
 </head>
 <body>
 <div class="wrapper">
@@ -93,19 +74,34 @@
                     </div>
                 </form>
             </div>
-
-
         </div>
 
     </header>
-    <main class="articles">
+    <main class="articles read">
 
         <section class="title">
-            <h1>Popular articles</h1>
-            <div class="line"></div>
+            <h1 class="underline">5 WELLNESS TRENDS YOU WILL SEE THIS YEAR</h1>
         </section>
         <section class="container">
-            <div class="set">
+            <div class="article_block">
+                <div class="article_illustration">
+                    <img src="https://s3.us-east-1.amazonaws.com/dexerto-assets-production-cbbdf288/uploads/2020/02/11100545/gordon-ramsey-hot-ones-sean-evans-nervous.jpg" alt="">
+                </div>
+                <p>Everything you need to know about the top trends for beauty, health and fitness this year. Read on to get your dose of the greatest moves in beauty - from crystals to heal your skin, to feminine care for the modern woman.</p>
+                <h3>ALL-IN-ONE WELLNESS</h3>
+                <p class="article_text">As our lives become more connected, it becomes easier to have the world at your fingertips - quite literally. Its downside? It's almost (pun very intended) impossible to completely disconnect. This means that we are also constantly looking for ways to disarm and recalibrate ourselves. And the best place to do this? All-in-one wellness spots offering multiple solutions for all your health, wellness and beauty needs. From aesthetic clinics that go beyond offering high-tech treatments to pampering facials and massages, you'll also see more places like COMO Shambhala's Urban Escape in Singapore. With a wide variety of fitness, wellness and beauty classes and treatments available, you have access to everything from yoga, pilates, naturopathy, massage therapy, and alternative healing.</p>
+                <h3>CRYSTAL IMMEDIATE SKIN CARE</h3>
+                <p>Last year took crystal healing to a whole new level, this year when you'll see a lot more crystal-infused skincare products. While much has been said about the vibrational energy of crystals, there are still many people who question their ability to eliminate negativity and a sense of well-being. It all sounds a bit too new age to you, don't worry. The truth is, crystal-infused skin care products are made from ultra-fine crystal particles, which are essentially minerals that carry tiny electrical charges.</p>
+                <p class="article_text">When mixed into skincare and applied to the skin, they can activate slow cellular activity, soothe inflammation and improve circulation. Sublime Hydrating Treatment Essence by Nazan Schnapp, for example, is a toner with rose quartz that locks in hydration, soothes the skin and infuses it with antioxidants. The Crushed Amethyst Exfoliating Body Polish from Herbivore Botanicals combines finely ground gemstone with organic virgin coconut oil and jasmine oil to smooth, lighten, nourish and perfume your skin.</p>
+                <h3>FEMALE CARE</h3>
+                <p>Move over, Brazilian wax! It is expected to grow by more than seven percent in the coming years. The female care industry is given a new lease of life as more women are better educated and more interested in female care. Gone are the days when feminine grooming was limited to waxing or IPL hair removal. In addition to products that help reduce ingrown hair or soothe skin after waxing, today's vaginal skin and vulva care seems to include so much more, from fancy vaginal cleansers, clarifying cleansers, to even detoxifying masks. In addition, feminine hygiene products such as sanitary towels are an important source of waste and as consumers become more aware of the environmental impact of their actions, there is a growing interest in menstrual cups and innovations such as absorbent underwear.</p>
+                <h3>VEGETABLE MEAT</h3>
+                <p>As more people are concerned about sustainability, it makes sense for companies to find ways to reduce our carbon footprint by reducing the amount of beef we consume. After all, livestock is one of the most environmentally unfriendly livestock farms. Which explains why there is a growing interest in meat substitutes that are completely plant-based. Beyond Meat, for example, makes Beyond Burger and Voorbij Worst, which looks, cooks and tastes like real meat. With Bill Gates as one of its backers, Beyond Meat now sells in supermarkets across America and is also available at major hotels such as Grand Hyatt Singapore. </p>
+                <h3>CONTINUOUS GROWTH OF SUSTAINABLE BEAUTY</h3>
+                <p>In line with the overall increase in sustainability, brands are adapting in more ways than ever. For example, L'Oreal is working to reduce its water consumption in the production of its products; while LVMH's Dior plans to reduce its water consumption and carbon footprint by reducing product packaging and switching to point-of-sale energy-saving fixtures, as well as maximizing shipping (smaller packaging means every pack</p>
+                <!--******* sidebar-->
+            </div>
+            <aside>
                 <div>
                     <div class="img">
                         <img src="https://photos.bigoven.com/recipe/hero/crunchy-ice-cream-dessert.jpg" alt="">
@@ -146,52 +142,11 @@
                         <a href="article_read_1.html" class="showRecipe">Read More</a>
                     </div>
                 </div>
-                <div>
-                    <div class="img">
-                        <img src="https://photos.bigoven.com/recipe/hero/chicken-zorba.jpg" alt="">
-                    </div>
-                    <div class="wrap">
-                        <h3>Chicken Zorba</h3>
-                        <p>Delicious tangy chicken meal with a lime twist.</p>
-                        <a href="article_read_1.html" class="showRecipe">Read More</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="img">
-                        <img src="https://photos.bigoven.com/recipe/hero/crunchy-asian-broccoli-coleslaw-3.jpg" alt="">
-                    </div>
-                    <div class="wrap">
-                        <h3>Crunchy Asian Broccoli Coleslaw</h3>
-                        <p>Good for large groups because it makes a lot.</p>
-                        <a href="article_read_1.html" class="showRecipe">Read More</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="img">
-                        <img src="https://photos.bigoven.com/recipe/hero/wonderful-carrot-cake.jpg" alt="">
-                    </div>
-                    <div class="wrap">
-                        <h3>Wonderful Carrot Cake</h3>
-                        <p>Using applesauce in place of the oil, less sugar and some wheat flour in place of white produces great results. The cake is much moister and the kids will love the sweet taste.</p>
-                        <a href="article_read_1.html" class="showRecipe">Read More</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="img">
-                        <img src="https://photos.bigoven.com/recipe/hero/spicy-quinoa-cucumber-and-toma-c86daf.jpg" alt="">
-                    </div>
-                    <div class="wrap">
-                        <h3>Spicy Quinoa, Cucumber & Tomato Salad</h3>
-                        <p>Recipe from the NY Times: http://www.nytimes.com/2010/07/13/health/nutrition/13recipehealth.html?_r=0
-                            This refreshing summer salad can sit in the refrigerator for a few hours without deteriorating, so it makes a great choice for bringing to work or to a summer picnic.</p>
-                        <a href="article_read_1.html" class="showRecipe">Read More</a>
-                    </div>
-                </div>
-            </div>
+            </aside>
         </section>
 
     </main>
-                        <footer>
+<footer>
         <section class="ft-main ">
             <div class="ft-main-item side footer-menu">
                 <h2 class="ft-title">Menu</h2>
@@ -300,14 +255,3 @@
 <script type="text/javascript" src="js/index.js?"></script>
 </body>
 </html>
-
-
-<section>
-    <header><span></span></header>
-    <main>
-        <img src="" alt="">
-        <h2></h2>
-        <p></p>
-        <a href="" class="button"></a>
-    </main>
-</section>

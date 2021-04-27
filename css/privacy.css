@@ -1,18 +1,7 @@
-h2 {
-	font-size: 24px;
-	color: #303030;
-	margin-bottom: 30px;
-	text-align: center;
-}
-h3 {
-	font-size: 14px;
-	color: var(--main);
-} 
-p {
-	font-size: 12px;
-}
+
+
 ul li {
-	font-size: 12px;
+	font-size: 14px;
 }
 ul, p {
 	margin-bottom: 20px;

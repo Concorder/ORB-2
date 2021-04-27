@@ -162,6 +162,25 @@ main .contactBox .wrapBox .check {
 	font-size: 11px;
     display: block;
     line-height: 1.4;
+	padding-left:25px;
+	position: relative;
+}
+input[type="checkbox"]{
+	position: absolute;
+	left: 0;
+	width: fit-content !important;
+}
+label.check{
+	margin-bottom: 10px;
+}
+.chargeWarning {
+	text-align: center;
+	font-size: 12px;
+
+}
+.chargeWarning span {
+	color: var(--accent1);
+	font-weight: 600;
 }
 @media all and (max-width: 980px) {
 	main .contactBox {
