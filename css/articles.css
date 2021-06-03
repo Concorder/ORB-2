@@ -17,6 +17,7 @@ main.articles .set > div .showRecipe {
     left: unset;
     right: 20px;
     transform: none;
+    top: 3px;
     position: absolute;
 }
 .articles .container p {
@@ -27,7 +28,7 @@ main.articles .set > div .showRecipe {
 }
 .article_illustration {
     text-align: center;
-    max-height: 600px;
+    max-height: 440px;
     overflow: hidden;
 }
 .article_illustration img {

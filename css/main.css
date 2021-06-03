@@ -241,6 +241,7 @@ main .set > div .img {
 main .set > div .wrap {
 	padding-left: 15px;
 	padding-right: 15px;
+	position: relative;
 }
 main .set > div h3 {
 	color: var(--main);
@@ -262,7 +263,6 @@ main .set > div p {
 }
 main .set > div .showRecipe {
 	position: absolute;
-	bottom: 35px;
 	left: 50%;
 	transform: translate(-50%,0);
 	font-size: 13px;
