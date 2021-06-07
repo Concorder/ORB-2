@@ -626,7 +626,6 @@ footer .links img {
 }
 a:focus, a:hover {
 	color: var(--accent1);
-	text-decoration: underline;
 }
 
 
