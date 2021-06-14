@@ -185,6 +185,9 @@ content: none}
 	position: relative;
 	transition: 1s;
 }
+main .nutrition .title {
+	padding: 5px;
+}
 .headerMenu a:hover {
 	color: var(--accent1);
 }
