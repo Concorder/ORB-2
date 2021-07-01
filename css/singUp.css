@@ -103,6 +103,9 @@ main #billingForm .paymentBrand {
 	border: 1px solid #9e9e9e;
 	border-radius: 4px;
 }
+input[type="checkbox"] {
+	width: unset !important;
+}
 main .contactBox .dropdown select {
 	padding: 8px 20px;
 	color: #9e9e9e;

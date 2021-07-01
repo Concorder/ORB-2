@@ -87,6 +87,7 @@ button {
 input[type="submit"] {
 	cursor: pointer;
 }
+
 .btn {
 	bottom: 35px;
 	font-size: 13px;
@@ -110,6 +111,35 @@ input[type="submit"] {
 }
 
 /*******************************************************   HEADER  */
+@media screen and (min-width: 980px){
+	header .container .logo {
+		width: 50px;
+		float: left;
+	}
+	header form {
+		height: 29px;
+		width: max-content;
+	}
+	form > * {
+		height: 100%;
+		font-size: 14px !important;
+	}
+	#userName, #userPassword, #authentication {
+		margin: 0 5px 0 0;
+	}
+	#authentication, #signIn {
+		width: 70px;
+
+	}
+	#signIn {
+		transition: 0.5s;
+	}
+	#userName, #userPassword {
+		max-width: 100px;
+		font-size: 13px;
+	}
+
+}
 
 
 header {
@@ -128,6 +158,7 @@ header .container .logo {
 }
 header .container .logo img {
 	width: 100%;
+
 }
 header .container .search {
 	float: left;
@@ -250,6 +281,7 @@ main .nutrition .title {
     border: 0;
 }
 
+
 /****************************** Navigator*/
 a.nav-link.dropdown-toggle {
 	font-size: 18px;
@@ -290,9 +322,7 @@ header .container .login,
 header .container .authorized {
 	float: right;
 }
-header .container .login form {
-	width: 125px;
-}
+
 header .container .login input {
 	width: 100%;
 	margin-bottom: 7px;
@@ -308,6 +338,7 @@ header .container .login #authentication {
 	background: var(--main);
 	color: #fff;
 	cursor: pointer;
+	transition: 1s;
 }
 .dropdown-menu.show {
 	display: block;
@@ -712,6 +743,9 @@ footer a {
 	.navbar-expand-lg .navbar-nav .dropdown-menu {
 		position: absolute;
 	}
+	#signIn {
+		display: none;
+	}
 	header .container {
 		padding-top: 25px;
 		padding-bottom: 0px;
@@ -727,7 +761,7 @@ footer a {
 		float: left;
 	}
 	header .container .logo {
-		width: 50px;	
+		width: 50px;
    		float: left;
 	}
 	header .container .login,
@@ -745,6 +779,7 @@ footer a {
 	header .container .login  form,
 	header .container .authorized {
 		width: 100%;
+
 	}
 	header .container .authorized > li {
 		margin-bottom: 17px;
@@ -763,7 +798,7 @@ footer a {
 	}
 	header .container .login #authentication {
 		font-size: 18px;
-    	margin-bottom: 50px;
+    	margin-bottom: 10px;
 	}
 	header .container .login .getPremium {
 		display: block;
