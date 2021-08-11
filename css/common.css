@@ -399,7 +399,11 @@ main .title h1 {
 	color: var(--accent1);
 	font-size: 28px;
 	font-weight: 600;
+	margin-top: 20px;
 
+}
+.cancel.title {
+	padding: 0 20px 30px;
 }
 /* / BTN-PRIMARY*/
 
@@ -480,13 +484,13 @@ header .container .logOutUser a {
 /********************************************* Log In - userButton */
 
 header .container .userButton {
-	width: 43px;
-	height: 100%;
+	margin-top: 5px;
+	margin-right: 7px;
 	display: block;
 	float: right;
 	outline: none;
 	cursor: pointer;
-	margin-right: 5px;
+
 
 }
 header .container .userButton .close {
@@ -494,9 +498,9 @@ header .container .userButton .close {
 	opacity: 1;
 }
 header .container .userButton svg {
-	width: 31px;
+	width: 40px;
 	fill: var(--main);
-	height: 31px;
+	height: 40px;
 }
 header .container .userButton .wrap {
 	display: block;
@@ -652,6 +656,7 @@ li svg {
 .footer-contact li a {
 	max-width: 85%;
 	display: inline-block;
+
 }
 
 
@@ -677,6 +682,25 @@ footer .links img {
 }
 a:focus, a:hover {
 	color: var(--accent1);
+}
+footer li svg {
+	width: 20px;
+	height: 20px;
+	margin-right: 3px;
+}
+.cancel p {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.greyPlate {
+	margin: 30px 0;
+	text-align: center;
+	padding: 20px;
+	border-radius: 4px;
+	background: var(--accent2);
+}
+.greyPlate h3 {
+	width: unset;
 }
 
 
@@ -838,6 +862,10 @@ footer a {
 	    text-decoration: none;
 	    font-size: 18px;
 	    font-weight: 600;
+	}
+	header .container .login .getPremium .getAccess.out{
+		background: orangered;
+		margin-top: 14px;
 	}
 	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 		color: #999;
