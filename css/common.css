@@ -405,6 +405,7 @@ main .title h1 {
 .cancel.title {
 	padding: 0 20px 30px;
 }
+
 /* / BTN-PRIMARY*/
 
 /***** / BOOTSTRAP BUTTONS *****/
@@ -703,7 +704,11 @@ footer li svg {
 	width: unset;
 }
 
-
+@media screen and (max-width: 570px){
+	.cancel .form-control {
+		margin-bottom: 15px;
+	}
+}
 @media only screen and (max-width: 1339px) {
 	.footer-menu {order: 1; width:50%; min-width: unset }
 	.footer-contact {order: 2; width: 50%}
@@ -729,6 +734,7 @@ footer li svg {
 	.ft-main {
 		justify-content: space-evenly;
 	}
+
 	.side {padding: 0}
 
 	footer .links {
