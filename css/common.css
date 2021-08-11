@@ -481,10 +481,12 @@ header .container .logOutUser a {
 
 header .container .userButton {
 	width: 43px;
+	height: 100%;
 	display: block;
 	float: right;
 	outline: none;
 	cursor: pointer;
+	margin-right: 5px;
 
 }
 header .container .userButton .close {
@@ -492,9 +494,9 @@ header .container .userButton .close {
 	opacity: 1;
 }
 header .container .userButton svg {
-	width: 100%;
+	width: 31px;
 	fill: var(--main);
-	height: 100%;
+	height: 31px;
 }
 header .container .userButton .wrap {
 	display: block;
