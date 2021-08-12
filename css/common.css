@@ -685,6 +685,9 @@ footer .links img {
 a:focus, a:hover {
 	color: var(--accent1);
 }
+footer li a {
+	vertical-align: sub;
+}
 footer li svg {
 	width: 20px;
 	height: 20px;
