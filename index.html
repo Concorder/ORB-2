@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 	<title>MindsBoom Recipes</title>
-	<link rel="shortcut icon" href="imgs/favicon.png"/>
-	 <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
+	<link rel="shortcut icon" href="imgs/favicon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
 	<link rel="stylesheet" href="css/open_sans.css">
 	<link rel="stylesheet" href="css/playfair.css">
 	<link rel="stylesheet" href="css/reset.css">
@@ -20,19 +21,23 @@
 			background: url(imgs/articles/wellness.png) no-repeat center;
 			background-size: cover;
 		}
+
 		main .slider .img2 {
 			background: url(imgs/articles/healthy_lifestyle.png) no-repeat center;
 			background-size: cover;
 
 		}
+
 		main .slider .img3 {
 			background: url(imgs/articles/lemon.png) no-repeat center;
 			background-size: cover;
 		}
+
 		main .slider .img4 {
 			background: url(imgs/articles/limited%20budget.png) no-repeat center;
 			background-size: cover;
 		}
+
 		main .slider .img5 {
 			background: url(imgs/articles/coconut.png) no-repeat center;
 			background-size: cover;
@@ -41,447 +46,513 @@
 
 
 </head>
+
 <body>
-<div class="wrapper">
-	<div id="warning">
-		<div class="container">
-				<span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve"><g><path d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z"></path></g></svg>
-Have a Problem? <a href="./contactUs.html">Contact us</a> or <a href="cancel.html">cancel membership</a></span>
+	<div class="wrapper">
+		<div id="warning">
+			<div class="container">
+				<span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+						id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+						xml:space="preserve">
+						<g>
+							<path
+								d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z">
+							</path>
+						</g>
+					</svg>
+					Have a Problem? <a href="./contactUs.html">Contact us</a> or <a href="cancel.html">cancel
+						membership</a></span>
+			</div>
 		</div>
+		<header>
+
+			<div class="container">
+				<a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+				<div class="search" style="display: flex;">
+					<form id="searchForm">
+						<input type="search" id="search" placeholder="Search" name="search" value="" maxlength="15">
+						<input type="submit" value="">
+						<span>Improve your skills with us</span>
+					</form>
+
+				</div>
+
+
+				<button class="userButton">
+					<svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0">
+						</path>
+					</svg>
+					<svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
+						<path
+							d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0" />
+						<path
+							d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0" />
+					</svg>
+				</button>
+				<ul class="headerMenu">
+					<li>
+						<a href="index.html">Recipes</a>
+					</li>
+					<li>
+						<a href="articles.html">Articles</a>
+					</li>
+					<li>
+						<a href="calculator.html">Calorie Calculator</a>
+					</li>
+				</ul>
+				<div class="login">
+					<form id="authenticationForm" action="index.html?page=" method="post">
+						<!--<input type="hidden" name="page" value="">-->
+						<input type="text" id="userName" name="u" value="" placeholder="User" maxlength="22">
+						<input type="password" id="userPassword" name="c" placeholder="Password" maxlength="12">
+						<input type="submit" id="authentication" value="Login" name="authentication">
+						<a href="signUp2.html" id="signIn">Sign Up</a>
+						<div class="getPremium">
+							<span class="text">Don’t have an account?</span>
+							<a href="signUp2.html" class="getAccess">Get access to premium</a>
+							<a href="cancel.html" class="getAccess out">Cancel Membership</a>
+						</div>
+					</form>
+				</div>
+
+
+			</div>
+
+		</header>
+		<main>
+			<section class="title">
+				<h1>Your Guide to Culinary Discoveries and Cooking Education</h1>
+				<div class="line"></div>
+			</section>
+			<section class="slider container">
+				<div class="img1">
+					<div class="wrap">
+						<h2>5 WELLNESS TRENDS YOU WILL SEE THIS YEAR</h2>
+						<div class="line"><img src="imgs/line1.jpg" alt=""></div>
+						<p>Everything you need to know about the top trends for beauty, health and fitness this year.
+						</p>
+						<a href="article_read_1.html" class="getRecipe">Read More</a>
+					</div>
+				</div>
+				<div class="img2">
+					<div class="wrap">
+						<h2>5 TIPS FOR A HEALTHY LIFESTYLE</h2>
+						<div class="line"><img src="imgs/line1.jpg" alt=""></div>
+						<p>A healthy lifestyle is one that helps maintain and improve your health and wellness.</p>
+						<a href="article_read_7.html" class="getRecipe">Read More</a>
+					</div>
+				</div>
+				<div class="img3">
+					<div class="wrap">
+						<h2>LEMON ZEST: BENEFITS FOR THE BODY</h2>
+						<div class="line"><img src="imgs/line1.jpg" alt=""></div>
+						<p>In addition to the juicy pulp of lemon, the brightly colored dense peel, called the zest, has
+							become widely used in cooking and has tremendous health benefits.</p>
+						<a href="article_read_11.html" class="getRecipe">Read More</a>
+					</div>
+				</div>
+				<div class="img4">
+					<div class="wrap">
+						<h2>TIPS FOR CLEAN EATING WITH A LIMITED BUDGET</h2>
+						<div class="line"><img src="imgs/line1.jpg" alt=""></div>
+						<p>One of the challenges we can face in adapting to a healthy lifestyle is weighing the cost of
+							our food bill.</p>
+						<a href="article_read_4.html" class="getRecipe">Read More</a>
+					</div>
+				</div>
+				<div class="img5">
+					<div class="wrap">
+						<h2>COCONUT OIL WONDERS</h2>
+						<div class="line"><img src="imgs/line1.jpg" alt=""></div>
+						<p>Coconut oil, just like a cheeky dude who grew into a full-fledged hunk, is now the hot, sexy
+							oil that no one can shut up about.</p>
+						<a href="article_read_2.html" class="getRecipe">Read More</a>
+					</div>
+				</div>
+			</section>
+			<section class="title">
+				<h2>FIND THE PERFECT FOOD AND DRINK IDEAS FOR EVERY OCASSION, FROM WEEKNIGHT DINNERS TO HOLIDAY FEASTS.
+				</h2>
+				<div class="line"></div>
+			</section>
+			<section class="container">
+				<div class="set">
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/crunchy-ice-cream-dessert.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Crunchy Ice Cream Dessert</h3>
+							<p>Delicious ice cream dessert that is crunchy and sweet.</p>
+							<a href="index.html?id=179763" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/best-ever-buckeyes.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Best Ever Buckeyes</h3>
+							<p>Delicious!</p>
+							<a href="index.html?id=190392" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/lo-mein-noodles-with-shrimp.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Lo Mein Noodles with Shrimp</h3>
+							<p>Lo Mein Noodles with Shrimp</p>
+							<a href="index.html?id=107047" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/frittata-15.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Frittata</h3>
+							<p>A frittata is an egg dish made mainly on the stove, easier than omelets, and can be
+								vehicles for almost any veggies, cheeses, or meats you happen to have around. They are
+								served in wedges and are easily transportable </p>
+							<a href="index.html?id=199458" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/chicken-zorba.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Chicken Zorba</h3>
+							<p>Delicious tangy chicken meal with a lime twist.</p>
+							<a href="index.html?id=326965" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/crunchy-asian-broccoli-coleslaw-3.jpg"
+								alt="">
+						</div>
+						<div class="wrap">
+							<h3>Crunchy Asian Broccoli Coleslaw</h3>
+							<p>Good for large groups because it makes a lot.</p>
+							<a href="index.html?id=174917" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/wonderful-carrot-cake.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Wonderful Carrot Cake</h3>
+							<p>Using applesauce in place of the oil, less sugar and some wheat flour in place of white
+								produces great results. The cake is much moister and the kids will love the sweet taste.
+							</p>
+							<a href="index.html?id=173110" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/spicy-quinoa-cucumber-and-toma-c86daf.jpg"
+								alt="">
+						</div>
+						<div class="wrap">
+							<h3>Spicy Quinoa, Cucumber & Tomato Salad</h3>
+							<p>Recipe from the NY Times:
+								http://www.nytimes.com/2010/07/13/health/nutrition/13recipehealth.html?_r=0
+								This refreshing summer salad can sit in the refrigerator for a few hours without
+								deteriorating, so it makes a great choice for bringing to work or to a summer picnic.
+							</p>
+							<a href="index.html?id=183592" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="video1 container">
+				<video autoplay muted loop id="video1">
+					<source src="video/video1.mp4" type="video/mp4">
+				</video>
+				<h1>FAVOURITE MEALS FROM WORLDLY CUISINES</h1>
+			</section>
+			<section class="container">
+				<div class="set">
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/cucumber-tomato-salad-2.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Cucumber Tomato Salad</h3>
+							<p>This salad is quick and easy -- the vinegar/sugar mixture gives the vegetables a sweet
+								but tangy flavor.</p>
+							<a href="index.html?id=165332" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/pork-tenderloin-with-classic-mole-s-2.jpg"
+								alt="">
+						</div>
+						<div class="wrap">
+							<h3>Pork Tenderloin With Classic Mole Sauce</h3>
+							<p>A very detailed version of the classic Mole sauce. </p>
+							<a href="index.html?id=159149" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/italian-sausage-stir-fry-4.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Italian Sausage Stir-Fry</h3>
+							<p>This is my take on a Chinese stir-fry using orzo in place of rice and traditional Italian
+								ingredients</p>
+							<a href="index.html?id=171349" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/cream-cheese-filled-banana-bread-2.jpg"
+								alt="">
+						</div>
+						<div class="wrap">
+							<h3>Cream Cheese-Filled Banana Bread</h3>
+							<p>The bread is soft, moist and the cream cheese layer is like having a layer of cheesecake
+								baked into banana bread. It’s an easy, no mixer recipe that goes from bowl to oven in
+								minutes. I use melted coconut oil so there’s no mixer to dirty and oil keeps bread
+								softer and springier than butter. Coconut oil adds a nearly imperceptible undertone
+								that’s sweeter and more fragrant than canola or vegetable oil, but substitute if
+								desired. Sour cream (or Greek yogurt) is extra insurance for a soft, springy, bouncy,
+								fluffy loaf. The big river of cream cheese is thick, bold, unmistakeable, and really
+								makes this bread out of this world.</p>
+							<a href="index.html?id=948963" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="container">
+				<div class="set">
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/tilapia-with-garlic-sauce-and-pasta.jpg"
+								alt="">
+						</div>
+						<div class="wrap">
+							<h3>Tilapia with Garlic Sauce and Pasta</h3>
+							<p>This is a Garlicy fish, pasta dish in a Chile butter herb sauce.</p>
+							<a href="index.html?id=179930" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/j-d-s-chili-con-carne-2.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>J.D.'s Chili Con Carne</h3>
+							<p>J.D.'s Chili Con Carne</p>
+							<a href="index.html?id=158455" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div class="video2">
+						<video autoplay muted loop id="video2">
+							<source src="video/video2.mp4" type="video/mp4">
+						</video>
+						<h1>The Best Chicken Recipes</h1>
+					</div>
+				</div>
+			</section>
+			<section class="container">
+				<div class="set">
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/provincial-roasted-seafood-with-win.jpg"
+								alt="">
+						</div>
+						<div class="wrap">
+							<h3>Provincial Roasted Seafood with Wine and Preserved Lemon</h3>
+							<p>This recipe is a blend of ideas: part stolen from the Domestic Goddess herself, Nigela
+								Lawson, part pinched from my experiences in Nice in the South of France, and part just
+								experimenting in the kitchen. The result is a dead easy dish, but one that is sure to
+								impress. For what can only be described as a luxurious dinner, this is actually
+								relatively inexpensive - not cheap, but certainly a lot cheaper than it looks or tastes!
+							</p>
+							<a href="index.html?id=823966" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/mayonnaise-muffins-2.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Mayonnaise Muffins</h3>
+							<p>Give these light and delicious muffins a chance. They are quick and easy. I don't like
+								Mayo, at all. An elderly woman made them for our lunch, and I had to be polite and try
+								them. I fell in love with them, they are wonderful. Very tasty with butter and jam, or
+								just dipped in gravy. You'll love them, and so will your family. </p>
+							<a href="index.html?id=169794" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/spaghetti-with-mussels-and-spi-2d9eba.jpg"
+								alt="">
+						</div>
+						<div class="wrap">
+							<h3>Spaghetti with Mussels and Spinach</h3>
+							<p>This one-dish meal is simple to prepare and delicious. </p>
+							<a href="index.html?id=159894" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/empanadas-meat-pie.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Empanadas (Meat Pie)</h3>
+							<p>Empanadas (Meat Pie)</p>
+							<a href="index.html?id=1421" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/tomato-basil-soup-5.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Tomato-Basil Soup</h3>
+							<p>Cooking Light March 2012</p>
+							<a href="index.html?id=308826" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/triple-layer-banan-cream-pie-bars.jpg"
+								alt="">
+						</div>
+						<div class="wrap">
+							<h3>Triple Layer Banana Cream Pie Bars</h3>
+							<p>Triple Layer Banana Cream Pie Bars</p>
+							<a href="index.html?id=202159" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/sauthon-tartare-salmon-tuna-tartare.jpg"
+								alt="">
+						</div>
+						<div class="wrap">
+							<h3>SauThon tartare (Salmon & Tuna tartare)</h3>
+							<p>Deux portions séparés de tartare apprêtés différament - Saumon et Thon
+								Two separate portions of tartare - Salmon and Tuna</p>
+							<a href="index.html?id=194511" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/seared-salmon-with-bacon-and-balsam-2.jpg"
+								alt="">
+						</div>
+						<div class="wrap">
+							<h3>Seared Salmon with bacon and balsamic honey and rosmary</h3>
+							<p>easy to make taste great</p>
+							<a href="index.html?id=171227" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div id="pagination"></div>
+
+		</main>
+		<footer>
+			<section class="ft-main ">
+				<div class="ft-main-item side footer-menu">
+					<h2 class="ft-title">Menu</h2>
+					<ul>
+						<li><a href="/?page=policy">Privacy Policy</a></li>
+						<li><a href="/?page=terms">Terms &amp; Conditions</a></li>
+						<li><a href="/?page=faq">FAQ</a></li>
+						<li><a href="/?page=refund">Refund Policy</a></li>
+						<li><a href="/?page=subscriptionterms">Subscription Terms</a></li>
+						<li><a href="/?page=contactUs">Contact us</a></li>
+					</ul>
+				</div>
+	
+				<div class="ft-main-item" id="main-item">
+					<a href="/" class="logo"><img src="imgs/logo.png" alt=""></a>
+					<div class="links">
+						<img src="imgs/mastercard.png">
+						<img src="imgs/securecode.png">
+						<img src="imgs/verified.png">
+						<img src="imgs/visa-electron.png">
+					</div>
+				</div>
+	
+				<div class="ft-main-item side footer-contact">
+					<h2 class="ft-title">Contact us</h2>
+					<ul>
+						<li>
+	
+							<svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm94.273438 320.105469c8.339843 8.34375 8.339843 21.824219 0 30.167969-4.160157 4.160156-9.621094 6.25-15.085938 6.25-5.460938 0-10.921875-2.089844-15.082031-6.25l-64.105469-64.109376-64.105469 64.109376c-4.160156 4.160156-9.621093 6.25-15.082031 6.25-5.464844 0-10.925781-2.089844-15.085938-6.25-8.339843-8.34375-8.339843-21.824219 0-30.167969l64.109376-64.105469-64.109376-64.105469c-8.339843-8.34375-8.339843-21.824219 0-30.167969 8.34375-8.339843 21.824219-8.339843 30.167969 0l64.105469 64.109376 64.105469-64.109376c8.34375-8.339843 21.824219-8.339843 30.167969 0 8.339843 8.34375 8.339843 21.824219 0 30.167969l-64.109376 64.105469zm0 0"></path></svg>
+							<a href="/?page=cancel">Cancel subscription</a>
+						</li>
+						<li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+									<g>
+										<g>
+											<polygon points="339.392,258.624 512,367.744 512,144.896 "></polygon>
+										</g>
+									</g>
+									<g>
+										<g>
+											<polygon points="0,144.896 0,367.744 172.608,258.624 "></polygon>
+										</g>
+									</g>
+									<g>
+										<g>
+											<path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"></path>
+										</g>
+									</g>
+									<g>
+										<g>
+											<path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+								L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"></path>
+										</g>
+									</g>
+								</svg>
+							<a href="mailto:support@mindsboom.com">support@mindsboom.com</a>
+						</li>
+						<li><svg id="Capa_1" enable-background="new 0 0 512 512" height="20" viewBox="0 0 512 512" width="20" xmlns="http://www.w3.org/2000/svg">
+							<g>
+								<circle cx="256" cy="165" r="75"></circle>
+								<path d="m256 0c-81.108 0-165 61.714-165 165 0 94.351 147.217 274.08 153.472 281.609 2.856 3.413 7.075 5.391 11.528 5.391s8.672-1.978 11.528-5.391c6.255-7.529 153.472-187.258 153.472-281.609 0-90.981-74.019-165-165-165zm0 270c-57.891 0-105-47.109-105-105s47.109-105 105-105 105 47.109 105 105-47.109 105-105 105z"></path>
+								<path d="m357.087 377.811c-28.922 41.873-55.961 75.306-66.487 87.973-8.643 10.327-21.241 16.216-34.6 16.216s-25.957-5.889-34.541-16.143c-10.551-12.698-37.608-46.155-66.544-88.046-38.83 13.722-63.915 35.1-63.915 59.189 0 41.42 73.874 75 165 75s165-33.58 165-75c0-24.088-25.084-45.467-63.913-59.189z"></path>
+							</g>
+						</svg> <a href="https://goo.gl/maps/rT5TuPr6xFtg91VT6">Mamtic Innovation LTD, 4 Charalambou
+							Pettemerides Str, 2042 Strovolos, Nicosia
+							Cyprus</a></li>
+							<li>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17.2969 4.49609L15.2168 2.41797C15.0701 2.27059 14.8957 2.15366 14.7036 2.07389C14.5116 1.99412 14.3056 1.95308 14.0977 1.95313C13.6738 1.95313 13.2754 2.11914 12.9766 2.41797L10.7383 4.65625C10.5909 4.80298 10.474 4.97738 10.3942 5.16944C10.3144 5.3615 10.2734 5.56743 10.2734 5.77539C10.2734 6.19922 10.4395 6.59766 10.7383 6.89648L12.375 8.5332C11.9919 9.37766 11.4592 10.1459 10.8027 10.8008C10.1479 11.4589 9.37975 11.9935 8.53516 12.3789L6.89844 10.7422C6.75171 10.5948 6.57731 10.4779 6.38525 10.3981C6.19319 10.3183 5.98727 10.2773 5.7793 10.2773C5.35547 10.2773 4.95703 10.4434 4.65821 10.7422L2.41797 12.9785C2.27041 13.1255 2.15338 13.3002 2.0736 13.4926C1.99383 13.685 1.95288 13.8913 1.95313 14.0996C1.95313 14.5234 2.11914 14.9219 2.41797 15.2207L4.49414 17.2969C4.97071 17.7754 5.62891 18.0469 6.30469 18.0469C6.44727 18.0469 6.58399 18.0352 6.71875 18.0117C9.35157 17.5781 11.9629 16.1777 14.0703 14.0723C16.1758 11.9688 17.5742 9.35937 18.0137 6.71875C18.1465 5.91211 17.8789 5.08203 17.2969 4.49609V4.49609Z" fill="#A4C74D"/>
+									</svg>
+								<a
+									href="https://api.whatsapp.com/send/?phone=35795158557">Support:&nbsp;+357&nbsp;95158557</a>
+							</li>
+					</ul>
+				</div>
+			</section>
+			<p>© 2022 mindsboomrecipes.com. All Rights Reserved. Powered by Mamtic Innovation LTD.</p>
+		</footer>
 	</div>
-	<header>
-
-        <div class="container">
-            <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
-            <div class="search" style="display: flex;">
-                <form id="searchForm">
-                    <input type="search" id="search" placeholder="Search" name="search" value="" maxlength="15">
-                    <input type="submit" value="">
-                    <span>Improve your skills with us</span>
-                </form>
-
-            </div>
-
-
-            <button class="userButton">
-                <svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0"></path></svg>
-                <svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0"/><path d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0"/><path d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0"/></svg>
-            </button>
-            <ul class="headerMenu">
-                <li>
-                    <a href="index.html">Recipes</a>
-                </li><li>
-                <a href="articles.html">Articles</a>
-            </li>
-                <li>
-                    <a href="calculator.html">Calorie Calculator</a>
-                </li>
-            </ul>
-            <div class="login">
-                <form id="authenticationForm" action="index.html?page=" method="post">
-                    <!--<input type="hidden" name="page" value="">-->
-                    <input type="text" id="userName" name="u" value="" placeholder="User" maxlength="22">
-                    <input type="password" id="userPassword" name="c" placeholder="Password" maxlength="12">
-                    <input type="submit" id="authentication" value="Login" name="authentication">
-                    <a href="signUp2.html" id="signIn">Sign Up</a>
-                    <div class="getPremium">
-                        <span class="text">Don’t have an account?</span>
-                        <a href="signUp2.html" class="getAccess">Get access to premium</a>
-                        <a href="cancel.html" class="getAccess out">Cancel Membership</a>
-                    </div>
-                </form>
-            </div>
-
-
-        </div>
-
-    </header>
-	<main>
-		<section class="title">
-			<h1>Your Guide to Culinary Discoveries and Cooking Education</h1>
-			<div class="line"></div>
-		</section>
-		<section class="slider container">
-			<div class="img1">
-				<div class="wrap">
-					<h2>5 WELLNESS TRENDS YOU WILL SEE THIS YEAR</h2>
-					<div class="line"><img src="imgs/line1.jpg" alt=""></div>
-					<p>Everything you need to know about the top trends for beauty, health and fitness this year. </p>
-					<a href="article_read_1.html" class="getRecipe">Read More</a>
-				</div>
-			</div>
-			<div class="img2">
-				<div class="wrap">
-					<h2>5 TIPS FOR A HEALTHY LIFESTYLE</h2>
-					<div class="line"><img src="imgs/line1.jpg" alt=""></div>
-					<p>A healthy lifestyle is one that helps maintain and improve your health and wellness.</p>
-					<a href="article_read_7.html" class="getRecipe">Read More</a>
-				</div>
-			</div>
-			<div class="img3">
-				<div class="wrap">
-					<h2>LEMON ZEST: BENEFITS FOR THE BODY</h2>
-					<div class="line"><img src="imgs/line1.jpg" alt=""></div>
-					<p>In addition to the juicy pulp of lemon, the brightly colored dense peel, called the zest, has become widely used in cooking and has tremendous health benefits.</p>
-					<a href="article_read_11.html" class="getRecipe">Read More</a>
-				</div>
-			</div>
-			<div class="img4">
-				<div class="wrap">
-					<h2>TIPS FOR CLEAN EATING WITH A LIMITED BUDGET</h2>
-					<div class="line"><img src="imgs/line1.jpg" alt=""></div>
-					<p>One of the challenges we can face in adapting to a healthy lifestyle is weighing the cost of our food bill.</p>
-					<a href="article_read_4.html" class="getRecipe">Read More</a>
-				</div>
-			</div>
-			<div class="img5">
-				<div class="wrap">
-					<h2>COCONUT OIL WONDERS</h2>
-					<div class="line"><img src="imgs/line1.jpg" alt=""></div>
-					<p>Coconut oil, just like a cheeky dude who grew into a full-fledged hunk, is now the hot, sexy oil that no one can shut up about.</p>
-					<a href="article_read_2.html" class="getRecipe">Read More</a>
-				</div>
-			</div>
-		</section>
-		<section class="title">
-			<h2>FIND THE PERFECT FOOD AND DRINK IDEAS FOR EVERY OCASSION, FROM WEEKNIGHT DINNERS TO HOLIDAY FEASTS.</h2>
-			<div class="line"></div>
-		</section>
-		<section class="container">
-			<div class="set">
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/crunchy-ice-cream-dessert.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Crunchy Ice Cream Dessert</h3>
-						<p>Delicious ice cream dessert that is crunchy and sweet.</p>
-						<a href="index.html?id=179763" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/best-ever-buckeyes.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Best Ever Buckeyes</h3>
-						<p>Delicious!</p>
-						<a href="index.html?id=190392" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/lo-mein-noodles-with-shrimp.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Lo Mein Noodles with Shrimp</h3>
-						<p>Lo Mein Noodles with Shrimp</p>
-						<a href="index.html?id=107047" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/frittata-15.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Frittata</h3>
-						<p>A frittata is an egg dish made mainly on the stove, easier than omelets, and can be vehicles for almost any veggies, cheeses, or meats you happen to have around. They are served in wedges and are easily transportable </p>
-						<a href="index.html?id=199458" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/chicken-zorba.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Chicken Zorba</h3>
-						<p>Delicious tangy chicken meal with a lime twist.</p>
-						<a href="index.html?id=326965" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/crunchy-asian-broccoli-coleslaw-3.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Crunchy Asian Broccoli Coleslaw</h3>
-						<p>Good for large groups because it makes a lot.</p>
-						<a href="index.html?id=174917" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/wonderful-carrot-cake.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Wonderful Carrot Cake</h3>
-						<p>Using applesauce in place of the oil, less sugar and some wheat flour in place of white produces great results. The cake is much moister and the kids will love the sweet taste.</p>
-						<a href="index.html?id=173110" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/spicy-quinoa-cucumber-and-toma-c86daf.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Spicy Quinoa, Cucumber & Tomato Salad</h3>
-						<p>Recipe from the NY Times: http://www.nytimes.com/2010/07/13/health/nutrition/13recipehealth.html?_r=0
-							This refreshing summer salad can sit in the refrigerator for a few hours without deteriorating, so it makes a great choice for bringing to work or to a summer picnic.</p>
-						<a href="index.html?id=183592" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="video1 container">
-			<video autoplay muted loop id="video1">
-				<source src="video/video1.mp4" type="video/mp4">
-			</video>
-			<h1>FAVOURITE MEALS FROM WORLDLY CUISINES</h1>
-		</section>
-		<section class="container">
-			<div class="set">
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/cucumber-tomato-salad-2.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Cucumber Tomato Salad</h3>
-						<p>This salad is quick and easy -- the vinegar/sugar mixture gives the vegetables a sweet but tangy flavor.</p>
-						<a href="index.html?id=165332" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/pork-tenderloin-with-classic-mole-s-2.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Pork Tenderloin With Classic Mole Sauce</h3>
-						<p>A very detailed version of the classic Mole sauce. </p>
-						<a href="index.html?id=159149" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/italian-sausage-stir-fry-4.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Italian Sausage Stir-Fry</h3>
-						<p>This is my take on a Chinese stir-fry using orzo in place of rice and traditional Italian ingredients</p>
-						<a href="index.html?id=171349" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/cream-cheese-filled-banana-bread-2.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Cream Cheese-Filled Banana Bread</h3>
-						<p>The bread is soft, moist and the cream cheese layer is like having a layer of cheesecake baked into banana bread. It’s an easy, no mixer recipe that goes from bowl to oven in minutes. I use melted coconut oil so there’s no mixer to dirty and oil keeps bread softer and springier than butter. Coconut oil adds a nearly imperceptible undertone that’s sweeter and more fragrant than canola or vegetable oil, but substitute if desired. Sour cream (or Greek yogurt) is extra insurance for a soft, springy, bouncy, fluffy loaf. The big river of cream cheese is thick, bold, unmistakeable, and really makes this bread out of this world.</p>
-						<a href="index.html?id=948963" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="container">
-			<div class="set">
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/tilapia-with-garlic-sauce-and-pasta.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Tilapia with Garlic Sauce and Pasta</h3>
-						<p>This is a Garlicy fish, pasta dish in a Chile butter herb sauce.</p>
-						<a href="index.html?id=179930" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/j-d-s-chili-con-carne-2.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>J.D.'s Chili Con Carne</h3>
-						<p>J.D.'s Chili Con Carne</p>
-						<a href="index.html?id=158455" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div class="video2">
-					<video autoplay muted loop id="video2">
-						<source src="video/video2.mp4" type="video/mp4">
-					</video>
-					<h1>The Best Chicken Recipes</h1>
-				</div>
-			</div>
-		</section>
-		<section class="container">
-			<div class="set">
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/provincial-roasted-seafood-with-win.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Provincial Roasted Seafood with Wine and Preserved Lemon</h3>
-						<p>This recipe is a blend of ideas: part stolen from the Domestic Goddess herself, Nigela Lawson, part pinched from my experiences in Nice in the South of France, and part just experimenting in the kitchen. The result is a dead easy dish, but one that is sure to impress. For what can only be described as a luxurious dinner, this is actually relatively inexpensive - not cheap, but certainly a lot cheaper than it looks or tastes! </p>
-						<a href="index.html?id=823966" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/mayonnaise-muffins-2.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Mayonnaise Muffins</h3>
-						<p>Give these light and delicious muffins a chance. They are quick and easy. I don't like Mayo, at all. An elderly woman made them for our lunch, and I had to be polite and try them. I fell in love with them, they are wonderful. Very tasty with butter and jam, or just dipped in gravy. You'll love them, and so will your family. </p>
-						<a href="index.html?id=169794" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/spaghetti-with-mussels-and-spi-2d9eba.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Spaghetti with Mussels and Spinach</h3>
-						<p>This one-dish meal is simple to prepare and delicious. </p>
-						<a href="index.html?id=159894" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/empanadas-meat-pie.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Empanadas (Meat Pie)</h3>
-						<p>Empanadas (Meat Pie)</p>
-						<a href="index.html?id=1421" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/tomato-basil-soup-5.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Tomato-Basil Soup</h3>
-						<p>Cooking Light March 2012</p>
-						<a href="index.html?id=308826" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/triple-layer-banan-cream-pie-bars.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Triple Layer Banana Cream Pie Bars</h3>
-						<p>Triple Layer Banana Cream Pie Bars</p>
-						<a href="index.html?id=202159" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/sauthon-tartare-salmon-tuna-tartare.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>SauThon tartare (Salmon & Tuna tartare)</h3>
-						<p>Deux portions séparés de tartare apprêtés différament - Saumon et Thon
-							Two separate portions of tartare - Salmon and Tuna</p>
-						<a href="index.html?id=194511" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-				<div>
-					<div class="img">
-						<img src="https://photos.bigoven.com/recipe/hero/seared-salmon-with-bacon-and-balsam-2.jpg" alt="">
-					</div>
-					<div class="wrap">
-						<h3>Seared Salmon with bacon and balsamic honey and rosmary</h3>
-						<p>easy to make taste great</p>
-						<a href="index.html?id=171227" class="showRecipe">Show recipe</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<div id="pagination"></div>
-
-	</main>
-	                    <footer>
-        <section class="ft-main ">
-            <div class="ft-main-item side footer-menu">
-                <h2 class="ft-title">Menu</h2>
-                <ul>
-                    <li><a href="policy.html">Privacy Policy</a></li>
-                    <li><a href="terms.html">Terms &amp; Conditions</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="refund.html">Refund Policy</a></li>
-                    <li><a href="subscriptionterms.html">Subscription Terms</a></li>
-                    <li><a href="contactUs.html">Contact us</a></li>
-                </ul>
-            </div>
-
-            <div class="ft-main-item" id="main-item">
-                <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
-                <div class="links">
-                    <img src="imgs/mastercard.png">
-                    <img src="imgs/securecode.png">
-                    <img src="imgs/verified.png">
-                    <img src="imgs/visa-electron.png">
-                </div>
-            </div>
-
-            <div class="ft-main-item side footer-contact">
-                <h2 class="ft-title">Contact us</h2>
-                <ul>
-                    <li>
-
-                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm94.273438 320.105469c8.339843 8.34375 8.339843 21.824219 0 30.167969-4.160157 4.160156-9.621094 6.25-15.085938 6.25-5.460938 0-10.921875-2.089844-15.082031-6.25l-64.105469-64.109376-64.105469 64.109376c-4.160156 4.160156-9.621093 6.25-15.082031 6.25-5.464844 0-10.925781-2.089844-15.085938-6.25-8.339843-8.34375-8.339843-21.824219 0-30.167969l64.109376-64.105469-64.109376-64.105469c-8.339843-8.34375-8.339843-21.824219 0-30.167969 8.34375-8.339843 21.824219-8.339843 30.167969 0l64.105469 64.109376 64.105469-64.109376c8.34375-8.339843 21.824219-8.339843 30.167969 0 8.339843 8.34375 8.339843 21.824219 0 30.167969l-64.109376 64.105469zm0 0"/></svg>
-                        <a href="./cancel.html">Cancel subscription</a>
-                    </li>
-                    <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20"
-								viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-								<g>
-									<g>
-										<polygon points="339.392,258.624 512,367.744 512,144.896 " />
-									</g>
-								</g>
-								<g>
-									<g>
-										<polygon points="0,144.896 0,367.744 172.608,258.624 " />
-									</g>
-								</g>
-								<g>
-									<g>
-										<path
-                                                d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z" />
-									</g>
-								</g>
-								<g>
-									<g>
-										<path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
-							L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z" />
-									</g>
-								</g>
-							</svg>
-                        <a href="mailto:support@mindsboom.com">support@mindsboom.com</a>
-                    </li>
-                    <li><svg id="Capa_1" enable-background="new 0 0 512 512" height="20" viewBox="0 0 512 512"
-                             width="20" xmlns="http://www.w3.org/2000/svg">
-                        <g>
-                            <circle cx="256" cy="165" r="75" />
-                            <path
-                                    d="m256 0c-81.108 0-165 61.714-165 165 0 94.351 147.217 274.08 153.472 281.609 2.856 3.413 7.075 5.391 11.528 5.391s8.672-1.978 11.528-5.391c6.255-7.529 153.472-187.258 153.472-281.609 0-90.981-74.019-165-165-165zm0 270c-57.891 0-105-47.109-105-105s47.109-105 105-105 105 47.109 105 105-47.109 105-105 105z" />
-                            <path
-                                    d="m357.087 377.811c-28.922 41.873-55.961 75.306-66.487 87.973-8.643 10.327-21.241 16.216-34.6 16.216s-25.957-5.889-34.541-16.143c-10.551-12.698-37.608-46.155-66.544-88.046-38.83 13.722-63.915 35.1-63.915 59.189 0 41.42 73.874 75 165 75s165-33.58 165-75c0-24.088-25.084-45.467-63.913-59.189z" />
-                        </g>
-                    </svg> <a href="https://goo.gl/maps/rT5TuPr6xFtg91VT6">4 Charalambou
-                        Pettemerides Str, 2042 Strovolos, Nicosia
-                        Cyprus</a></li>
-                </ul>
-            </div>
-        </section>
-        <p>© 2021 mindsboomrecipes.com. All Rights Reserved.</p>
-    </footer>
-</div>
-<script src="js/pagination.js"></script>
-<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="js/slick-carouse1.8.1.min.js"></script><script type="text/javascript" src="js/slider.js"></script>
-<script type="text/javascript" src="js/index.js?"></script>
+	<script src="js/pagination.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick-carouse1.8.1.min.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
+	<script type="text/javascript" src="js/index.js?"></script>
 </body>
+
 </html>

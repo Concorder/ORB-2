@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
@@ -11,260 +12,410 @@
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/privacy.css">
 </head>
+
 <body>
-<div class="wrapper">
-	<div id="warning">
-		<div class="container">
-				<span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-<g>
-	<path d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z"></path>
-</g>
-</svg>                    Have a Problem? <a href="./contactUs.html">Contact us</a> or <a href="cancel.html">cancel membership</a></span>
+	<div class="wrapper">
+		<div id="warning">
+			<div class="container">
+				<span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+						id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+						xml:space="preserve">
+						<g>
+							<path
+								d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z">
+							</path>
+						</g>
+					</svg> Have a Problem? <a href="./contactUs.html">Contact us</a> or <a href="cancel.html">cancel
+						membership</a></span>
+			</div>
 		</div>
+		<header>
+			<div class="container">
+				<a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+				<div class="search" style="display: flex;">
+					<form id="searchForm">
+						<input type="search" id="search" placeholder="Search" name="search" value="" maxlength="15">
+						<input type="submit" value="">
+						<span>Improve your skills with us</span>
+					</form>
+
+				</div>
+
+
+				<button class="userButton">
+					<svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0">
+						</path>
+					</svg>
+					<svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
+						<path
+							d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0" />
+						<path
+							d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0" />
+					</svg>
+				</button>
+				<ul class="headerMenu">
+					<li>
+						<a href="index.html">Recipes</a>
+					</li>
+					<li>
+						<a href="articles.html">Articles</a>
+					</li>
+					<li>
+						<a href="calculator.html">Calorie Calculator</a>
+					</li>
+				</ul>
+				<div class="login">
+					<form id="authenticationForm" action="index.html?page=" method="post">
+						<!--<input type="hidden" name="page" value="">-->
+						<input type="text" id="userName" name="u" value="" placeholder="User" maxlength="22">
+						<input type="password" id="userPassword" name="c" placeholder="Password" maxlength="12">
+						<input type="submit" id="authentication" value="Login" name="authentication">
+						<a href="signUp2.html" id="signIn">Sign Up</a>
+						<div class="getPremium">
+							<span class="text">Don’t have an account?</span>
+							<a href="signUp2.html" class="getAccess">Get access to premium</a>
+							<a href="cancel.html" class="getAccess out">Cancel Membership</a>
+						</div>
+					</form>
+				</div>
+
+
+			</div>
+
+		</header>
+		<main class="policy_terms container">
+			<section class="title">
+				<h1>Privacy Policy</h1>
+			</section>
+			<article>
+				<h3>GENERAL</h3>
+				<p>Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to
+					understand how we collect, use, communicate and disclose personal information. The following
+					outlines our privacy policy.
+					Before or at the time of collecting personal information, we will identify the purposes for which
+					information is being collected.
+					We will collect and use personal information solely with the objective of fulfilling those purposes
+					specified by us and for other compatible purposes, unless we obtain the consent of the individual
+					concerned or as required by law.
+					We will only retain personal information as long as necessary for the fulfillment of those purposes.
+					We will collect personal information by lawful and fair means and, where appropriate, with the
+					knowledge or consent of the individual concerned.
+					Personal data should be relevant to the purposes for which it is to be used, and, to the extent
+					necessary for those purposes, should be accurate, complete, and up-to-date.
+					We will protect personal information by reasonable security safeguards against loss or theft, as
+					well as unauthorized access, disclosure, copying, use or modification.
+					We will make readily available to customers information about our policies and practices relating to
+					the management of personal information.
+					We are committed to conducting our business in accordance with these principles in order to ensure
+					that the confidentiality of personal information is protected and maintained.</p>
+			</article>
+			<article>
+				<h3>The following applies from February 1st 2021</h3>
+				<p>MindsBoom.com, 4 Charalambou Pettemerides Str, 2042 Strovolos, Nicosia Cyprus, “MindsBoom” “we”, “us”
+					or “ours”) are the controller of your personal information, and we are obligated to protect and
+					respect your privacy and your personal integrity, when your use MindsBoom´s products and services
+					and are browsing our website. This Privacy Policy will help you understand, which personal
+					information we gather, why we gather this information and how we use them. The Privacy Policy will
+					also explain how you can exercise your rights, when you confide us with your personal information.
+					We ask you to read this Privacy Policy carefully and familiarize yourself with the content. If you
+					have any questions, you are welcome to contact us via the contact information, which is found in the
+					bottom of this Privacy Policy.</p>
+			</article>
+			<article>
+				<h3>Which personal information do we gather from you?</h3>
+				<p>When you gain access, sign up, participate in, create an account or in other way uses our services,
+					we can collect personal information about you. The personal information, we collect, depends on the
+					circumstances and the services you use, but can consist of the following:</p>
+			</article>
+			<article>
+				<h3>Personal information which you actively provide us</h3>
+				<ul>
+					<li>Name, e-mail, phone number and address.</li>
+					<li>Gender</li>
+					<li>Birthdate</li>
+					<li>Nationality</li>
+					<li>Payment information</li>
+					<li>User identification, included username for login, password, secret question and the answers of
+						this.</li>
+				</ul>
+			</article>
+			<article>
+				<h3>User generated personal information</h3>
+				<ul>
+					<li>Your purchase references, i.e. if you react on ads or campaigns</li>
+					<li>IP address</li>
+					<li>We can also gather other information about your use of our services through cookies and similar
+						technologies.</li>
+				</ul>
+			</article>
+			<article>
+				<h3>Personal information gathered from third party</h3>
+				<p>We may supplement the information we collect from you with information we receive from third parties
+					and through your use of websites, products or services offered by other companies in our group,
+					MindsBoom.com(“MindsBoom”). This can for example Include information we receive from third parties
+					who provide our payment solutions in order to enable payment when using our Services.</p>
+			</article>
+			<article>
+				<h3>What happens, if you connect your social media services with our service?</h3>
+				<p>You can use your account on social media services, for example. your Facebook account, to connect to
+					some of our Services, such as when you create an account on our Services. If you choose to do so, we
+					collect certain information about your social networking account for the purposes described under
+					“Why do we gather your personal information”. We collect only such personal information as is
+					necessary to perform the Services you request by logging in to your social media account.</p>
+				<p>Please note that this Privacy Policy does not apply when you use the features of your social media
+					account. Instead, your interactions with these features are governed by the privacy policy and other
+					policies of the companies that provide the services.</p>
+			</article>
+			<article>
+				<h3>Why do we gather your personal information?</h3>
+				<p class="noIndentation">Our purpose</p>
+				<p>We process your personal information for the following purposes:</p>
+				<ul class="orderList">A) For the sake of our contractual relationship:
+					<li>To handle payment for your account and to deliver order and invoice information to you</li>
+					<li>To keep track of your purchases in order to ensure that we can provide you with the services
+						that you are entitled to</li>
+					<li>To communicate with you about your subscription, account or purchase of our Services</li>
+					<li>To inform you about changes in our Services</li>
+					<li>To provide offers, news, information, products or services that you request from us</li>
+				</ul>
+				<ul class="orderList">B) For legitimate purposes:
+					<li>To share your information with other companies within the MindsBoom.com when necessary for
+						administrative purposes or for the deliverance of our Services to you</li>
+					<li>To use IP address or other information required to block the malicious use of our Services for
+						the purpose of protecting our Services or otherwise enforcing or using our Terms and Conditions
+					</li>
+					<li>To provide information in a merger and acquisition process for business and strategic management
+						purposes.</li>
+					<li> In order to provide you with offers, news, information, products or services that we believe
+						may be of interest to you, including tailor-made advertising, it relate to your likely interests
+					</li>
+					<li>For analysis and statistical purposes</li>
+					<li>To establish, exercise or defend legal requirements</li>
+				</ul>
+				<ul>C) For marketing purposes:
+					<li>To send you newsletters if you have consented to this, which may also contain offers, news or
+						information related to our Services and / or other products and services in the MindsBoom.com
+						which we believe may be of interest to you. Please note that at any time you can unsubscribe
+						from the newsletter by changing your account preferences on your account page.</li>
+				</ul>
+				<ul>We may also process your personal information if it is necessary for us to comply with a legal
+					obligation or decision of an authority.
+					<li>What legal basis in GDPR is the processing of your personal data based on?</li>
+					<li>The processing of your personal information for the purposes described below:</li>
+					<li>point (A) is required for the conclusion and fulfillment of our obligations following our
+						agreement with you;</li>
+					<li>point (B) is required for our legitimate interests in developing, managing, protecting and
+						marketing our Services as well as from a business and strategic perspective;</li>
+					<li>point (C) will only occur if we have received your consent to such treatment;</li>
+					<li>point (D) is required to comply with legal obligations.</li>
+				</ul>
+			</article>
+			<article>
+				<h3>Is it mandatory for you to provide your personal information?</h3>
+				<p>Personal information that we request from you and which is marked “mandatory” in any way, such as
+					using the * symbol, is required for us to provide our Services (for legal, contractual,
+					administrative, technical or similar reasons ). However, some of your personal information may only
+					be required if you use specific features, enable optional parts of the Service, or request access to
+					certain resources, offers, promotions, programs, or similar from us or our affiliates. This will you
+					be informed about before collecting such personal information from you.</p>
+			</article>
+			<article>
+				<h3>Who can we share your personal information with?</h3>
+				<p>Group transfers</p>
+				<p>We may disclose your personal information to other companies within the MindsBoom.com, if necessary
+					for administrative purposes or for the provision of our Services to you. If you have consented to
+					this, we may also disclose your personal information to companies within the MindsBoom.com for
+					marketing purposes. MindsBoom.com companies that access your personal information follow practices
+					in accordance with this Privacy Policy.</p>
+				<p>The partners, sponsors and advertisers</p>
+				<p>We can share your personal information with our collaborators and sponsors when you participate in
+					surveys and competitions in the Service. In addition, we may also share your personal information
+					with our collaborators and advertisers, but only after you have requested it or assent that you have
+					consented to it.
+					As described, we may also use aggregated information to monitor the use of our Services in order to
+					help us improve and develop our Services, and we may make such aggregated information available to
+					third parties, such as. content partners or advertisers. Aggregated information does not include
+					personal information and can’t be linked to you.</p>
+				<p>Third parties for security or other legitimate reasons
+					We may also disclose your personal information to third parties if we reasonably have reason to
+					believe that disclosure of such personal information is necessary</p>
+				<ul>
+					<li>- In order to comply with applicable legal obligations, including applications, court orders,
+						government requests or search warranties, or otherwise required by law;</li>
+					<li>- To protect our rights or property, or the safety of our customers or employees;</li>
+					<li>- To protect against fraudulent, malicious, misuse, unauthorized or illegal use or subscription
+						to our Services and to protect our network, Services, Devices and Users from such use;</li>
+					<li>- To promote or defend against complaints or legal claims in court, administrative cases and
+						procedures and the like;</li>
+					<li>- To assess credit risk, for reporting purposes or to receive payment for our Services;</li>
+					<li>- As part of merger and aggregation, provided that the potential buyer or seller agrees to
+						respect and process your personal information in accordance with our Privacy Policy;</li>
+					<li>- To external auditors and supervisors</li>
+				</ul>
+			</article>
+			<article>
+				<h3>Access to other MindsBoom sites</h3>
+				<p>To access our Services, you will be prompted to log in with an email address and password or log in
+					via a social media account. When you connect to MindsBoom or any other associated service in our
+					MindsBoom community, you can access the other community sites. In order to make use of the
+					individual websites or Services, you must also accept the general terms and conditions of each site
+					and privacy and cookie policy, which may differ from what is contained here. Your username and
+					password for the Service are used to confirm that you are subscribed to one of our websites and will
+					be used to confirm your identity when you log in to one of our websites. This information will not
+					be disclosed outside the MindsBoom.com with the exceptions listed above in the section “Who can we
+					share your personal information with?”.</p>
+			</article>
+			<article>
+				<h3>Where do we process your personal information?</h3>
+				<p>The personal data we collect from you can be transferred to and stored at a destination outside the
+					European Economic Area (“EEA”), including destinations not covered by a decision of the European
+					Commission on an adequate level of protection for the processing of personal data. It can be shared
+					with other companies within the MindsBoom.com, handled by employees working for us or for one of our
+					suppliers outside the EEA. Such staff may, for example, be involved in fulfilling your order,
+					processing your payment information and performing our support services. We take all reasonable
+					precautions to ensure that your personal information is processed safely and in accordance with this
+					Privacy Policy and has taken appropriate safeguards to protect your personal information. For
+					further information about or a copy of these safeguards, please contact us using the contact
+					information found at the end of this Privacy Policy.</p>
+			</article>
+			<article>
+				<h3>How long do we store your personal data?</h3>
+				<p>We will keep your personal information only as long as we consider it necessary to fulfill our
+					purposes as described above under “Why do we process your personal information”. Then we will delete
+					or, in some cases, anonymize your personal information. We regularly check whether we have saved
+					personal information to be deleted. Since we process your personal information for different
+					purposes, the actual period of personal information will vary.
+					Typically, the following deletion deadlines apply:</p>
+				<table class="mainTable" style="width: 100%;" border="1">
+					<tbody>
+						<tr class="header">
+							<td>Data type</td>
+							<td>What is it?</td>
+							<td>Deletion deadline</td>
+						</tr>
+						<tr>
+							<td>User data</td>
+							<td>User data is information about, how you use the service and which orders you make.</td>
+							<td>Until the account is deleted (is processed in 5 years)</td>
+						</tr>
+						<tr>
+							<td>Customer service data</td>
+							<td>Customer service data is information that you provide when you are in contact with
+								MindsBoom customer service and voice recordings made for educational purposes.</td>
+							<td>3 years (call logs and text dialogs) 1 month (voice recordings)</td>
+						</tr>
+						<tr>
+							<td>Account information</td>
+							<td>Account information is information about your account, such as username, password and
+								purchase information made in the MindsBoom service.</td>
+							<td>Until deletion of account</td>
+						</tr>
+						<tr>
+							<td>Transaction data</td>
+							<td>Transaction data is information about transactions made on your account in connection
+								with purchases made in the MindsBoom service.</td>
+							<td>10 years</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+			<article>
+				<h3>How do we protect your personal information?</h3>
+				<p>Protecting your personal information is important to us. All personal information you provide us is
+					stored on secure servers and we have strict procedures to protect against loss, abuse, unauthorized
+					access, change, disclosure or destruction of your personal information. Any payment transactions
+					will be encrypted by industry standard technology and subject to PCI security standards.</p>
+				<p>While we work hard to protect your personal data, we cannot guarantee that our security measures
+					prevent any unauthorized attempts to access, use or disclose personal information. However, we
+					maintain safety and incident plans, including plans for handling any breach of data security, in
+					case of a physical or technical incident to handle this in a timely fashion and limit any adverse
+					effect of such an incident.</p>
+			</article>
+			<article>
+				<h3>How can you access your personal information?</h3>
+				<ol>We understand that sometimes you may need additional information from us about your personal
+					information and how they are processed or that you may want to update or correct the personal
+					information you have given us. Therefore, you include the following rights:
+					<li>- Right to access your personal information: You are entitled to be verified by us if we process
+						personal information about you and, if so, to access your personal information and information.
+					</li>
+					<li>- Right to get corrected personal information: If you find that personal information we treat
+						about you is inaccurate, you have the right to make us correct such personally identifiable
+						information.</li>
+					<li>- Right to delete personal information (the right to be forgotten): Under certain circumstances,
+						for example, if your personal information has been processed illegally or you have withdrawn
+						your consent (if processing of your personal information is based on your consent), you have the
+						right to request and delete your personal information from us.</li>
+					<li>- Right to limit processing: under certain circumstances, i.e. If you contest the accuracy of
+						your personal information or if you object to our legitimate purpose to process your personal
+						information, you are entitled to request that we limit the processing of your personal
+						information until a solution has been found.</li>
+					<li>- Right to protest against processing: under certain circumstances, i.e. if you contest our
+						legitimate interest in processing your personal information, you have the right to object, for
+						reasons relating to your particular situation, against such processing.</li>
+					<li>- Right to data portability: If your personal information is processed automatically based on
+						your consent or in the performance of our contractual relationship, you have the right to
+						request that we provide you with your personal information in a machine-readable format for
+						transmission to another data controller.</li>
+					<li>- Right to lodge a complaint with the supervisory authority: You have the right to file a
+						complaint regarding our processing of your personal information to your supervisory authority.
+					</li>
+
+				</ol>
+				<p>If our processing of your personal information is based on your consent, you have the right to
+					withdraw such consent at any time (however, it will not affect processing based on your consent
+					before withdrawal) by contacting us or by updating the settings in the Service. (where relevant).
+					Please contact us using the contact details below to make a request for your rights. We will make
+					commercially reasonable efforts to respond to your request within 30 days of receiving such a
+					request. If we cannot comply with your request within 30 days, we will let you know about this, the
+					reason for the delay and when we expect to be able to meet your request.
+					Also, be aware that you can change your contact preferences on the “Settings” page if you do not
+					want to receive certain types of information from us. You can also do this at any time by contacting
+					us at MindsBoom.com.</p>
+			</article>
+			<article>
+				<h3>Changes to this Privacy policy</h3>
+				<p>Our Privacy Policy may be amended from time to time. Therefore, be sure to review the latest version
+					of this policy on a regular basis. We will disclose any changes to the Privacy Policy here, and if
+					the changes are significant, we will provide you with a more prominent message such as email. If we
+					change this Privacy Policy in a way that will affect how we use your personal information, we will
+					advise you about the choices you may have as a result of these changes. We will also keep previous
+					versions of this Privacy Policy in an archive for your review.</p>
+			</article>
+			<article>
+				<h3>Contact</h3>
+				<p>We welcome any questions, comments and requests regarding this Privacy Policy, which should be sent
+					to dpo@MindsBoom.com.
+					We are subject to and bound by General Regulation (EU) 20116/679 of the European Parliament and of
+					the Council of 27 April 2016 on Data Protection (“GDPR”), Law No 429 of 31 May 2000 on the
+					processing of personal data (“Personal Data Act”) and Act No. 227 of 22 April 2002 on Information
+					Society Services, including certain aspects of electronic commerce (the “e-commerce Act”).</p>
+			</article>
+
+		</main>
 	</div>
-	<header>
-        <div class="container">
-            <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
-            <div class="search" style="display: flex;">
-                <form id="searchForm">
-                    <input type="search" id="search" placeholder="Search" name="search" value="" maxlength="15">
-                    <input type="submit" value="">
-                    <span>Improve your skills with us</span>
-                </form>
-
-            </div>
-
-
-            <button class="userButton">
-                <svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0"></path></svg>
-                <svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0"/><path d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0"/><path d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0"/></svg>
-            </button>
-            <ul class="headerMenu">
-                <li>
-                    <a href="index.html">Recipes</a>
-                </li><li>
-                <a href="articles.html">Articles</a>
-            </li>
-                <li>
-                    <a href="calculator.html">Calorie Calculator</a>
-                </li>
-            </ul>
-            <div class="login">
-                <form id="authenticationForm" action="index.html?page=" method="post">
-                    <!--<input type="hidden" name="page" value="">-->
-                    <input type="text" id="userName" name="u" value="" placeholder="User" maxlength="22">
-                    <input type="password" id="userPassword" name="c" placeholder="Password" maxlength="12">
-                    <input type="submit" id="authentication" value="Login" name="authentication">
-                    <a href="signUp2.html" id="signIn">Sign Up</a>
-                    <div class="getPremium">
-                        <span class="text">Don’t have an account?</span>
-                        <a href="signUp2.html" class="getAccess">Get access to premium</a>
-                        <a href="cancel.html" class="getAccess out">Cancel Membership</a>
-                    </div>
-                </form>
-            </div>
-
-
-        </div>
-
-    </header>
-	<main class="policy_terms container">
-		<section class="title">
-			<h1 >Privacy Policy</h1>
-		</section>
-		<article>
-			<h3>GENERAL</h3>
-			<p>Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to understand how we collect, use, communicate and disclose personal information. The following outlines our privacy policy.
-				Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.
-				We will collect and use personal information solely with the objective of fulfilling those purposes specified by us and for other compatible purposes, unless we obtain the consent of the individual concerned or as required by law.
-				We will only retain personal information as long as necessary for the fulfillment of those purposes.
-				We will collect personal information by lawful and fair means and, where appropriate, with the knowledge or consent of the individual concerned.
-				Personal data should be relevant to the purposes for which it is to be used, and, to the extent necessary for those purposes, should be accurate, complete, and up-to-date.
-				We will protect personal information by reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification.
-				We will make readily available to customers information about our policies and practices relating to the management of personal information.
-				We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained.</p>
-		</article>
-		<article>
-			<h3>The following applies from February 1st 2021</h3>
-			<p>MindsBoom.com, 4 Charalambou Pettemerides Str, 2042 Strovolos, Nicosia Cyprus, “MindsBoom” “we”, “us” or “ours”) are the controller of your personal information, and we are obligated to protect and respect your privacy and your personal integrity, when your use MindsBoom´s products and services and are browsing our website. This Privacy Policy will help you understand, which personal information we gather, why we gather this information and how we use them. The Privacy Policy will also explain how you can exercise your rights, when you confide us with your personal information. We ask you to read this Privacy Policy carefully and familiarize yourself with the content. If you have any questions, you are welcome to contact us via the contact information, which is found in the bottom of this Privacy Policy.</p>
-		</article>
-		<article>
-			<h3>Which personal information do we gather from you?</h3>
-			<p>When you gain access, sign up, participate in, create an account or in other way uses our services, we can collect personal information about you. The personal information, we collect, depends on the circumstances and the services you use, but can consist of the following:</p>
-		</article>
-		<article>
-			<h3>Personal information which you actively provide us</h3>
-			<ul>
-				<li>Name, e-mail, phone number and address.</li>
-				<li>Gender</li>
-				<li>Birthdate</li>
-				<li>Nationality</li>
-				<li>Payment information</li>
-				<li>User identification, included username for login, password, secret question and the answers of this.</li>
-			</ul>
-		</article>
-		<article>
-			<h3>User generated personal information</h3>
-			<ul>
-				<li>Your purchase references, i.e. if you react on ads or campaigns</li>
-				<li>IP address</li>
-				<li>We can also gather other information about your use of our services through cookies and similar technologies.</li>
-			</ul>
-		</article>
-		<article>
-			<h3>Personal information gathered from third party</h3>
-			<p>We may supplement the information we collect from you with information we receive from third parties and through your use of websites, products or services offered by other companies in our group, MindsBoom.com(“MindsBoom”). This can for example Include information we receive from third parties who provide our payment solutions in order to enable payment when using our Services.</p>
-		</article>
-		<article>
-			<h3>What happens, if you connect your social media services with our service?</h3>
-			<p>You can use your account on social media services, for example. your Facebook account, to connect to some of our Services, such as when you create an account on our Services. If you choose to do so, we collect certain information about your social networking account for the purposes described under “Why do we gather your personal information”. We collect only such personal information as is necessary to perform the Services you request by logging in to your social media account.</p>
-			<p>Please note that this Privacy Policy does not apply when you use the features of your social media account. Instead, your interactions with these features are governed by the privacy policy and other policies of the companies that provide the services.</p>
-		</article>
-		<article>
-			<h3>Why do we gather your personal information?</h3>
-			<p class="noIndentation">Our purpose</p>
-			<p>We process your personal information for the following purposes:</p>
-			<ul class="orderList">A) For the sake of our contractual relationship:
-				<li>To handle payment for your account and to deliver order and invoice information to you</li>
-				<li>To keep track of your purchases in order to ensure that we can provide you with the services that you are entitled to</li>
-				<li>To communicate with you about your subscription, account or purchase of our Services</li>
-				<li>To inform you about changes in our Services</li>
-				<li>To provide offers, news, information, products or services that you request from us</li>
-			</ul>
-			<ul class="orderList">B) For legitimate purposes:
-				<li>To share your information with other companies within the MindsBoom.com when necessary for administrative purposes or for the deliverance of our Services to you</li>
-				<li>To use IP address or other information required to block the malicious use of our Services for the purpose of protecting our Services or otherwise enforcing or using our Terms and Conditions</li>
-				<li>To provide information in a merger and acquisition process for business and strategic management purposes.</li>
-				<li> In order to provide you with offers, news, information, products or services that we believe may be of interest to you, including tailor-made advertising, it relate to your likely interests</li>
-				<li>For analysis and statistical purposes</li>
-				<li>To establish, exercise or defend legal requirements</li>
-			</ul>
-			<ul>C) For marketing purposes:
-				<li>To send you newsletters if you have consented to this, which may also contain offers, news or information related to our Services and / or other products and services in the MindsBoom.com which we believe may be of interest to you. Please note that at any time you can unsubscribe from the newsletter by changing your account preferences on your account page.</li>
-			</ul>
-			<ul>We may also process your personal information if it is necessary for us to comply with a legal obligation or decision of an authority.
-				<li>What legal basis in GDPR is the processing of your personal data based on?</li>
-				<li>The processing of your personal information for the purposes described below:</li>
-				<li>point (A) is required for the conclusion and fulfillment of our obligations following our agreement with you;</li>
-				<li>point (B) is required for our legitimate interests in developing, managing, protecting and marketing our Services as well as from a business and strategic perspective;</li>
-				<li>point (C) will only occur if we have received your consent to such treatment;</li>
-				<li>point (D) is required to comply with legal obligations.</li>
-			</ul>
-		</article>
-		<article>
-			<h3>Is it mandatory for you to provide your personal information?</h3>
-			<p>Personal information that we request from you and which is marked “mandatory” in any way, such as using the * symbol, is required for us to provide our Services (for legal, contractual, administrative, technical or similar reasons ). However, some of your personal information may only be required if you use specific features, enable optional parts of the Service, or request access to certain resources, offers, promotions, programs, or similar from us or our affiliates. This will you be informed about before collecting such personal information from you.</p>
-		</article>
-		<article>
-			<h3>Who can we share your personal information with?</h3>
-			<p>Group transfers</p>
-			<p>We may disclose your personal information to other companies within the MindsBoom.com, if necessary for administrative purposes or for the provision of our Services to you. If you have consented to this, we may also disclose your personal information to companies within the MindsBoom.com for marketing purposes. MindsBoom.com companies that access your personal information follow practices in accordance with this Privacy Policy.</p>
-			<p>The partners, sponsors and advertisers</p>
-			<p>We can share your personal information with our collaborators and sponsors when you participate in surveys and competitions in the Service. In addition, we may also share your personal information with our collaborators and advertisers, but only after you have requested it or assent that you have consented to it.
-				As described, we may also use aggregated information to monitor the use of our Services in order to help us improve and develop our Services, and we may make such aggregated information available to third parties, such as. content partners or advertisers. Aggregated information does not include personal information and can’t be linked to you.</p>
-			<p>Third parties for security or other legitimate reasons
-				We may also disclose your personal information to third parties if we reasonably have reason to believe that disclosure of such personal information is necessary</p>
-			<ul>
-				<li>- In order to comply with applicable legal obligations, including applications, court orders, government requests or search warranties, or otherwise required by law;</li>
-				<li>- To protect our rights or property, or the safety of our customers or employees;</li>
-				<li>- To protect against fraudulent, malicious, misuse, unauthorized or illegal use or subscription to our Services and to protect our network, Services, Devices and Users from such use;</li>
-				<li>- To promote or defend against complaints or legal claims in court, administrative cases and procedures and the like;</li>
-				<li>- To assess credit risk, for reporting purposes or to receive payment for our Services;</li>
-				<li>- As part of merger and aggregation, provided that the potential buyer or seller agrees to respect and process your personal information in accordance with our Privacy Policy;</li>
-				<li>- To external auditors and supervisors</li>
-			</ul>
-		</article>
-		<article>
-			<h3>Access to other MindsBoom sites</h3>
-			<p>To access our Services, you will be prompted to log in with an email address and password or log in via a social media account. When you connect to MindsBoom or any other associated service in our MindsBoom community, you can access the other community sites. In order to make use of the individual websites or Services, you must also accept the general terms and conditions of each site and privacy and cookie policy, which may differ from what is contained here. Your username and password for the Service are used to confirm that you are subscribed to one of our websites and will be used to confirm your identity when you log in to one of our websites. This information will not be disclosed outside the MindsBoom.com with the exceptions listed above in the section “Who can we share your personal information with?”.</p>
-		</article>
-		<article>
-			<h3>Where do we process your personal information?</h3>
-			<p>The personal data we collect from you can be transferred to and stored at a destination outside the European Economic Area (“EEA”), including destinations not covered by a decision of the European Commission on an adequate level of protection for the processing of personal data. It can be shared with other companies within the MindsBoom.com, handled by employees working for us or for one of our suppliers outside the EEA. Such staff may, for example, be involved in fulfilling your order, processing your payment information and performing our support services. We take all reasonable precautions to ensure that your personal information is processed safely and in accordance with this Privacy Policy and has taken appropriate safeguards to protect your personal information. For further information about or a copy of these safeguards, please contact us using the contact information found at the end of this Privacy Policy.</p>
-		</article>
-		<article>
-			<h3>How long do we store your personal data?</h3>
-			<p>We will keep your personal information only as long as we consider it necessary to fulfill our purposes as described above under “Why do we process your personal information”. Then we will delete or, in some cases, anonymize your personal information. We regularly check whether we have saved personal information to be deleted. Since we process your personal information for different purposes, the actual period of personal information will vary.
-				Typically, the following deletion deadlines apply:</p>
-			<table class="mainTable" style="width: 100%;" border="1">
-				<tbody>
-				<tr class="header">
-					<td>Data type</td>
-					<td>What is it?</td>
-					<td>Deletion deadline</td>
-				</tr>
-				<tr>
-					<td>User data</td>
-					<td>User data is information about, how you use the service and which orders you make.</td>
-					<td>Until the account is deleted (is processed in 5 years)</td>
-				</tr>
-				<tr>
-					<td>Customer service data</td>
-					<td>Customer service data is information that you provide when you are in contact with MindsBoom customer service and voice recordings made for educational purposes.</td>
-					<td>3 years (call logs and text dialogs) 1 month (voice recordings)</td>
-				</tr>
-				<tr>
-					<td>Account information</td>
-					<td>Account information is information about your account, such as username, password and purchase information made in the MindsBoom service.</td>
-					<td>Until deletion of account</td>
-				</tr>
-				<tr>
-					<td>Transaction data</td>
-					<td>Transaction data is information about transactions made on your account in connection with purchases made in the MindsBoom service.</td>
-					<td>10 years</td>
-				</tr>
-				</tbody>
-			</table>
-		</article>
-		<article>
-			<h3>How do we protect your personal information?</h3>
-			<p>Protecting your personal information is important to us. All personal information you provide us is stored on secure servers and we have strict procedures to protect against loss, abuse, unauthorized access, change, disclosure or destruction of your personal information. Any payment transactions will be encrypted by industry standard technology and subject to PCI security standards.</p>
-			<p>While we work hard to protect your personal data, we cannot guarantee that our security measures prevent any unauthorized attempts to access, use or disclose personal information. However, we maintain safety and incident plans, including plans for handling any breach of data security, in case of a physical or technical incident to handle this in a timely fashion and limit any adverse effect of such an incident.</p>
-		</article>
-		<article>
-			<h3>How can you access your personal information?</h3>
-			<ol>We understand that sometimes you may need additional information from us about your personal information and how they are processed or that you may want to update or correct the personal information you have given us. Therefore, you include the following rights:
-				<li>- Right to access your personal information: You are entitled to be verified by us if we process personal information about you and, if so, to access your personal information and information.</li>
-				<li>- Right to get corrected personal information: If you find that personal information we treat about you is inaccurate, you have the right to make us correct such personally identifiable information.</li>
-				<li>- Right to delete personal information (the right to be forgotten): Under certain circumstances, for example, if your personal information has been processed illegally or you have withdrawn your consent (if processing of your personal information is based on your consent), you have the right to request and delete your personal information from us.</li>
-				<li>- Right to limit processing: under certain circumstances, i.e. If you contest the accuracy of your personal information or if you object to our legitimate purpose to process your personal information, you are entitled to request that we limit the processing of your personal information until a solution has been found.</li>
-				<li>- Right to protest against processing: under certain circumstances, i.e. if you contest our legitimate interest in processing your personal information, you have the right to object, for reasons relating to your particular situation, against such processing.</li>
-				<li>- Right to data portability: If your personal information is processed automatically based on your consent or in the performance of our contractual relationship, you have the right to request that we provide you with your personal information in a machine-readable format for transmission to another data controller.</li>
-				<li>- Right to lodge a complaint with the supervisory authority: You have the right to file a complaint regarding our processing of your personal information to your supervisory authority.</li>
-
-			</ol>
-			<p>If our processing of your personal information is based on your consent, you have the right to withdraw such consent at any time (however, it will not affect processing based on your consent before withdrawal) by contacting us or by updating the settings in the Service. (where relevant).
-				Please contact us using the contact details below to make a request for your rights. We will make commercially reasonable efforts to respond to your request within 30 days of receiving such a request. If we cannot comply with your request within 30 days, we will let you know about this, the reason for the delay and when we expect to be able to meet your request.
-				Also, be aware that you can change your contact preferences on the “Settings” page if you do not want to receive certain types of information from us. You can also do this at any time by contacting us at MindsBoom.com.</p>
-		</article>
-		<article>
-			<h3>Changes to this Privacy policy</h3>
-			<p>Our Privacy Policy may be amended from time to time. Therefore, be sure to review the latest version of this policy on a regular basis. We will disclose any changes to the Privacy Policy here, and if the changes are significant, we will provide you with a more prominent message such as email. If we change this Privacy Policy in a way that will affect how we use your personal information, we will advise you about the choices you may have as a result of these changes. We will also keep previous versions of this Privacy Policy in an archive for your review.</p>
-		</article>
-		<article>
-			<h3>Contact</h3>
-			<p>We welcome any questions, comments and requests regarding this Privacy Policy, which should be sent to dpo@MindsBoom.com.
-				We are subject to and bound by General Regulation (EU) 20116/679 of the European Parliament and of the Council of 27 April 2016 on Data Protection (“GDPR”), Law No 429 of 31 May 2000 on the processing of personal data (“Personal Data Act”) and Act No. 227 of 22 April 2002 on Information Society Services, including certain aspects of electronic commerce (the “e-commerce Act”).</p>
-		</article>
-
-	</main>
-</div>
-    <footer>
+	<footer>
         <section class="ft-main ">
             <div class="ft-main-item side footer-menu">
                 <h2 class="ft-title">Menu</h2>
                 <ul>
-                    <li><a href="policy.html">Privacy Policy</a></li>
-                    <li><a href="terms.html">Terms &amp; Conditions</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="refund.html">Refund Policy</a></li>
-                    <li><a href="subscriptionterms.html">Subscription Terms</a></li>
-                    <li><a href="contactUs.html">Contact us</a></li>
+                    <li><a href="/?page=policy">Privacy Policy</a></li>
+                    <li><a href="/?page=terms">Terms &amp; Conditions</a></li>
+                    <li><a href="/?page=faq">FAQ</a></li>
+                    <li><a href="/?page=refund">Refund Policy</a></li>
+                    <li><a href="/?page=subscriptionterms">Subscription Terms</a></li>
+                    <li><a href="/?page=contactUs">Contact us</a></li>
                 </ul>
             </div>
 
             <div class="ft-main-item" id="main-item">
-                <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+                <a href="/" class="logo"><img src="imgs/logo.png" alt=""></a>
                 <div class="links">
                     <img src="imgs/mastercard.png">
                     <img src="imgs/securecode.png">
@@ -278,55 +429,57 @@
                 <ul>
                     <li>
 
-                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm94.273438 320.105469c8.339843 8.34375 8.339843 21.824219 0 30.167969-4.160157 4.160156-9.621094 6.25-15.085938 6.25-5.460938 0-10.921875-2.089844-15.082031-6.25l-64.105469-64.109376-64.105469 64.109376c-4.160156 4.160156-9.621093 6.25-15.082031 6.25-5.464844 0-10.925781-2.089844-15.085938-6.25-8.339843-8.34375-8.339843-21.824219 0-30.167969l64.109376-64.105469-64.109376-64.105469c-8.339843-8.34375-8.339843-21.824219 0-30.167969 8.34375-8.339843 21.824219-8.339843 30.167969 0l64.105469 64.109376 64.105469-64.109376c8.34375-8.339843 21.824219-8.339843 30.167969 0 8.339843 8.34375 8.339843 21.824219 0 30.167969l-64.109376 64.105469zm0 0"/></svg>
-                        <a href="./cancel.html">Cancel subscription</a>
+                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm94.273438 320.105469c8.339843 8.34375 8.339843 21.824219 0 30.167969-4.160157 4.160156-9.621094 6.25-15.085938 6.25-5.460938 0-10.921875-2.089844-15.082031-6.25l-64.105469-64.109376-64.105469 64.109376c-4.160156 4.160156-9.621093 6.25-15.082031 6.25-5.464844 0-10.925781-2.089844-15.085938-6.25-8.339843-8.34375-8.339843-21.824219 0-30.167969l64.109376-64.105469-64.109376-64.105469c-8.339843-8.34375-8.339843-21.824219 0-30.167969 8.34375-8.339843 21.824219-8.339843 30.167969 0l64.105469 64.109376 64.105469-64.109376c8.34375-8.339843 21.824219-8.339843 30.167969 0 8.339843 8.34375 8.339843 21.824219 0 30.167969l-64.109376 64.105469zm0 0"></path></svg>
+                        <a href="/?page=cancel">Cancel subscription</a>
                     </li>
-                    <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20"
-								viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 								<g>
 									<g>
-										<polygon points="339.392,258.624 512,367.744 512,144.896 " />
+										<polygon points="339.392,258.624 512,367.744 512,144.896 "></polygon>
 									</g>
 								</g>
 								<g>
 									<g>
-										<polygon points="0,144.896 0,367.744 172.608,258.624 " />
+										<polygon points="0,144.896 0,367.744 172.608,258.624 "></polygon>
 									</g>
 								</g>
 								<g>
 									<g>
-										<path
-                                                d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z" />
+										<path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"></path>
 									</g>
 								</g>
 								<g>
 									<g>
 										<path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
-							L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z" />
+							L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"></path>
 									</g>
 								</g>
 							</svg>
                         <a href="mailto:support@mindsboom.com">support@mindsboom.com</a>
                     </li>
-                    <li><svg id="Capa_1" enable-background="new 0 0 512 512" height="20" viewBox="0 0 512 512"
-                             width="20" xmlns="http://www.w3.org/2000/svg">
+                    <li><svg id="Capa_1" enable-background="new 0 0 512 512" height="20" viewBox="0 0 512 512" width="20" xmlns="http://www.w3.org/2000/svg">
                         <g>
-                            <circle cx="256" cy="165" r="75" />
-                            <path
-                                    d="m256 0c-81.108 0-165 61.714-165 165 0 94.351 147.217 274.08 153.472 281.609 2.856 3.413 7.075 5.391 11.528 5.391s8.672-1.978 11.528-5.391c6.255-7.529 153.472-187.258 153.472-281.609 0-90.981-74.019-165-165-165zm0 270c-57.891 0-105-47.109-105-105s47.109-105 105-105 105 47.109 105 105-47.109 105-105 105z" />
-                            <path
-                                    d="m357.087 377.811c-28.922 41.873-55.961 75.306-66.487 87.973-8.643 10.327-21.241 16.216-34.6 16.216s-25.957-5.889-34.541-16.143c-10.551-12.698-37.608-46.155-66.544-88.046-38.83 13.722-63.915 35.1-63.915 59.189 0 41.42 73.874 75 165 75s165-33.58 165-75c0-24.088-25.084-45.467-63.913-59.189z" />
+                            <circle cx="256" cy="165" r="75"></circle>
+                            <path d="m256 0c-81.108 0-165 61.714-165 165 0 94.351 147.217 274.08 153.472 281.609 2.856 3.413 7.075 5.391 11.528 5.391s8.672-1.978 11.528-5.391c6.255-7.529 153.472-187.258 153.472-281.609 0-90.981-74.019-165-165-165zm0 270c-57.891 0-105-47.109-105-105s47.109-105 105-105 105 47.109 105 105-47.109 105-105 105z"></path>
+                            <path d="m357.087 377.811c-28.922 41.873-55.961 75.306-66.487 87.973-8.643 10.327-21.241 16.216-34.6 16.216s-25.957-5.889-34.541-16.143c-10.551-12.698-37.608-46.155-66.544-88.046-38.83 13.722-63.915 35.1-63.915 59.189 0 41.42 73.874 75 165 75s165-33.58 165-75c0-24.088-25.084-45.467-63.913-59.189z"></path>
                         </g>
-                    </svg> <a href="https://goo.gl/maps/rT5TuPr6xFtg91VT6">4 Charalambou
+                    </svg> <a href="https://goo.gl/maps/rT5TuPr6xFtg91VT6">Mamtic Innovation LTD, 4 Charalambou
                         Pettemerides Str, 2042 Strovolos, Nicosia
                         Cyprus</a></li>
+						<li>
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M17.2969 4.49609L15.2168 2.41797C15.0701 2.27059 14.8957 2.15366 14.7036 2.07389C14.5116 1.99412 14.3056 1.95308 14.0977 1.95313C13.6738 1.95313 13.2754 2.11914 12.9766 2.41797L10.7383 4.65625C10.5909 4.80298 10.474 4.97738 10.3942 5.16944C10.3144 5.3615 10.2734 5.56743 10.2734 5.77539C10.2734 6.19922 10.4395 6.59766 10.7383 6.89648L12.375 8.5332C11.9919 9.37766 11.4592 10.1459 10.8027 10.8008C10.1479 11.4589 9.37975 11.9935 8.53516 12.3789L6.89844 10.7422C6.75171 10.5948 6.57731 10.4779 6.38525 10.3981C6.19319 10.3183 5.98727 10.2773 5.7793 10.2773C5.35547 10.2773 4.95703 10.4434 4.65821 10.7422L2.41797 12.9785C2.27041 13.1255 2.15338 13.3002 2.0736 13.4926C1.99383 13.685 1.95288 13.8913 1.95313 14.0996C1.95313 14.5234 2.11914 14.9219 2.41797 15.2207L4.49414 17.2969C4.97071 17.7754 5.62891 18.0469 6.30469 18.0469C6.44727 18.0469 6.58399 18.0352 6.71875 18.0117C9.35157 17.5781 11.9629 16.1777 14.0703 14.0723C16.1758 11.9688 17.5742 9.35937 18.0137 6.71875C18.1465 5.91211 17.8789 5.08203 17.2969 4.49609V4.49609Z" fill="#A4C74D"/>
+								</svg>
+							<a
+								href="https://api.whatsapp.com/send/?phone=35795158557">Support:&nbsp;+357&nbsp;95158557</a>
+						</li>
                 </ul>
             </div>
         </section>
-        <p>© 2021 mindsboomrecipes.com. All Rights Reserved.</p>
+        <p>© 2022 mindsboomrecipes.com. All Rights Reserved. Powered by Mamtic Innovation LTD.</p>
     </footer>
-<script src="./js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
+	<script src="./js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 </body>
+
 </html>

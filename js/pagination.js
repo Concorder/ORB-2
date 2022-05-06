@@ -145,7 +145,7 @@ var Pagination = {
 * Initialization
 * * * * * * * * * * * * * * * * */
 
-var init = function() {
+/*var init = function() {
     Pagination.Init(document.getElementById('pagination'), {
         size: 10, // pages size
         page: 1,  // selected page
@@ -153,5 +153,5 @@ var init = function() {
     });
 };
 
-document.addEventListener('DOMContentLoaded', init, false);
+document.addEventListener('DOMContentLoaded', init, false);*/
 

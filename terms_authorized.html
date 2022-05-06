@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
@@ -10,149 +11,402 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/common.css">
 </head>
+
 <body>
-<div class="wrapper">
-	<div id="warning">
-		<div class="container">
-				<span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-<g>
-	<path d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z"></path>
-</g>
-</svg>                    Have a Problem? <a href="./contactUs.html">Contact us</a> or <a href="cancel.html">cancel membership</a></span>
+	<div class="wrapper">
+		<div id="warning">
+			<div class="container">
+				<span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+						id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+						xml:space="preserve">
+						<g>
+							<path
+								d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z">
+							</path>
+						</g>
+					</svg> Have a Problem? <a href="./contactUs.html">Contact us</a> or <a href="cancel.html">cancel
+						membership</a></span>
+			</div>
 		</div>
+		<header>
+			<div class="container">
+				<a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+				<div class="search" style="display: flex;">
+					<form id="searchForm">
+						<input type="search" id="search" placeholder="Search" name="search" value="" maxlength="15">
+						<input type="submit" value="">
+						<span>Improve your skills with us</span>
+					</form>
+
+				</div>
+
+
+				<button class="userButton">
+					<svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0">
+						</path>
+					</svg>
+					<svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
+						<path
+							d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0" />
+						<path
+							d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0" />
+					</svg>
+				</button>
+				<ul class="headerMenu">
+					<li>
+						<a href="index.html">Recipes</a>
+					</li>
+					<li>
+						<a href="articles.html">Articles</a>
+					</li>
+					<li>
+						<a href="calculator.html">Calorie Calculator</a>
+					</li>
+				</ul>
+				<div class="login">
+					<form id="authenticationForm" action="index.html?page=" method="post">
+						<!--<input type="hidden" name="page" value="">-->
+						<input type="text" id="userName" name="u" value="" placeholder="User" maxlength="22">
+						<input type="password" id="userPassword" name="c" placeholder="Password" maxlength="12">
+						<input type="submit" id="authentication" value="Login" name="authentication">
+						<a href="signUp2.html" id="signIn">Sign Up</a>
+						<div class="getPremium">
+							<span class="text">Don’t have an account?</span>
+							<a href="signUp2.html" class="getAccess">Get access to premium</a>
+							<a href="cancel.html" class="getAccess out">Cancel Membership</a>
+						</div>
+					</form>
+				</div>
+
+
+			</div>
+
+		</header>
+		<main class="policy_terms terms container">
+			<article>
+				<span>General T&amp;C</span>
+			</article>
+			<article>
+				<h3>General Terms</h3>
+				<p>Welcome to TastyDietRecipe at www.tastydietrecipe.com (“the Website”). Please read these General
+					Terms and Conditions (‘the Terms’) carefully. Please note that Services covered by this agreement
+					may not be cancelled by you other than as detailed in these Terms once the provision of those
+					Services has commenced. If you do not agree with these Terms, you should not proceed any further on
+					this website, with registration or with any attempt to access or use the Services covered by these
+					Terms. Otherwise you agree to use the Services on the Terms set out in this agreement. We may need
+					to vary these Terms from time to time and any such changes will be undertaken in accordance with
+					these Terms. Please check this website regularly as we will notify you here of any such changes.</p>
+			</article>
+			<article>
+				<h3>1. Description and Types of the Services</h3>
+				<p>RecipesForLife (‘Company’, ‘We’) has developed a range of downloadable mobile entertainment content
+					items, on-line as well as wireless, such as but not limited to ringtones, games, wallpapers and
+					SMS-Services (collectively the ‘Services’) to certain compatible mobile devices.</p>
+				<p>The Services are made available to you subject to these Terms. The Services will include access to
+					information, data, text, software, music, sound, photographs, graphics, video, message or other
+					materials. The Services are not intended to supply tax, accounting or legal advice, advice regarding
+					the suitability or profitability of any security or investment, any health or medical advice, or any
+					other advice of a personal or private nature. The Services may also include access to content and
+					services of independent third parties. After proper registration and payment, you will be permitted
+					to download or otherwise use the Services through compatible mobile phones and other compatible
+					devices. Company is offering its Services (a) through an ongoing subscription model (b) as a credit
+					model in which a bundle of credits for a defined number of individual downloads on a renewable
+					(periodic) subscription basis is offered and (c) through a one-off (single) purchase model. Not all
+					models might be available in your country. More specific information with regard to the Services
+					offered in your country can be found on the Website. Unless otherwise expressly indicated, no
+					information presented in the Services or in connection with the Services shall be deemed as a
+					binding offer by Company, but as an invitation for you to order Services. Company will have the
+					right to provide the Services, as it deems best but will try to ensure that the Services are of no
+					lesser standard than as at the date these Terms were entered into. Subject to your right to be
+					reimbursed fees in accordance with these Terms, Company reserves the right to modify or discontinue,
+					temporarily or permanently, the Services provided to you. If the Service is to be permanently
+					discontinued by us we will notify you of this fact.</p>
+			</article>
+			<article>
+				<h3>2. Registration and General Access to the Services</h3>
+				<p>You need to be at least eighteen years old to subscribe to the any of the Services. If you are not
+					the person responsible for paying the mobile phone or internet bill or are under eighteen years of
+					age, please obtain the permission of the bill payer, parents, guardian and/or employers before
+					subscribing and/ or participating in the Services. By subscribing and/or participating in the
+					Services, you (1) acknowledge and confirm that, where required, you have obtained the necessary
+					permission, consent or approval from the bill payer, parents, guardian or employer and (2) accept
+					that you have been offered the opportunity to read and accept the Terms before using the Services.
+					If you do not agree; do not use the Services. When you sign-up for and/or use the Service you
+					acknowledge and confirm that you have accepted these Terms and that you comply with the terms that
+					apply in your situation, as specified above. You agree that each person who requests such Services
+					is your agent with full authority to act on your behalf with respect to such Services. Unless
+					explicitly stated otherwise, any new or additional features those augment or enhance the current
+					Services, including the release of new Services, shall be subject to the Terms.</p>
+			</article>
+			<article>
+				<h3>3. Obligation to Register; Personal Data</h3>
+				<p>Upon your request, Company may register you as a user and provide you with access to the Services by
+					allocating you a personal username and password. You are solely responsible for maintaining the
+					confidentiality of any possible password and account. Company may need to change usernames allocated
+					to certain aspects of its Services and reserves the right to do so (you will be informed if this is
+					necessary). In order to guarantee safe use of the Services, as well as payment of the applicable
+					fees, you will guarantee that at all times the personal information (hereinafter to be referred to
+					as the ‘Personal Data’) provided on the registration form is correct and complete. If Company, in
+					its sole discretion, believes that the Personal Data is not accurate or complete, Company is
+					entitled to suspend or terminate your account and to withhold both current and future use of the
+					Services, or any component of it. You are responsible for maintaining the secrecy of any passwords
+					and/or accounts issued to you by Company, and you are fully liable for all actions carried out
+					involving the use of your password or account. You undertake to contact Company if you notice or
+					suspect that unauthorized use has been made of your password or account, or that security or
+					protection of the Personal Data is no longer guaranteed for any other reason. Company cannot and
+					will not be liable for any loss or damage arising from your failure to comply with this Section.
+					Company may provide you with access to some Services without you registering as a user, such as
+					sign-up via your mobile phone for the Services. In each such case your identification is based on
+					means of identification that we deem appropriate, such as your mobile telephone number. You agree
+					that such information may be collected and disclosed to Company and used in accordance with the
+					Section “Privacy and Processing Data” of these Terms.</p>
+			</article>
+			<article>
+				<h3>4. Access to the Ongoing Subscription Model</h3>
+				<p>The ongoing subscription shall begin when Company, upon your request, has provided you with access to
+					the Services. Access to the Services can be provided by delivering to you informative or
+					entertainment Services (e.g. by delivering downloadable content (such as a wallpaper, a ringtone or
+					a mobile game)), by otherwise providing access to the Services (e.g. to your mobile number) or by
+					enabling you to download the Services (e.g. by delivering a WAP-Push link or link in a text message
+					for download or otherwise use of the Services on Company website). All subscription agreements shall
+					remain in effect until terminated and/or cancelled by you or Company in accordance with the terms
+					set out herein. Agreements for the Services of Company and independent third parties which are made
+					available through the Services shall begin when Company or the third party has accepted your order
+					for the same or has provided you with the Services pursuant to your order. The agreement will remain
+					in effect until terminated by you or Company in accordance with the terms set out herein.</p>
+			</article>
+			<article>
+				<h3>5. Access to the Credit Model</h3>
+				<p>In the credit model offered by Company, a bundle of credits for a defined number of individual
+					downloads is provided on a renewable subscription basis. The credit model is an ongoing subscription
+					and shall begin when Company has provided the bundle of credits to you. Applicable fees and credits
+					will be communicated to you on the Website and through our Services. In the credit model, a defined
+					number of credits will be provided which entitle you to download, receive and/or access that defined
+					number of available downloads. The subscription period is depending on the type of the subscription
+					contract offered in your country. The subscription contract and the subscription period will be
+					renewed each period as applicable and a new subscription fee shall become due for the new
+					subscription period. The subscription contract shall remain in effect until terminated and/or
+					cancelled by you or Company according to the terms set out herein. After entering into your
+					subscription agreement and upon payment of the applicable subscription fee for the relevant
+					subscription period Company will transfer the bundle of download credits to your account. The
+					periodic subscription fee shall become due every period your subscription agreement is valid
+					irrespective of whether or not you actually download any Services during any particular subscription
+					period; the consideration for the periodic subscription fee shall solely be the periodic provision
+					of the right to download, receive and/or access downloadable Services. The number of credits for
+					downloads shall be reduced by actual downloaded Services. Credits cannot be redeemed for cash, are
+					not transferable and are depending on the type of subscription agreement you ordered. If you do not
+					use/redeem all your credits within the subscription period the unused credits will (a) be rolled
+					over into the next subscription period and remain in your account until used/redeemed or until
+					expiration or termination of your subscription agreement or, if sooner, (b) expire every 90 days
+					after assignment. Credits can only be used to download the Services offered by Company.</p>
+			</article>
+			<article>
+				<h3>6. Access to the One-Off (Single) Purchase Model</h3>
+				<p>The one-off (single) purchase model includes that you can select any one-off Services you would like
+					to purchase. The possibility to download, receive and/or access the Services is offered for a flat
+					fee, as communicated on our website or otherwise. There is no subscription and there are no
+					recurring charges involved.</p>
+			</article>
+			<article>
+				<h3>7. Charges</h3>
+				<p>The fees for the Services are available at the Company website (e.g. under ‘F.A.Q.’). The periodic
+					fee shall be charged for every subscription period the agreement is in effect. You shall pay Company
+					for the Services and the use thereof in accordance with the price lists in force at the time of your
+					order. Unless otherwise indicated, the fees will be billed on your wireless phone bill or deducted
+					from your balance. Additional taxes and separate wireless provider text
+					message/WAP/GPRS/UMTS/bandwith fees may apply to your use of the Services. Where applicable, the
+					charges can also be paid by using credits, with your credit card, by bank transfer or through your
+					user account. The different payment methods are specified during the order process for the Services
+					you chose. Company may also invoice you for the charges of third parties whose services are
+					available through the Services if this has been agreed upon with said third party. Such charges
+					shall be invoiced in accordance with the fees of such third parties. All fees, including fees for
+					existing subscription agreements, are subject to change upon notice from Company. Company will
+					provide you with reasonable notice of such change. If you do not accept the new fees (which will be
+					applicable on a prospective basis only), you may cancel your subscription and/or your account
+					effective immediately upon termination.</p>
+			</article>
+			<article>
+				<h3>8. Your Responsibilities</h3>
+				<p>In order to use the Services, you must have a mobile communications subscription with a participating
+					wireless service provider or otherwise have access to a (mobile) communications network for which
+					Company makes the Services available as well as any wireless service provider services necessary to
+					download content and/or to receive SMS messages, and pay any (wireless service provider) service
+					fees associated with any such access. You must have a working internet connection installed on your
+					mobile phone (e.g. WAP, GPRS, UMTS). Your mobile phone must be capable of receiving text messages,
+					ringtones, mobile games, video and/or color graphics. In addition, your mobile phone needs to be
+					Internet-enabled to download ringtones, mobile games, video, color graphics or other downloadable
+					Services. Company will not give refunds if you download or attempt to download Services to
+					incompatible phones or wireless service providers or if your mobile phone is not Internet-enabled.
+					For instructions, please check your wireless service provider's website or your mobile phone
+					manufacturers’ website. In addition, you must provide all equipment and software necessary to
+					connect to the Services. You are responsible for ensuring that the equipment and/or software do not
+					disturb or interfere with Company's operations. Company shall have the right to immediately
+					disconnect from the Services any equipment or software causing interference and to immediately
+					terminate this Agreement. Services are for personal use only and may not be assigned or transferred
+					to any other mobile phone number, person or entity, nor may you provide any other person or entity
+					access to your Services, either directly or indirectly. Any conduct or activity that we believe
+					restricts or inhibits any other user from accessing, using, or enjoying the Services will not be
+					permitted. You agree to use the Services only for lawful purposes.</p>
+			</article>
+			<article>
+				<h3>9. Intellectual Property Rights</h3>
+				<p>Except as otherwise set forth herein, all right, title and interest in and to any intellectual
+					property, proprietary rights or other rights related to intangible property which are used,
+					developed, comprising, embodied in, or practiced in connection with any of the Services (‘Company
+					Intellectual Property Rights’) are owned by Company or its licensors and you agree to make no claim
+					of interest in or ownership of any such Company Intellectual Property Rights. Company hereby grants,
+					and you hereby accept, a personal, limited, non-transferable, non-exclusive, revocable and
+					non-assignable license and permission to download and use the Services on a designated compatible
+					mobile device solely for your own personal, non-commercial use. You further acknowledge and agree
+					that you may not amend, rent, rent out, lend, lease, borrow, loan, sell, distribute, create or
+					generate the Services and/or the Company Intellectual Property rights except in the event that
+					Company has given you explicit written permission to do so. You acknowledge that no title to the
+					Company Intellectual Property Rights is transferred to you, and that you do not obtain any rights,
+					express or implied, in the Services, other than the rights expressly granted in these Terms. You
+					acknowledge that all marks that appear throughout the Services belong to Company, or the respective
+					owners of such marks, and are protected by domestic and international trademark and copyright laws.
+					Any use of any of the marks appearing throughout the Services without the express written consent of
+					Company or the owner of the mark, as appropriate, is strictly prohibited. 'TastyDietRecipe' is a
+					trademark of Company. The Services may be downloaded only once and may not be transferred, sold,
+					distributed, displayed, performed, copied, modified or used in any way, in whole or in part, other
+					than as contemplated by these Terms. You guarantee that you will only use the interface provided by
+					Company in order to access the Services. You agree that the right holders, which license their
+					musical and other content items to Company for use in the Services, are comprehended in this sense
+					by the scope of protection of this agreement, and that they are themselves authorized to enforce the
+					provisions of this agreement, which relate directly to their content. You know that the use of
+					musical pieces is subject to the terms of use as set out below. You may not allow a third party to
+					copy, modify, reproduce, transfer, distribute or use in any other manner pieces of music, which you
+					use or receive, outside the limits narrowly allowed by copyright. You oblige yourself to immediately
+					inform Company of any such non-authorized use. All rights, which are not expressly granted to you by
+					this agreement, are reserved by Company and/or its licensors.</p>
+			</article>
+			<article>
+				<h3>10. Agreements for Services of Third Parties/Transactions with Advertisers and/or Sponsors</h3>
+				<p>The Services may also include access to Services of independent third parties either directly or via
+					links to sites operated by such third parties. Where reasonably possible, Company shall indicate the
+					Services as third party content. Even though they may be co-branded with Company and therefore
+					include Company's trademarks, the agreements for Services provided by third parties are concluded
+					directly between you and the third party. We may also use advertisers and promoters to help offset
+					the costs of our Services. As a condition to using these Services, you agree that we may display
+					advertisements and other promotions on our website and deliver advertisements and promotions in
+					connection with our Services. You also agree that you will not attempt to block or otherwise
+					interfere with such advertisements or promotions. Some jurisdictions do not allow us to send text
+					messages advertisements without your express consent, so the foregoing may not apply to you. We will
+					not share your Personal Data with third parties without your consent. The inclusion of any
+					advertising or promotion on our website or in our Services does not constitute any endorsement by
+					Company of such content, product, service or company. We try to ensure that any advertisements or
+					promotions are appropriate for our users. You have a right to ask us at anytime not to contact you
+					by way of direct marketing. Company shall not be a party to, or in any way responsible for, any
+					transaction concerning services made available from such third parties or for any content or
+					information presented in connection with any services of third parties.</p>
+			</article>
+			<article>
+				<h3>11. Privacy and Processing Data</h3>
+				<p>You acknowledge that Company collects and processes ‘personal information’ (i.e. Information that
+					could be used to contact you or that you provided to us, such as full name, postal address, gender,
+					age, opinions, estimates, knowledge, phone number or e-mail address), ‘financial information’ (i.e.
+					credit card numbers, bank account information or passwords) or ‘demographic and usage information’
+					(i.e. Information that you submit, or that we collect, that is neither personal information nor
+					financial information but necessary for the proper functioning and billing of our Services, such as
+					date regarding the start and the end and the extent of your usage of the Services), subject to the
+					rest of this paragraph in order to operate this website (together referred to as ‘Personal Data’)
+					and subject to the terms set out in the Privacy Statement which is an integral part of these General
+					Terms and Conditions. Company attaches great value to the privacy of its users; however we may pass
+					on your Personal Data to your wireless service provider or gateway service provider to secure
+					collection of fees. Further, we may pass on your Personal Data to governmental agencies, including
+					but not limited to courts and district attorneys' offices, for legal proceedings and the prevention
+					of crimes. Personal Data collected by Company may be stored and processed in the Netherlands or any
+					other country in which Company or its agents maintain facilities. By using the Services, you consent
+					to any such transfer of Personal Data outside of your country. Your Personal Data will be deleted no
+					later than six months after termination of your subscription. Company may store your Personal Data
+					beyond this date if that is required by law or agreement. Company will maintain procedures
+					consistent with applicable laws for individuals to gain access to their Personal Data and, when
+					appropriate and upon request, correct or delete their Personal Data.</p>
+			</article>
+			<article>
+				<h3>12. Disclaimer of Warranties and Limitation of Liabilities</h3>
+				<p>Company, its directors, officers, employees, suppliers and agents (‘the Provider Parties’) disclaim
+					any responsibility for any harm resulting from your use of the Services. You expressly understand
+					and agree that the Services are provided on an ‘as is’ and ‘as available’ basis with no warranties
+					whatsoever. The Provider Parties expressly disclaim to the fullest extent permitted by law all
+					warranties, either express, implied, statutory or otherwise, with respect to the Services,
+					including, without limitation, the implied warranties of title, merchantability, fitness for a
+					particular purpose, and non-infringement of proprietary rights. The Provider Parties disclaim any
+					warranties regarding the security, reliability, timeliness, and performance of the Services. The
+					Provider Parties do not warrant that the services will meet your requirements or that the operation
+					of the Services will be uninterrupted and error free. No advice or information, whether oral or
+					written, obtained by you from us or through our Services shall create any warranty not expressly
+					made herein. You may not rely on any such information or advice. You understand and agree that you
+					download and/or use the Services, the content, software and websites at your own discretion and risk
+					and that you will be solely responsible for any damages to your computer system, mobile phone or
+					loss of data that result from using the Services. Except in jurisdictions where such provisions are
+					restricted, you agree that Company's entire liability to you or any third person, and your or any
+					third person's exclusive remedy, in law, in equity, or otherwise, with respect to the Services
+					provided under this agreement and/or for any breach of this agreement is solely limited to the
+					amount you paid for such Services during the term of this agreement. Except in jurisdictions where
+					such provisions are restricted, the Providing Parties shall not be liable for any direct, indirect,
+					incidental, special, exemplary, punitive, third party or consequential (including damages for loss
+					of business profits, business interruption, loss of business information and the like) arising out
+					of your use, misuse or inability to use the Services, the content, software and website, even if
+					Company has been advised of the possibility of such damages, to the extent that a country does not
+					permit the exclusion or limitation of liability as set forth herein, Company's liability is limited
+					to the extent permitted by law in such country.</p>
+			</article>
+			<article>
+				<h3>13. Indemnification</h3>
+				<p>You agree to indemnify and hold Company and its parents, members, subsidiaries, affiliates, service
+					providers, contractors, agents, licensors, officers, directors, shareholders and employees, harmless
+					from any loss, liability, claim, lawsuit or demand, including reasonable attorney's fees, made by
+					any third party due to or arising out of or in connection with (a) your use of the Services, and (b)
+					the breach by you of your representations and warranties set forth in these Terms. You shall pay any
+					and all costs, damages and expenses, including, without limitation, reasonable attorneys' fees and
+					costs awarded against or otherwise incurred by Company in connection with or arising from any such
+					claim, lawsuit, action, demand or other proceeding.</p>
+			</article>
+			<article>
+				<h3>14. Termination and Cancellation of Services; Right to withdraw</h3>
+				<p>To unsubscribe to the Services by text message, text STOP to the number from which you are receiving
+					the text messages or send an email. In the first situation the termination shall become effective
+					immediately upon receipt of the termination request. In the latter cases, cancellation shall only
+					become effective within 48 hours upon receipt of the termination request. In the event that you have
+					multiple subscriptions, 'STOP' will cancel all active subscriptions. Charges may still appear on
+					your wireless service provider bill the following month as it bills retrospectively.</p>
+			</article>
+			<article>
+				<p>You agree that Company, at its sole discretion, may at any time terminate your use of the Services
+					and remove and discard any content within such Services, (1) if Company believes that you have
+					violated or acted inconsistently with these Terms; (2) you fail to pay the charges within the period
+					stated in your mobile phone subscription with your operator; (3) Company is expressly requested to
+					do so by the operator or (4) any law, regulations, directives or governmental action renders all or
+					any portion of the Services is unlawful or impractical. You agree that Company shall not be liable
+					to you or any third party for any termination of your access to the Services. If you cancel your
+					account or subscription for any reason, Company will not refund any of your fees paid to date,
+					except as explicitly provided in any of the provisions of these Terms.</p>
+			</article>
+		</main>
 	</div>
-	<header>
-        <div class="container">
-            <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
-            <div class="search" style="display: flex;">
-                <form id="searchForm">
-                    <input type="search" id="search" placeholder="Search" name="search" value="" maxlength="15">
-                    <input type="submit" value="">
-                    <span>Improve your skills with us</span>
-                </form>
-
-            </div>
-
-
-            <button class="userButton">
-                <svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0"></path></svg>
-                <svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0"/><path d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0"/><path d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0"/></svg>
-            </button>
-            <ul class="headerMenu">
-                <li>
-                    <a href="index.html">Recipes</a>
-                </li><li>
-                <a href="articles.html">Articles</a>
-            </li>
-                <li>
-                    <a href="calculator.html">Calorie Calculator</a>
-                </li>
-            </ul>
-            <div class="login">
-                <form id="authenticationForm" action="index.html?page=" method="post">
-                    <!--<input type="hidden" name="page" value="">-->
-                    <input type="text" id="userName" name="u" value="" placeholder="User" maxlength="22">
-                    <input type="password" id="userPassword" name="c" placeholder="Password" maxlength="12">
-                    <input type="submit" id="authentication" value="Login" name="authentication">
-                    <a href="signUp2.html" id="signIn">Sign Up</a>
-                    <div class="getPremium">
-                        <span class="text">Don’t have an account?</span>
-                        <a href="signUp2.html" class="getAccess">Get access to premium</a>
-                        <a href="cancel.html" class="getAccess out">Cancel Membership</a>
-                    </div>
-                </form>
-            </div>
-
-
-        </div>
-
-    </header>
-	<main class="policy_terms terms container">
-		<article>
-			<span>General T&amp;C</span>
-		</article>
-		<article>
-			<h3>General Terms</h3>
-			<p>Welcome to TastyDietRecipe at www.tastydietrecipe.com (“the Website”). Please read these General Terms and Conditions (‘the Terms’) carefully. Please note that Services covered by this agreement may not be cancelled by you other than as detailed in these Terms once the provision of those Services has commenced. If you do not agree with these Terms, you should not proceed any further on this website, with registration or with any attempt to access or use the Services covered by these Terms. Otherwise you agree to use the Services on the Terms set out in this agreement. We may need to vary these Terms from time to time and any such changes will be undertaken in accordance with these Terms. Please check this website regularly as we will notify you here of any such changes.</p>
-		</article>
-		<article>
-			<h3>1. Description and Types of the Services</h3>
-			<p>RecipesForLife (‘Company’, ‘We’) has developed a range of downloadable mobile entertainment content items, on-line as well as wireless, such as but not limited to ringtones, games, wallpapers and SMS-Services (collectively the ‘Services’) to certain compatible mobile devices.</p>
-			<p>The Services are made available to you subject to these Terms. The Services will include access to information, data, text, software, music, sound, photographs, graphics, video, message or other materials. The Services are not intended to supply tax, accounting or legal advice, advice regarding the suitability or profitability of any security or investment, any health or medical advice, or any other advice of a personal or private nature. The Services may also include access to content and services of independent third parties. After proper registration and payment, you will be permitted to download or otherwise use the Services through compatible mobile phones and other compatible devices. Company is offering its Services (a) through an ongoing subscription model (b) as a credit model in which a bundle of credits for a defined number of individual downloads on a renewable (periodic) subscription basis is offered and (c) through a one-off (single) purchase model. Not all models might be available in your country. More specific information with regard to the Services offered in your country can be found on the Website. Unless otherwise expressly indicated, no information presented in the Services or in connection with the Services shall be deemed as a binding offer by Company, but as an invitation for you to order Services. Company will have the right to provide the Services, as it deems best but will try to ensure that the Services are of no lesser standard than as at the date these Terms were entered into. Subject to your right to be reimbursed fees in accordance with these Terms, Company reserves the right to modify or discontinue, temporarily or permanently, the Services provided to you. If the Service is to be permanently discontinued by us we will notify you of this fact.</p>
-		</article>
-		<article>
-			<h3>2. Registration and General Access to the Services</h3>
-			<p>You need to be at least eighteen years old to subscribe to the any of the Services. If you are not the person responsible for paying the mobile phone or internet bill or are under eighteen years of age, please obtain the permission of the bill payer, parents, guardian and/or employers before subscribing and/ or participating in the Services. By subscribing and/or participating in the Services, you (1) acknowledge and confirm that, where required, you have obtained the necessary permission, consent or approval from the bill payer, parents, guardian or employer and (2) accept that you have been offered the opportunity to read and accept the Terms before using the Services. If you do not agree; do not use the Services. When you sign-up for and/or use the Service you acknowledge and confirm that you have accepted these Terms and that you comply with the terms that apply in your situation, as specified above. You agree that each person who requests such Services is your agent with full authority to act on your behalf with respect to such Services. Unless explicitly stated otherwise, any new or additional features those augment or enhance the current Services, including the release of new Services, shall be subject to the Terms.</p>
-		</article>
-		<article>
-			<h3>3. Obligation to Register; Personal Data</h3>
-			<p>Upon your request, Company may register you as a user and provide you with access to the Services by allocating you a personal username and password. You are solely responsible for maintaining the confidentiality of any possible password and account. Company may need to change usernames allocated to certain aspects of its Services and reserves the right to do so (you will be informed if this is necessary). In order to guarantee safe use of the Services, as well as payment of the applicable fees, you will guarantee that at all times the personal information (hereinafter to be referred to as the ‘Personal Data’) provided on the registration form is correct and complete. If Company, in its sole discretion, believes that the Personal Data is not accurate or complete, Company is entitled to suspend or terminate your account and to withhold both current and future use of the Services, or any component of it. You are responsible for maintaining the secrecy of any passwords and/or accounts issued to you by Company, and you are fully liable for all actions carried out involving the use of your password or account. You undertake to contact Company if you notice or suspect that unauthorized use has been made of your password or account, or that security or protection of the Personal Data is no longer guaranteed for any other reason. Company cannot and will not be liable for any loss or damage arising from your failure to comply with this Section. Company may provide you with access to some Services without you registering as a user, such as sign-up via your mobile phone for the Services. In each such case your identification is based on means of identification that we deem appropriate, such as your mobile telephone number. You agree that such information may be collected and disclosed to Company and used in accordance with the Section “Privacy and Processing Data” of these Terms.</p>
-		</article>
-		<article>
-			<h3>4. Access to the Ongoing Subscription Model</h3>
-			<p>The ongoing subscription shall begin when Company, upon your request, has provided you with access to the Services. Access to the Services can be provided by delivering to you informative or entertainment Services (e.g. by delivering downloadable content (such as a wallpaper, a ringtone or a mobile game)), by otherwise providing access to the Services (e.g. to your mobile number) or by enabling you to download the Services (e.g. by delivering a WAP-Push link or link in a text message for download or otherwise use of the Services on Company website). All subscription agreements shall remain in effect until terminated and/or cancelled by you or Company in accordance with the terms set out herein. Agreements for the Services of Company and independent third parties which are made available through the Services shall begin when Company or the third party has accepted your order for the same or has provided you with the Services pursuant to your order. The agreement will remain in effect until terminated by you or Company in accordance with the terms set out herein.</p>
-		</article>
-		<article>
-			<h3>5. Access to the Credit Model</h3>
-			<p>In the credit model offered by Company, a bundle of credits for a defined number of individual downloads is provided on a renewable subscription basis. The credit model is an ongoing subscription and shall begin when Company has provided the bundle of credits to you. Applicable fees and credits will be communicated to you on the Website and through our Services. In the credit model, a defined number of credits will be provided which entitle you to download, receive and/or access that defined number of available downloads. The subscription period is depending on the type of the subscription contract offered in your country. The subscription contract and the subscription period will be renewed each period as applicable and a new subscription fee shall become due for the new subscription period. The subscription contract shall remain in effect until terminated and/or cancelled by you or Company according to the terms set out herein. After entering into your subscription agreement and upon payment of the applicable subscription fee for the relevant subscription period Company will transfer the bundle of download credits to your account. The periodic subscription fee shall become due every period your subscription agreement is valid irrespective of whether or not you actually download any Services during any particular subscription period; the consideration for the periodic subscription fee shall solely be the periodic provision of the right to download, receive and/or access downloadable Services. The number of credits for downloads shall be reduced by actual downloaded Services. Credits cannot be redeemed for cash, are not transferable and are depending on the type of subscription agreement you ordered. If you do not use/redeem all your credits within the subscription period the unused credits will (a) be rolled over into the next subscription period and remain in your account until used/redeemed or until expiration or termination of your subscription agreement or, if sooner, (b) expire every 90 days after assignment. Credits can only be used to download the Services offered by Company.</p>
-		</article>
-		<article>
-			<h3>6. Access to the One-Off (Single) Purchase Model</h3>
-			<p>The one-off (single) purchase model includes that you can select any one-off Services you would like to purchase. The possibility to download, receive and/or access the Services is offered for a flat fee, as communicated on our website or otherwise. There is no subscription and there are no recurring charges involved.</p>
-		</article>
-		<article>
-			<h3>7. Charges</h3>
-			<p>The fees for the Services are available at the Company website (e.g. under ‘F.A.Q.’). The periodic fee shall be charged for every subscription period the agreement is in effect. You shall pay Company for the Services and the use thereof in accordance with the price lists in force at the time of your order. Unless otherwise indicated, the fees will be billed on your wireless phone bill or deducted from your balance. Additional taxes and separate wireless provider text message/WAP/GPRS/UMTS/bandwith fees may apply to your use of the Services. Where applicable, the charges can also be paid by using credits, with your credit card, by bank transfer or through your user account. The different payment methods are specified during the order process for the Services you chose. Company may also invoice you for the charges of third parties whose services are available through the Services if this has been agreed upon with said third party. Such charges shall be invoiced in accordance with the fees of such third parties. All fees, including fees for existing subscription agreements, are subject to change upon notice from Company. Company will provide you with reasonable notice of such change. If you do not accept the new fees (which will be applicable on a prospective basis only), you may cancel your subscription and/or your account effective immediately upon termination.</p>
-		</article>
-		<article>
-			<h3>8. Your Responsibilities</h3>
-			<p>In order to use the Services, you must have a mobile communications subscription with a participating wireless service provider or otherwise have access to a (mobile) communications network for which Company makes the Services available as well as any wireless service provider services necessary to download content and/or to receive SMS messages, and pay any (wireless service provider) service fees associated with any such access. You must have a working internet connection installed on your mobile phone (e.g. WAP, GPRS, UMTS). Your mobile phone must be capable of receiving text messages, ringtones, mobile games, video and/or color graphics. In addition, your mobile phone needs to be Internet-enabled to download ringtones, mobile games, video, color graphics or other downloadable Services. Company will not give refunds if you download or attempt to download Services to incompatible phones or wireless service providers or if your mobile phone is not Internet-enabled. For instructions, please check your wireless service provider's website or your mobile phone manufacturers’ website. In addition, you must provide all equipment and software necessary to connect to the Services. You are responsible for ensuring that the equipment and/or software do not disturb or interfere with Company's operations. Company shall have the right to immediately disconnect from the Services any equipment or software causing interference and to immediately terminate this Agreement. Services are for personal use only and may not be assigned or transferred to any other mobile phone number, person or entity, nor may you provide any other person or entity access to your Services, either directly or indirectly. Any conduct or activity that we believe restricts or inhibits any other user from accessing, using, or enjoying the Services will not be permitted. You agree to use the Services only for lawful purposes.</p>
-		</article>
-		<article>
-			<h3>9. Intellectual Property Rights</h3>
-			<p>Except as otherwise set forth herein, all right, title and interest in and to any intellectual property, proprietary rights or other rights related to intangible property which are used, developed, comprising, embodied in, or practiced in connection with any of the Services (‘Company Intellectual Property Rights’) are owned by Company or its licensors and you agree to make no claim of interest in or ownership of any such Company Intellectual Property Rights. Company hereby grants, and you hereby accept, a personal, limited, non-transferable, non-exclusive, revocable and non-assignable license and permission to download and use the Services on a designated compatible mobile device solely for your own personal, non-commercial use. You further acknowledge and agree that you may not amend, rent, rent out, lend, lease, borrow, loan, sell, distribute, create or generate the Services and/or the Company Intellectual Property rights except in the event that Company has given you explicit written permission to do so. You acknowledge that no title to the Company Intellectual Property Rights is transferred to you, and that you do not obtain any rights, express or implied, in the Services, other than the rights expressly granted in these Terms. You acknowledge that all marks that appear throughout the Services belong to Company, or the respective owners of such marks, and are protected by domestic and international trademark and copyright laws. Any use of any of the marks appearing throughout the Services without the express written consent of Company or the owner of the mark, as appropriate, is strictly prohibited. 'TastyDietRecipe' is a trademark of Company. The Services may be downloaded only once and may not be transferred, sold, distributed, displayed, performed, copied, modified or used in any way, in whole or in part, other than as contemplated by these Terms. You guarantee that you will only use the interface provided by Company in order to access the Services. You agree that the right holders, which license their musical and other content items to Company for use in the Services, are comprehended in this sense by the scope of protection of this agreement, and that they are themselves authorized to enforce the provisions of this agreement, which relate directly to their content. You know that the use of musical pieces is subject to the terms of use as set out below. You may not allow a third party to copy, modify, reproduce, transfer, distribute or use in any other manner pieces of music, which you use or receive, outside the limits narrowly allowed by copyright. You oblige yourself to immediately inform Company of any such non-authorized use. All rights, which are not expressly granted to you by this agreement, are reserved by Company and/or its licensors.</p>
-		</article>
-		<article>
-			<h3>10. Agreements for Services of Third Parties/Transactions with Advertisers and/or Sponsors</h3>
-			<p>The Services may also include access to Services of independent third parties either directly or via links to sites operated by such third parties. Where reasonably possible, Company shall indicate the Services as third party content. Even though they may be co-branded with Company and therefore include Company's trademarks, the agreements for Services provided by third parties are concluded directly between you and the third party. We may also use advertisers and promoters to help offset the costs of our Services. As a condition to using these Services, you agree that we may display advertisements and other promotions on our website and deliver advertisements and promotions in connection with our Services. You also agree that you will not attempt to block or otherwise interfere with such advertisements or promotions. Some jurisdictions do not allow us to send text messages advertisements without your express consent, so the foregoing may not apply to you. We will not share your Personal Data with third parties without your consent. The inclusion of any advertising or promotion on our website or in our Services does not constitute any endorsement by Company of such content, product, service or company. We try to ensure that any advertisements or promotions are appropriate for our users. You have a right to ask us at anytime not to contact you by way of direct marketing. Company shall not be a party to, or in any way responsible for, any transaction concerning services made available from such third parties or for any content or information presented in connection with any services of third parties.</p>
-		</article>
-		<article>
-			<h3>11. Privacy and Processing Data</h3>
-			<p>You acknowledge that Company collects and processes ‘personal information’ (i.e. Information that could be used to contact you or that you provided to us, such as full name, postal address, gender, age, opinions, estimates, knowledge, phone number or e-mail address), ‘financial information’ (i.e. credit card numbers, bank account information or passwords) or ‘demographic and usage information’ (i.e. Information that you submit, or that we collect, that is neither personal information nor financial information but necessary for the proper functioning and billing of our Services, such as date regarding the start and the end and the extent of your usage of the Services), subject to the rest of this paragraph in order to operate this website (together referred to as ‘Personal Data’) and subject to the terms set out in the Privacy Statement which is an integral part of these General Terms and Conditions. Company attaches great value to the privacy of its users; however we may pass on your Personal Data to your wireless service provider or gateway service provider to secure collection of fees. Further, we may pass on your Personal Data to governmental agencies, including but not limited to courts and district attorneys' offices, for legal proceedings and the prevention of crimes. Personal Data collected by Company may be stored and processed in the Netherlands or any other country in which Company or its agents maintain facilities. By using the Services, you consent to any such transfer of Personal Data outside of your country. Your Personal Data will be deleted no later than six months after termination of your subscription. Company may store your Personal Data beyond this date if that is required by law or agreement. Company will maintain procedures consistent with applicable laws for individuals to gain access to their Personal Data and, when appropriate and upon request, correct or delete their Personal Data.</p>
-		</article>
-		<article>
-			<h3>12. Disclaimer of Warranties and Limitation of Liabilities</h3>
-			<p>Company, its directors, officers, employees, suppliers and agents (‘the Provider Parties’) disclaim any responsibility for any harm resulting from your use of the Services. You expressly understand and agree that the Services are provided on an ‘as is’ and ‘as available’ basis with no warranties whatsoever. The Provider Parties expressly disclaim to the fullest extent permitted by law all warranties, either express, implied, statutory or otherwise, with respect to the Services, including, without limitation, the implied warranties of title, merchantability, fitness for a particular purpose, and non-infringement of proprietary rights. The Provider Parties disclaim any warranties regarding the security, reliability, timeliness, and performance of the Services. The Provider Parties do not warrant that the services will meet your requirements or that the operation of the Services will be uninterrupted and error free. No advice or information, whether oral or written, obtained by you from us or through our Services shall create any warranty not expressly made herein. You may not rely on any such information or advice. You understand and agree that you download and/or use the Services, the content, software and websites at your own discretion and risk and that you will be solely responsible for any damages to your computer system, mobile phone or loss of data that result from using the Services. Except in jurisdictions where such provisions are restricted, you agree that Company's entire liability to you or any third person, and your or any third person's exclusive remedy, in law, in equity, or otherwise, with respect to the Services provided under this agreement and/or for any breach of this agreement is solely limited to the amount you paid for such Services during the term of this agreement. Except in jurisdictions where such provisions are restricted, the Providing Parties shall not be liable for any direct, indirect, incidental, special, exemplary, punitive, third party or consequential (including damages for loss of business profits, business interruption, loss of business information and the like) arising out of your use, misuse or inability to use the Services, the content, software and website, even if Company has been advised of the possibility of such damages, to the extent that a country does not permit the exclusion or limitation of liability as set forth herein, Company's liability is limited to the extent permitted by law in such country.</p>
-		</article>
-		<article>
-			<h3>13. Indemnification</h3>
-			<p>You agree to indemnify and hold Company and its parents, members, subsidiaries, affiliates, service providers, contractors, agents, licensors, officers, directors, shareholders and employees, harmless from any loss, liability, claim, lawsuit or demand, including reasonable attorney's fees, made by any third party due to or arising out of or in connection with (a) your use of the Services, and (b) the breach by you of your representations and warranties set forth in these Terms. You shall pay any and all costs, damages and expenses, including, without limitation, reasonable attorneys' fees and costs awarded against or otherwise incurred by Company in connection with or arising from any such claim, lawsuit, action, demand or other proceeding.</p>
-		</article>
-		<article>
-			<h3>14. Termination and Cancellation of Services; Right to withdraw</h3>
-			<p>To unsubscribe to the Services by text message, text STOP to the number from which you are receiving the text messages or send an email. In the first situation the termination shall become effective immediately upon receipt of the termination request. In the latter cases, cancellation shall only become effective within 48 hours upon receipt of the termination request. In the event that you have multiple subscriptions, 'STOP' will cancel all active subscriptions. Charges may still appear on your wireless service provider bill the following month as it bills retrospectively.</p>
-		</article>
-		<article>
-			<p>You agree that Company, at its sole discretion, may at any time terminate your use of the Services and remove and discard any content within such Services, (1) if Company believes that you have violated or acted inconsistently with these Terms; (2) you fail to pay the charges within the period stated in your mobile phone subscription with your operator; (3) Company is expressly requested to do so by the operator or (4) any law, regulations, directives or governmental action renders all or any portion of the Services is unlawful or impractical. You agree that Company shall not be liable to you or any third party for any termination of your access to the Services. If you cancel your account or subscription for any reason, Company will not refund any of your fees paid to date, except as explicitly provided in any of the provisions of these Terms.</p>
-		</article>
-	</main>
-</div>
-    <footer>
+	<footer>
         <section class="ft-main ">
             <div class="ft-main-item side footer-menu">
                 <h2 class="ft-title">Menu</h2>
                 <ul>
-                    <li><a href="policy.html">Privacy Policy</a></li>
-                    <li><a href="terms.html">Terms &amp; Conditions</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="refund.html">Refund Policy</a></li>
-                    <li><a href="subscriptionterms.html">Subscription Terms</a></li>
-                    <li><a href="contactUs.html">Contact us</a></li>
+                    <li><a href="/?page=policy">Privacy Policy</a></li>
+                    <li><a href="/?page=terms">Terms &amp; Conditions</a></li>
+                    <li><a href="/?page=faq">FAQ</a></li>
+                    <li><a href="/?page=refund">Refund Policy</a></li>
+                    <li><a href="/?page=subscriptionterms">Subscription Terms</a></li>
+                    <li><a href="/?page=contactUs">Contact us</a></li>
                 </ul>
             </div>
 
             <div class="ft-main-item" id="main-item">
-                <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+                <a href="/" class="logo"><img src="imgs/logo.png" alt=""></a>
                 <div class="links">
                     <img src="imgs/mastercard.png">
                     <img src="imgs/securecode.png">
@@ -166,55 +420,57 @@
                 <ul>
                     <li>
 
-                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm94.273438 320.105469c8.339843 8.34375 8.339843 21.824219 0 30.167969-4.160157 4.160156-9.621094 6.25-15.085938 6.25-5.460938 0-10.921875-2.089844-15.082031-6.25l-64.105469-64.109376-64.105469 64.109376c-4.160156 4.160156-9.621093 6.25-15.082031 6.25-5.464844 0-10.925781-2.089844-15.085938-6.25-8.339843-8.34375-8.339843-21.824219 0-30.167969l64.109376-64.105469-64.109376-64.105469c-8.339843-8.34375-8.339843-21.824219 0-30.167969 8.34375-8.339843 21.824219-8.339843 30.167969 0l64.105469 64.109376 64.105469-64.109376c8.34375-8.339843 21.824219-8.339843 30.167969 0 8.339843 8.34375 8.339843 21.824219 0 30.167969l-64.109376 64.105469zm0 0"/></svg>
-                        <a href="./cancel.html">Cancel subscription</a>
+                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm94.273438 320.105469c8.339843 8.34375 8.339843 21.824219 0 30.167969-4.160157 4.160156-9.621094 6.25-15.085938 6.25-5.460938 0-10.921875-2.089844-15.082031-6.25l-64.105469-64.109376-64.105469 64.109376c-4.160156 4.160156-9.621093 6.25-15.082031 6.25-5.464844 0-10.925781-2.089844-15.085938-6.25-8.339843-8.34375-8.339843-21.824219 0-30.167969l64.109376-64.105469-64.109376-64.105469c-8.339843-8.34375-8.339843-21.824219 0-30.167969 8.34375-8.339843 21.824219-8.339843 30.167969 0l64.105469 64.109376 64.105469-64.109376c8.34375-8.339843 21.824219-8.339843 30.167969 0 8.339843 8.34375 8.339843 21.824219 0 30.167969l-64.109376 64.105469zm0 0"></path></svg>
+                        <a href="/?page=cancel">Cancel subscription</a>
                     </li>
-                    <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20"
-								viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 								<g>
 									<g>
-										<polygon points="339.392,258.624 512,367.744 512,144.896 " />
+										<polygon points="339.392,258.624 512,367.744 512,144.896 "></polygon>
 									</g>
 								</g>
 								<g>
 									<g>
-										<polygon points="0,144.896 0,367.744 172.608,258.624 " />
+										<polygon points="0,144.896 0,367.744 172.608,258.624 "></polygon>
 									</g>
 								</g>
 								<g>
 									<g>
-										<path
-                                                d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z" />
+										<path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"></path>
 									</g>
 								</g>
 								<g>
 									<g>
 										<path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
-							L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z" />
+							L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"></path>
 									</g>
 								</g>
 							</svg>
                         <a href="mailto:support@mindsboom.com">support@mindsboom.com</a>
                     </li>
-                    <li><svg id="Capa_1" enable-background="new 0 0 512 512" height="20" viewBox="0 0 512 512"
-                             width="20" xmlns="http://www.w3.org/2000/svg">
+                    <li><svg id="Capa_1" enable-background="new 0 0 512 512" height="20" viewBox="0 0 512 512" width="20" xmlns="http://www.w3.org/2000/svg">
                         <g>
-                            <circle cx="256" cy="165" r="75" />
-                            <path
-                                    d="m256 0c-81.108 0-165 61.714-165 165 0 94.351 147.217 274.08 153.472 281.609 2.856 3.413 7.075 5.391 11.528 5.391s8.672-1.978 11.528-5.391c6.255-7.529 153.472-187.258 153.472-281.609 0-90.981-74.019-165-165-165zm0 270c-57.891 0-105-47.109-105-105s47.109-105 105-105 105 47.109 105 105-47.109 105-105 105z" />
-                            <path
-                                    d="m357.087 377.811c-28.922 41.873-55.961 75.306-66.487 87.973-8.643 10.327-21.241 16.216-34.6 16.216s-25.957-5.889-34.541-16.143c-10.551-12.698-37.608-46.155-66.544-88.046-38.83 13.722-63.915 35.1-63.915 59.189 0 41.42 73.874 75 165 75s165-33.58 165-75c0-24.088-25.084-45.467-63.913-59.189z" />
+                            <circle cx="256" cy="165" r="75"></circle>
+                            <path d="m256 0c-81.108 0-165 61.714-165 165 0 94.351 147.217 274.08 153.472 281.609 2.856 3.413 7.075 5.391 11.528 5.391s8.672-1.978 11.528-5.391c6.255-7.529 153.472-187.258 153.472-281.609 0-90.981-74.019-165-165-165zm0 270c-57.891 0-105-47.109-105-105s47.109-105 105-105 105 47.109 105 105-47.109 105-105 105z"></path>
+                            <path d="m357.087 377.811c-28.922 41.873-55.961 75.306-66.487 87.973-8.643 10.327-21.241 16.216-34.6 16.216s-25.957-5.889-34.541-16.143c-10.551-12.698-37.608-46.155-66.544-88.046-38.83 13.722-63.915 35.1-63.915 59.189 0 41.42 73.874 75 165 75s165-33.58 165-75c0-24.088-25.084-45.467-63.913-59.189z"></path>
                         </g>
-                    </svg> <a href="https://goo.gl/maps/rT5TuPr6xFtg91VT6">4 Charalambou
+                    </svg> <a href="https://goo.gl/maps/rT5TuPr6xFtg91VT6">Mamtic Innovation LTD, 4 Charalambou
                         Pettemerides Str, 2042 Strovolos, Nicosia
                         Cyprus</a></li>
+						<li>
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M17.2969 4.49609L15.2168 2.41797C15.0701 2.27059 14.8957 2.15366 14.7036 2.07389C14.5116 1.99412 14.3056 1.95308 14.0977 1.95313C13.6738 1.95313 13.2754 2.11914 12.9766 2.41797L10.7383 4.65625C10.5909 4.80298 10.474 4.97738 10.3942 5.16944C10.3144 5.3615 10.2734 5.56743 10.2734 5.77539C10.2734 6.19922 10.4395 6.59766 10.7383 6.89648L12.375 8.5332C11.9919 9.37766 11.4592 10.1459 10.8027 10.8008C10.1479 11.4589 9.37975 11.9935 8.53516 12.3789L6.89844 10.7422C6.75171 10.5948 6.57731 10.4779 6.38525 10.3981C6.19319 10.3183 5.98727 10.2773 5.7793 10.2773C5.35547 10.2773 4.95703 10.4434 4.65821 10.7422L2.41797 12.9785C2.27041 13.1255 2.15338 13.3002 2.0736 13.4926C1.99383 13.685 1.95288 13.8913 1.95313 14.0996C1.95313 14.5234 2.11914 14.9219 2.41797 15.2207L4.49414 17.2969C4.97071 17.7754 5.62891 18.0469 6.30469 18.0469C6.44727 18.0469 6.58399 18.0352 6.71875 18.0117C9.35157 17.5781 11.9629 16.1777 14.0703 14.0723C16.1758 11.9688 17.5742 9.35937 18.0137 6.71875C18.1465 5.91211 17.8789 5.08203 17.2969 4.49609V4.49609Z" fill="#A4C74D"/>
+								</svg>
+							<a
+								href="https://api.whatsapp.com/send/?phone=35795158557">Support:&nbsp;+357&nbsp;95158557</a>
+						</li>
                 </ul>
             </div>
         </section>
-        <p>© 2021 mindsboomrecipes.com. All Rights Reserved.</p>
+        <p>© 2022 mindsboomrecipes.com. All Rights Reserved. Powered by Mamtic Innovation LTD.</p>
     </footer>
-<script src="./js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
+	<script src="./js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 </body>
+
 </html>

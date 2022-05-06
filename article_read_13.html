@@ -39,61 +39,80 @@
 
 <body>
     <div class="wrapper">
-	<div id="warning">
-		<div class="container">
-				<span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-<g>
-	<path d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z"></path>
-</g>
-</svg>                    Have a Problem? <a href="./contactUs.html">Contact us</a> or <a href="cancel.html">cancel membership</a></span>
-		</div>
-	</div>
-        <header>
-        <div class="container">
-            <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
-            <div class="search" style="display: flex;">
-                <form id="searchForm">
-                    <input type="search" id="search" placeholder="Search" name="search" value="" maxlength="15">
-                    <input type="submit" value="">
-                    <span>Improve your skills with us</span>
-                </form>
-
+        <div id="warning">
+            <div class="container">
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+                        xml:space="preserve">
+                        <g>
+                            <path
+                                d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z">
+                            </path>
+                        </g>
+                    </svg> Have a Problem? <a href="./contactUs.html">Contact us</a> or <a href="cancel.html">cancel
+                        membership</a></span>
             </div>
-
-
-            <button class="userButton">
-                <svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0"></path></svg>
-                <svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0"/><path d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0"/><path d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0"/></svg>
-            </button>
-            <ul class="headerMenu">
-                <li>
-                    <a href="index.html">Recipes</a>
-                </li><li>
-                <a href="articles.html">Articles</a>
-            </li>
-                <li>
-                    <a href="calculator.html">Calorie Calculator</a>
-                </li>
-            </ul>
-            <div class="login">
-                <form id="authenticationForm" action="index.html?page=" method="post">
-                    <!--<input type="hidden" name="page" value="">-->
-                    <input type="text" id="userName" name="u" value="" placeholder="User" maxlength="22">
-                    <input type="password" id="userPassword" name="c" placeholder="Password" maxlength="12">
-                    <input type="submit" id="authentication" value="Login" name="authentication">
-                    <a href="signUp2.html" id="signIn">Sign Up</a>
-                    <div class="getPremium">
-                        <span class="text">Don’t have an account?</span>
-                        <a href="signUp2.html" class="getAccess">Get access to premium</a>
-                        <a href="cancel.html" class="getAccess out">Cancel Membership</a>
-                    </div>
-                </form>
-            </div>
-
-
         </div>
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+                <div class="search" style="display: flex;">
+                    <form id="searchForm">
+                        <input type="search" id="search" placeholder="Search" name="search" value="" maxlength="15">
+                        <input type="submit" value="">
+                        <span>Improve your skills with us</span>
+                    </form>
 
-    </header>
+                </div>
+
+
+                <button class="userButton">
+                    <svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0">
+                        </path>
+                    </svg>
+                    <svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
+                        <path
+                            d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0" />
+                        <path
+                            d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0" />
+                    </svg>
+                </button>
+                <ul class="headerMenu">
+                    <li>
+                        <a href="index.html">Recipes</a>
+                    </li>
+                    <li>
+                        <a href="articles.html">Articles</a>
+                    </li>
+                    <li>
+                        <a href="calculator.html">Calorie Calculator</a>
+                    </li>
+                </ul>
+                <div class="login">
+                    <form id="authenticationForm" action="index.html?page=" method="post">
+                        <!--<input type="hidden" name="page" value="">-->
+                        <input type="text" id="userName" name="u" value="" placeholder="User" maxlength="22">
+                        <input type="password" id="userPassword" name="c" placeholder="Password" maxlength="12">
+                        <input type="submit" id="authentication" value="Login" name="authentication">
+                        <a href="signUp2.html" id="signIn">Sign Up</a>
+                        <div class="getPremium">
+                            <span class="text">Don’t have an account?</span>
+                            <a href="signUp2.html" class="getAccess">Get access to premium</a>
+                            <a href="cancel.html" class="getAccess out">Cancel Membership</a>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+
+        </header>
         <main class="articles read">
 
             <section class="title">
@@ -102,8 +121,7 @@
             <section class="container">
                 <div class="article_block">
                     <div class="article_illustration">
-                        <img src="imgs/articles/waking_up_early.png"
-                            alt="">
+                        <img src="imgs/articles/waking_up_early.png" alt="">
                     </div>
                     <p>There are people who are used to being awake in the morning. Conversely, there are those who are
                         more accustomed to showing all their activity in the afternoon. The story of sleep, like most of
@@ -156,62 +174,61 @@
 
                 </div>
                 <aside>
-                <div>
-                    <div class="img">
-                        <img src="imgs/articles/coconut.png" alt="">
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/coconut.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>COCONUT OIL WONDERS</h3>
+                            <a href="article_read_2.html" class="showRecipe">Read More</a>
+                        </div>
                     </div>
-                    <div class="wrap">
-                        <h3>COCONUT OIL WONDERS</h3>
-                        <a href="article_read_2.html" class="showRecipe">Read More</a>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/limited%20budget.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>TIPS FOR CLEAN EATING WITH A LIMITED BUDGET</h3>
+                            <a href="article_read_4.html" class="showRecipe">Read More</a>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div class="img">
-                        <img src="imgs/articles/limited%20budget.png" alt="">
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/serving_size.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>HOW TO MEASURE SERVING SIZES</h3>
+                            <a href="article_read_6.html" class="showRecipe">Read More</a>
+                        </div>
                     </div>
-                    <div class="wrap">
-                        <h3>TIPS FOR CLEAN EATING WITH A LIMITED BUDGET</h3>
-                        <a href="article_read_4.html" class="showRecipe">Read More</a>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/live_longer.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>9 NUTRITIONAL RULES TO HELP YOU LIVE LONGER</h3>
+                            <a href="article_read_9.html" class="showRecipe">Read More</a>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div class="img">
-                        <img src="imgs/articles/serving_size.png" alt="">
-                    </div>
-                    <div class="wrap">
-                        <h3>HOW TO MEASURE SERVING SIZES</h3>
-                        <a href="article_read_6.html" class="showRecipe">Read More</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="img">
-                        <img src="imgs/articles/live_longer.png" alt="">
-                    </div>
-                    <div class="wrap">
-                        <h3>9 NUTRITIONAL RULES TO HELP YOU LIVE LONGER</h3>
-                        <a href="article_read_9.html" class="showRecipe">Read More</a>
-                    </div>
-                </div>
-            </aside>
+                </aside>
             </section>
-
         </main>
         <footer>
             <section class="ft-main ">
                 <div class="ft-main-item side footer-menu">
                     <h2 class="ft-title">Menu</h2>
                     <ul>
-                        <li><a href="policy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms &amp; Conditions</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="refund.html">Refund Policy</a></li>
-                        <li><a href="subscriptionterms.html">Subscription Terms</a></li>
-                        <li><a href="contactUs.html">Contact us</a></li>
+                        <li><a href="/?page=policy">Privacy Policy</a></li>
+                        <li><a href="/?page=terms">Terms &amp; Conditions</a></li>
+                        <li><a href="/?page=faq">FAQ</a></li>
+                        <li><a href="/?page=refund">Refund Policy</a></li>
+                        <li><a href="/?page=subscriptionterms">Subscription Terms</a></li>
+                        <li><a href="/?page=contactUs">Contact us</a></li>
                     </ul>
                 </div>
-
+    
                 <div class="ft-main-item" id="main-item">
-                    <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+                    <a href="/" class="logo"><img src="imgs/logo.png" alt=""></a>
                     <div class="links">
                         <img src="imgs/mastercard.png">
                         <img src="imgs/securecode.png">
@@ -219,84 +236,60 @@
                         <img src="imgs/visa-electron.png">
                     </div>
                 </div>
-
+    
                 <div class="ft-main-item side footer-contact">
                     <h2 class="ft-title">Contact us</h2>
                     <ul>
-                        <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20"
-                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                <g>
+                        <li>
+    
+                            <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm94.273438 320.105469c8.339843 8.34375 8.339843 21.824219 0 30.167969-4.160157 4.160156-9.621094 6.25-15.085938 6.25-5.460938 0-10.921875-2.089844-15.082031-6.25l-64.105469-64.109376-64.105469 64.109376c-4.160156 4.160156-9.621093 6.25-15.082031 6.25-5.464844 0-10.925781-2.089844-15.085938-6.25-8.339843-8.34375-8.339843-21.824219 0-30.167969l64.109376-64.105469-64.109376-64.105469c-8.339843-8.34375-8.339843-21.824219 0-30.167969 8.34375-8.339843 21.824219-8.339843 30.167969 0l64.105469 64.109376 64.105469-64.109376c8.34375-8.339843 21.824219-8.339843 30.167969 0 8.339843 8.34375 8.339843 21.824219 0 30.167969l-64.109376 64.105469zm0 0"></path></svg>
+                            <a href="/?page=cancel">Cancel subscription</a>
+                        </li>
+                        <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                     <g>
-                                        <polygon points="339.392,258.624 512,367.744 512,144.896 " />
+                                        <g>
+                                            <polygon points="339.392,258.624 512,367.744 512,144.896 "></polygon>
+                                        </g>
                                     </g>
-                                </g>
-                                <g>
                                     <g>
-                                        <polygon points="0,144.896 0,367.744 172.608,258.624 " />
+                                        <g>
+                                            <polygon points="0,144.896 0,367.744 172.608,258.624 "></polygon>
+                                        </g>
                                     </g>
-                                </g>
-                                <g>
                                     <g>
-                                        <path
-                                            d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z" />
+                                        <g>
+                                            <path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"></path>
+                                        </g>
                                     </g>
-                                </g>
-                                <g>
                                     <g>
-                                        <path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
-							L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z" />
+                                        <g>
+                                            <path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+                                L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"></path>
+                                        </g>
                                     </g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                            </svg>&nbsp;&nbsp;&nbsp;
+                                </svg>
                             <a href="mailto:support@mindsboom.com">support@mindsboom.com</a>
                         </li>
-                        <li><svg id="Capa_1" enable-background="new 0 0 512 512" height="20" viewBox="0 0 512 512"
-                                width="20" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <circle cx="256" cy="165" r="75" />
-                                    <path
-                                        d="m256 0c-81.108 0-165 61.714-165 165 0 94.351 147.217 274.08 153.472 281.609 2.856 3.413 7.075 5.391 11.528 5.391s8.672-1.978 11.528-5.391c6.255-7.529 153.472-187.258 153.472-281.609 0-90.981-74.019-165-165-165zm0 270c-57.891 0-105-47.109-105-105s47.109-105 105-105 105 47.109 105 105-47.109 105-105 105z" />
-                                    <path
-                                        d="m357.087 377.811c-28.922 41.873-55.961 75.306-66.487 87.973-8.643 10.327-21.241 16.216-34.6 16.216s-25.957-5.889-34.541-16.143c-10.551-12.698-37.608-46.155-66.544-88.046-38.83 13.722-63.915 35.1-63.915 59.189 0 41.42 73.874 75 165 75s165-33.58 165-75c0-24.088-25.084-45.467-63.913-59.189z" />
-                                </g>
-                            </svg> <a href="https://goo.gl/maps/rT5TuPr6xFtg91VT6">4 Charalambou
-                                Pettemerides Str, 2042 Strovolos, Nicosia
-                                Cyprus</a></li>
+                        <li><svg id="Capa_1" enable-background="new 0 0 512 512" height="20" viewBox="0 0 512 512" width="20" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <circle cx="256" cy="165" r="75"></circle>
+                                <path d="m256 0c-81.108 0-165 61.714-165 165 0 94.351 147.217 274.08 153.472 281.609 2.856 3.413 7.075 5.391 11.528 5.391s8.672-1.978 11.528-5.391c6.255-7.529 153.472-187.258 153.472-281.609 0-90.981-74.019-165-165-165zm0 270c-57.891 0-105-47.109-105-105s47.109-105 105-105 105 47.109 105 105-47.109 105-105 105z"></path>
+                                <path d="m357.087 377.811c-28.922 41.873-55.961 75.306-66.487 87.973-8.643 10.327-21.241 16.216-34.6 16.216s-25.957-5.889-34.541-16.143c-10.551-12.698-37.608-46.155-66.544-88.046-38.83 13.722-63.915 35.1-63.915 59.189 0 41.42 73.874 75 165 75s165-33.58 165-75c0-24.088-25.084-45.467-63.913-59.189z"></path>
+                            </g>
+                        </svg> <a href="https://goo.gl/maps/rT5TuPr6xFtg91VT6">Mamtic Innovation LTD, 4 Charalambou
+                            Pettemerides Str, 2042 Strovolos, Nicosia
+                            Cyprus</a></li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.2969 4.49609L15.2168 2.41797C15.0701 2.27059 14.8957 2.15366 14.7036 2.07389C14.5116 1.99412 14.3056 1.95308 14.0977 1.95313C13.6738 1.95313 13.2754 2.11914 12.9766 2.41797L10.7383 4.65625C10.5909 4.80298 10.474 4.97738 10.3942 5.16944C10.3144 5.3615 10.2734 5.56743 10.2734 5.77539C10.2734 6.19922 10.4395 6.59766 10.7383 6.89648L12.375 8.5332C11.9919 9.37766 11.4592 10.1459 10.8027 10.8008C10.1479 11.4589 9.37975 11.9935 8.53516 12.3789L6.89844 10.7422C6.75171 10.5948 6.57731 10.4779 6.38525 10.3981C6.19319 10.3183 5.98727 10.2773 5.7793 10.2773C5.35547 10.2773 4.95703 10.4434 4.65821 10.7422L2.41797 12.9785C2.27041 13.1255 2.15338 13.3002 2.0736 13.4926C1.99383 13.685 1.95288 13.8913 1.95313 14.0996C1.95313 14.5234 2.11914 14.9219 2.41797 15.2207L4.49414 17.2969C4.97071 17.7754 5.62891 18.0469 6.30469 18.0469C6.44727 18.0469 6.58399 18.0352 6.71875 18.0117C9.35157 17.5781 11.9629 16.1777 14.0703 14.0723C16.1758 11.9688 17.5742 9.35937 18.0137 6.71875C18.1465 5.91211 17.8789 5.08203 17.2969 4.49609V4.49609Z" fill="#A4C74D"/>
+                                    </svg>
+                                <a
+                                    href="https://api.whatsapp.com/send/?phone=35795158557">Support:&nbsp;+357&nbsp;95158557</a>
+                            </li>
                     </ul>
                 </div>
             </section>
-            <p>© 2021 mindsboomrecipes.com. All Rights Reserved.</p>
+            <p>© 2022 mindsboomrecipes.com. All Rights Reserved. Powered by Mamtic Innovation LTD.</p>
         </footer>
     </div>
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
